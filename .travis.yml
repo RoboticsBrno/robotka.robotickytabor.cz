@@ -5,13 +5,22 @@ before_install:
   - sudo apt-get install graphicsmagick
 
 language: ruby
+rvm:
+  2.7
 
 install:
   - bundle install
 
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - JEKYLL_ENV=production
+
 script:
   - echo "${TRAVIS_COMMIT}" > version
-  - JEKYLL_ENV=production bundle exec jekyll build
+  - bundle exec jekyll build
+
+cache: bundler
 
 deploy:
   provider: pages
