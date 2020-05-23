@@ -1,0 +1,23 @@
+git:
+  depth: 1
+
+before_install:
+  - sudo apt-get install graphicsmagick
+
+language: ruby
+
+install:
+  - bundle install
+
+script:
+  - echo "${TRAVIS_COMMIT}" > version
+  - JEKYLL_ENV=production bundle exec jekyll build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: false
+  local-dir: _site
+  on:
+    branch: master

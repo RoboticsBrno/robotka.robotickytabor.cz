@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="section no-pad-bot" id="index-banner">
+    <br><br>
+    <h1 class="header center orange-text">{{ site.title }}</h1>
+      
+    <div class="row center">
+      <a href="{{ '/guide/' | relative_url }}" id="download-button" class="btn-large waves-effect waves-light orange">Poskládat Robotku</a>
+    </div>
+    <br><br>
+  </div>
+
+  <div class="section" id="about">
+    <div class="row center">
+      <div class="col s10 offset-s1">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="galerie">
+    <p>  </p>
+    <div class="row">
+        <h3>Galerie</h3>
+        <div class="row">
+          <div class="col s6">
+            <a data-fancybox="gallery" href="{{ '/gallery/001.jpg' | relative_url }}"><img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/img/gallery/001.jpg' | relative_url }}" alt="" class="responsive-img"></a>
+          </div>
+          <div class="col s6">
+              <a data-fancybox="gallery" href="{{ '/gallery/002.jpg' | relative_url }}"><img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/img/gallery/002.jpg' | relative_url }}" alt="" class="responsive-img"></a>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+              <a data-fancybox="gallery" href="{{ '/gallery/004.jpg' | relative_url }}"><img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/img/gallery/004.jpg' | relative_url }}" alt="" class="responsive-img"></a>
+            </div>
+            <div class="col s6">
+                <a data-fancybox="gallery" href="{{ '/gallery/005.jpg' | relative_url }}"><img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/img/gallery/005.jpg' | relative_url }}" alt="" class="responsive-img"></a>
+            </div>
+          </div>
+  
+    </div>
+  </div>
+
+  <div class="section" id="partners">
+    <div class="row">
+      <h3>Partneři</h3>
+      <p>První uvedení Robotuky na Robotickém táboře v roce 2020 pod vedením <a target="_tab" href="https://helceletka.cz">DDM Heleletova</a> bylo podpořeno našimi partnery. Bez jejich pomoci bychom nezvládli stavebnici Robotuky účastníkům tábora nachystat. Tímto bychom jim rádi poděkovali.</p>
+      <div class="row">
+        <div class="col s4 partners">
+          <a target="_tab" href="https://www.honeywell.com/"><img src="{{ '/img/partners/honeywell.png' | relative_url }}" class="partner-img responsive-img"></a>
+        </div>
+        <div class="col s4 partners">
+          <a target="_tab" href="https://www.redhat.com/en"><img src="{{ '/img/partners/redhat.png' | relative_url }}" class="partner-img responsive-img"></a>
+        </div>
+        <div class="col s4 partners">
+          <a target="_tab" href="https://www.gatema.cz/"><img src="{{ '/img/partners/gatema.svg' | relative_url }}" class="partner-img responsive-img"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s4 partners">
+          <a target="_tab" href="https://www.fablabbrno.cz/"><img src="{{ '/img/partners/fablab.png' | relative_url }}" class="partner-img responsive-img"></a>
+        </div>
+        <div class="col s4 partners">
+          <a target="_tab" href="https://www.soselectronic.cz/"><img src="{{ '/img/partners/sos.png' | relative_url }}" class="partner-img responsive-img"></a>
+        </div>
+        <div class="col s4 partners">
+          <a target="_tab" href="https://laskarduino.cz/"><img src="{{ '/img/partners/laskarduino.png' | relative_url }}" class="partner-img responsive-img"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s4 offset-s4 partners">
+          <a target="_tab" href="https://www.avast.com/cs-cz/"><img src="{{ '/img/partners/avast.png' | relative_url }}" class="partner-img responsive-img"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+</div>

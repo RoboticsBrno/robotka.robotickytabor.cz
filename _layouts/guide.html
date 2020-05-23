@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="sidenav">
+    {% for it in site.data.collectionMenus.guides %}
+        <a href="#{{ it.name }}"> {{ it.name }}</a>
+        {% for c in it.children %}
+            <a href="#{{ c.label }}" style="margin-left: 12px; font-size: 80%"> {{ c.name }}</a>
+        {% endfor %}
+    {% endfor %}
+</div>
+
+<div class="bgwrap">
+    <div class="main">
+        <div class="container con-guide">
+
+            {{ content }}
+
+        </div>
+    </div>
+</div>
+

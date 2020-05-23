@@ -1,0 +1,42 @@
+title: Robotka
+author: RoboticsBrno
+email: info@robotikabrno.cz
+description: > # this means to ignore newlines until "baseurl:"
+    Robotka pro Robotický tábor
+
+twitter_username: RobotikaBrno
+github_username:  RoboticsBrno
+
+sass:
+    style: compressed
+
+collections:
+  guides:
+      output: true
+
+plugins:
+    - jekyll-minifier
+
+mini_magick:
+    thumbnail:
+        source: img/guides/original
+        destination: thumb/img/guides
+        resize: "700x400"
+      
+    medium:
+        source: img/guides/original
+        destination: img/guides/
+        resize: "1500x1000"
+
+    gal_thumb:
+        source: img/gallery/original
+        destination: thumb/img/gallery
+        resize: "600x400"
+    
+    gal_medium:
+        source: img/gallery/original
+        destination: img/gallery
+        resize: "1500x1000"
+
+# Google Analytics
+google_analytics: UA-144089676-1

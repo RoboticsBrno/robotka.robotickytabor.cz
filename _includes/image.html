@@ -1,0 +1,47 @@
+
+{% if include.url2 %}
+<div class="row">
+    {% assign counter_section = counter_section | plus: 1 %}
+    <div class="col l6">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="{{ include.url | relative_url }}">
+                <img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/' | append: include.url | relative_url }}" alt=""
+                    class="responsive-img{% if include.url contains '.png' %} crisp{%endif%}">
+            </a>
+            <figcaption>
+                <p class="step">{{counter_section}}</p>
+                {{ include.description | markdownify }}
+            </figcaption>
+        </figure>
+    </div>
+    {% assign counter_section = counter_section | plus: 1 %}
+    <div class="col l6">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="{{ include.url2 | relative_url }}">
+                <img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/' | append: include.url2 | relative_url }}" alt="" 
+                    class="responsive-img{% if include.url contains '.png' %} crisp{%endif%}">
+            </a>
+            <figcaption>
+                <p class="step">{{counter_section}}</p>
+                {{ include.description2 | markdownify }}
+            </figcaption>
+        </figure>
+    </div>
+</div>
+{% else %}
+{% assign counter_section = counter_section | plus: 1 %}
+<div class="row">
+    <div class="col l6">
+        <figure class="figure">
+            <a data-fancybox="gallery" href="{{ include.url | relative_url }}">
+                <img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/' | append: include.url | relative_url }}" alt=""
+                    class="responsive-img{% if include.url contains '.png' %} crisp{%endif%}">
+            </a>
+            <figcaption>
+                <p class="step">{{counter_section}}</p>
+                {{ include.description | markdownify }}
+            </figcaption>
+        </figure>
+    </div>
+</div>
+{% endif %}
