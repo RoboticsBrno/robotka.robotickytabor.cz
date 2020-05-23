@@ -6,7 +6,7 @@ name: Dálkové ovládání
 
 V této sekci ukážeme, jak zprovoznit na Robotuce program, který umožňuje ovládání Ruky
 z telefonu s Androidem přes aplikaci [RBController](https://play.google.com/store/apps/details?id=com.tassadar.rbcontroller)
-nebo z Windows počítače [přes naši aplikaci](https://github.com/RoboticsBrno/rbcontroller-electron/releases/download/v1.1.1/rbcontroller-electron.Setup.1.1.1.exe).
+nebo z Windows počítače [přes naši aplikaci](https://github.com/RoboticsBrno/rbcontroller-electron/releases/download/v1.3.0/rbcontroller-electron.Setup.1.3.0.exe).
 
 {% include image.html
     url="img/guides/demo_prog_00.png"
@@ -81,5 +81,5 @@ nebo z Windows počítače [přes naši aplikaci](https://github.com/RoboticsBrn
         "Na váš telefon s OS Android si [stáhněte aplikaci **RBController**](https://play.google.com/store/apps/details?id=com.tassadar.rbcontroller).<br/>
         Zadejte stejné jméno, jako jste psali do proměnné `cfg.owner`. Aplikace by měla najít vaši Ruku a umožnit její ovládání.
 
-**Můžete také použít aplikaci pro Windows,** kterou naleznete [na táboře tady](ftp://192.168.42.125/Public/rbcontroller-electron%20Setup%201.1.1.exe) a mimo táborovou WiFi [stahujte z Githubu](https://github.com/RoboticsBrno/rbcontroller-electron/releases/download/v1.1.1/rbcontroller-electron.Setup.1.1.1.exe)."
+**Můžete také použít aplikaci pro Windows,** kterou naleznete [na táboře tady](ftp://192.168.42.125/Public/rbcontroller-electron%20Setup%201.1.1.exe) a mimo táborovou WiFi [stahujte z Githubu](https://github.com/RoboticsBrno/rbcontroller-electron/releases/download/v1.3.0/rbcontroller-electron.Setup.1.3.0.exe)."
  %}
