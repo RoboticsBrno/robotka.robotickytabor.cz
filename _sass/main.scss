@@ -203,12 +203,15 @@ pre > code {
     font-size: 0.8em;
 }
 
+.brand-logo {
+    white-space: nowrap;
 
-@media (max-width: 400px) {
-    .brand-logo img {
-        display: none;
+    i {
+        font-size: 40px !important;
     }
+}
 
+@media (max-width: 600px) {
     nav {
         height: 40px;
         line-height: 40px;
@@ -221,6 +224,13 @@ pre > code {
         i {
             height: 40px !important;
             line-height: 40px !important;
+        }
+    }
+
+    .brand-logo {
+        font-size: 20px !important;
+        i {
+            font-size: 24px !important;
         }
     }
 }
