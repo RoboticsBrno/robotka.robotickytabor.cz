@@ -41,6 +41,12 @@ a {
 
   // Gets rid of tap active state
   -webkit-tap-highlight-color: transparent;
+
+  font-weight: 500;
+
+  &:hover {
+    color: lighten($link-color, 10%);
+  }
 }
 
 

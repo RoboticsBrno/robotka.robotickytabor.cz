@@ -73,6 +73,7 @@
 
   &:hover {
     background-color: $button-raised-background-hover;
+    color: white;
     @extend .z-depth-1-half;
   }
 }
