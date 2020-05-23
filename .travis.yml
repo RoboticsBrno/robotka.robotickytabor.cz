@@ -5,8 +5,6 @@ before_install:
   - sudo apt-get install graphicsmagick
 
 language: ruby
-rvm:
-  2.7
 
 install:
   - bundle install
@@ -18,7 +16,7 @@ env:
 
 script:
   - echo "${TRAVIS_COMMIT}" > version
-  - bundle exec jekyll build
+  - bundle exec jekyll build --baseurl /robotka.robotickytabor.cz/
 
 cache: bundler
 
