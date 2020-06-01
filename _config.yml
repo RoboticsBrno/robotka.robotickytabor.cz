@@ -13,9 +13,21 @@ sass:
 collections:
   guides:
       output: true
+  coding:
+      output: true
 
 plugins:
     - jekyll-minifier
+
+kramdown:
+    syntax_highlighter: rouge
+    syntax_highlighter_opts:
+        tab_width: 4
+        span:
+            line_numbers: false
+        block:
+            line_numbers: true
+            start_line: 1
 
 mini_magick:
     thumbnail:

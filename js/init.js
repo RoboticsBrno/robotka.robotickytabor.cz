@@ -64,6 +64,17 @@
         if(window.location.pathname.indexOf("/guide/") !== -1)
             initSteps();
 
+        document.querySelectorAll("[data-linenos-offset]").forEach(function(el) {
+            var offset = parseInt(el.dataset.linenosOffset, 10);
+            var pre = el.querySelector("pre.lineno")
+            var lines = pre.textContent.split("\n").length - 1
+            var newtext = ""
+            for(var i = offset; i < offset+lines; ++i) {
+                newtext += i + "\n"
+            }
+            pre.textContent = newtext;
+        })
+
         document.addEventListener("scroll", onDocumentScroll);
 
     }); // end of document ready
