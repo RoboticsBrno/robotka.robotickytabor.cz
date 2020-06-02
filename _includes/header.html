@@ -24,6 +24,9 @@
                     {% endif %}
                 {% endfor %}
             {% endif %}
+
+            {% assign coding = site.data.collectionMenus.coding[0] %}
+            <li><a href="{{coding.doc.url}}">Programování</a></li>
           </ul>
 
           <ul id="nav-mobile" class="side-nav">
@@ -49,6 +52,9 @@
                     {% endif %}
                 {% endfor %}
             {% endif %}
+
+            {% assign coding = site.data.collectionMenus.coding[0] %}
+            <li><a href="{{coding.doc.url}}">Programování</a></li>
           </ul>
 
           {% if page.name == 'guide.md' %}

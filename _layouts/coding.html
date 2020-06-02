@@ -2,24 +2,33 @@
 layout: default
 ---
 
+{% assign items = site.data.collectionMenus.coding %}
 <div class="sidenav">
-    {% for it in site.data.collectionMenus.coding %}
-        <a href="#{{ it.name }}"> {{ it.name }}</a>
-        {% for c in it.children %}
-            <a href="#{{ c.label }}" style="margin-left: 12px; font-size: 80%"> {{ c.name }}</a>
-        {% endfor %}
+    {% for it in items %}
+        <a href="{{ it.doc.url }}">{{ forloop.index }}. {{ it.doc.title }}</a>
+        {% if page.url == it.doc.url %}
+            {% for c in it.children %}
+                <a href="#{{ c.label }}" style="margin-left: 18px; font-size: 80%"> {{ c.name }}</a>
+            {% endfor %}
+        {% endif %}
     {% endfor %}
 </div>
 
 
 <div class="bgwrap">
     <div class="main">
-        <div class="container con-guide coding-container">
-
-
-
+        <div class="container con-guide coding-container" {% unless page.fullwidth %}style="max-width: 850px"{% endunless %}>
             {{ content }}
 
+            <div style="margin: 96px 0;">
+                <h1> </h1>
+                {% for it in items %}
+                    {% assign next = items[forloop.index] %}
+                    {% if page.url == it.doc.url and next %}
+                        <h5 style="font-weight:400">Další kapitola: <a href="{{next.doc.url}}">{{next.doc.title}}</a></h5>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>

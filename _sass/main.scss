@@ -16,9 +16,19 @@ ul > li {
 h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
     color: black;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    //font-weight: 700;
+    font-family: 'Montserrat', sans-serif;;
 }
+
+h4, h5, h6 {
+    font-weight: 700;
+}
+
+
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+    margin-top: 32px;
+}
+
 strong {
     font-weight: bold;
 }
@@ -318,7 +328,6 @@ td.rouge-code  {
 
 .coding-container {
     font-size: 16px;
-    max-width: 850px;
 
     h1 {
         font-size: 200%;
@@ -328,7 +337,7 @@ td.rouge-code  {
     }
 
     h4 {
-        font-size: 120%;
+        font-size: 130%;
         margin-top: 32px;
     }
 }
@@ -345,4 +354,10 @@ td.rouge-code  {
             margin-bottom: 20px;
         }
     }
+}
+
+.lead {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: black;
 }

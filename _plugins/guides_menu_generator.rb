@@ -26,6 +26,7 @@ class GuidesMenuGenerator < Jekyll::Generator
 
             menu.push({
                 "name" => doc.data["name"],
+                "doc" => doc,
                 "label" => Jekyll::Utils::slugify(doc.data["name"], mode: "pretty"),
                 "children" => children,
             })
