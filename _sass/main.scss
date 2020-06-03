@@ -277,7 +277,7 @@ hr {
     display: block;
     padding-left: 50px;
     position: relative;
-    min-height: 30px;
+    min-height: 70px;
 
     &::before {
         content: '!';
@@ -289,6 +289,17 @@ hr {
         font-weight: 800;
         color: #f0506e;
     }
+}
+
+.info {
+    padding: 32px 10px 0px 10px;
+    background-color: #dfebf5;
+    border-left: 3px solid #ef476f;
+    opacity: 0.83;
+    transition: opacity 0.6s;
+    margin: 15px 0px !important;
+    display: block;
+    position: relative;
 }
 
 .side-nav li > a {
@@ -348,7 +359,7 @@ td.rouge-code  {
         padding: 20px;
     }
 
-    .row {
+    .row::not(.info) {
         margin-bottom: 0px;
         .col {
             margin-bottom: 20px;
@@ -360,4 +371,8 @@ td.rouge-code  {
     font-size: 1.4rem;
     font-weight: 300;
     color: black;
+}
+
+.spoiler {
+    border-left: 3px solid #f0506e;
 }

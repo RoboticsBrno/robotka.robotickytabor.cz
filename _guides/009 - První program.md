@@ -11,7 +11,7 @@ name: První program
         a někam ho rozbalte tak, aby jste ho zase našli.
 
 <div class=\"alert\">Pozor: PlatformIO má chybu - nedokáže pracovat s diakritikou v cestě k projektu. <b>Všechny projetky musí být uloženy v cestě, kde nejsou háčky a čárky.</b><br>
-Pokud vaše uživatelské jméno obsahuje diakritiku, tak nemůžete používat plochu ani složku dokumenty, ale musíte vytvořit například <i>C:\Robotuka\examples</i>.</div>
+Pokud vaše uživatelské jméno obsahuje diakritiku, tak nemůžete používat plochu ani složku dokumenty, ale musíte vytvořit například <i>C:\Robotka\examples</i>.</div>
 
 _Pokud víte, co je to Git a umíte ho používat, můžete místo toho [naklonovat náš repozitář](https://github.com/RoboticsBrno/roboruka-examples)._"
     url2="img/guides/first_prog_00.png"
@@ -35,9 +35,9 @@ _Pokud víte, co je to Git a umíte ho používat, můžete místo toho [naklono
     url="img/guides/first_prog_01.png"
     description=
         "Otevřete soubor `src/main.cpp` a najděte funkci `void setup()`. Tato funkce je vykonána jednou, ihned po zapnutí robota.
-        Musí v ní být volání `rkSetup();` s případnou konfigurací, toto volání pro vás správně nastaví všechny části Robotuky.
+        Musí v ní být volání `rkSetup();` s případnou konfigurací, toto volání pro vás správně nastaví všechny části Robotky.
         <br/><br/>
-        _Pokud znáte programování pro Arduino, tak metodu `setup()` znáte, u Robotuky funguje stejně jako s Arduinem._"
+        _Pokud znáte programování pro Arduino, tak metodu `setup()` znáte, u Robotky funguje stejně jako s Arduinem._"
     url2="img/guides/first_prog_02.png"
     description2=
         "Dovnitř metody `setup()`, pod volání `rkSetup(cfg);` přidáme náš kód. Rozsvítíme červenou a žlutou LED:<br/><br/>
@@ -48,7 +48,7 @@ _Pokud víte, co je to Git a umíte ho používat, můžete místo toho [naklono
  {% include image.html
     url="img/guides/first_prog_02a.png"
     description=
-        "Všimněte si, že při psaní vám VSCode napovídá. Stačí napsat `rk` a už uvidíte všechny metody, které můžete používat na ovládání Robotuky."
+        "Všimněte si, že při psaní vám VSCode napovídá. Stačí napsat `rk` a už uvidíte všechny metody, které můžete používat na ovládání Robotky."
     url2="img/guides/first_prog_02b.png"
     description2=
         "Když na nějakou metodu najedete myší, VSCode vám také ukáže, co daná metoda dělá. Všechny tyto informace **[najdete také v dokumentaci](https://roboticsbrno.github.io/RB3201-RBControl-Roboruka-library/modules.html)**."
@@ -57,7 +57,7 @@ _Pokud víte, co je to Git a umíte ho používat, můžete místo toho [naklono
  {% include image.html
     url="img/guides/first_prog_03.png"
     description=
-        "Najděte si funkci `void loop()`. Tato funkce je volána pořád dokola, dokud je Robotuka zapnutá."
+        "Najděte si funkci `void loop()`. Tato funkce je volána pořád dokola, dokud je Robotka zapnutá."
     url2="img/guides/first_prog_04.png"
     description2=
         "Uvnitř metody `loop()` dopíšeme kód, který zkontroluje, zda je tlačítko SW**1** stisknuté, a pokud ano, tak zhasne

@@ -14,7 +14,7 @@ void setup() {
     rkConfig cfg;
     rkSetup(cfg);
     
-    rkLedBlue(true);
+    rkLedBlue(true); // tento řádek přidáme my - zatím ne, nejprve si pročti tuto kapitolu!
 }
 ```
 
@@ -91,7 +91,43 @@ Konečně se dostáváme k tomu zajímavému, Robotka bude něco dělat!
 ```
 {:data-linenos-offset="7"}
 
-Zavoláním této funkce řekneme robotce aby rozsvítila (`true`) modrou LED.
-Teď zkuste program zkompilovat a nahrát  (TODO: přidat link) do robota. Funguje? :)
+Přepište tento řádek na správné místo do vašeho programu (před `}`, která ukončuje
+funkci `setup` - pokud nevíš kam, koukni se na celý program na začátku této kapitoly).
 
-_Zkuste rozsvítit i ostatní barvy LED!_
+{:.info}
+{% include image.html
+    url="img/guides/first_prog_02a.png"
+    description=
+        "Všimněte si, že při psaní vám VSCode napovídá. Stačí napsat `rk` a už uvidíte všechny metody, které můžete používat na ovládání Robotky."
+    singlecol=true
+ %}
+
+{:.info}
+{% include image.html
+    url="img/guides/first_prog_02b.png"
+    description=
+        "Když na nějakou metodu najedete myší, VSCode vám také ukáže, co daná metoda dělá. Všechny tyto informace **[najdete také v dokumentaci](https://roboticsbrno.github.io/RB3201-RBControl-Roboruka-library/modules.html)**."
+    singlecol=true
+ %}
+
+<br>
+
+{:.lead}
+Zkuste rozsvítit i ostatní barvy LED!
+
+Použijte napovídání ve VSCode a zavolejte další funkce na rozsvícení ostatních LED.
+
+{:.spoiler}
+```cpp
+#include "robotka.h"
+
+void setup() {
+    rkConfig cfg;
+    rkSetup(cfg);
+
+    rkLedBlue(true);
+    rkLedGreen(true);
+    rkLedRed(true);
+    rkLedYellow(true);
+}
+```

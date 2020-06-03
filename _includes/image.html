@@ -31,14 +31,14 @@
 {% else %}
 {% assign counter_section = counter_section | plus: 1 %}
 <div class="row">
-    <div class="col {% if include.singlecol %}l10{%else%}l6{% endif %} s12">
+    <div class="col {% if include.singlecol %}l12{%else%}l6{% endif %} s12">
         <figure class="figure">
             <a data-fancybox="gallery" href="{{ include.url | relative_url }}">
                 <img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/' | append: include.url | relative_url }}" alt=""
                     class="responsive-img{% if include.url contains '.png' %} crisp{%endif%}">
             </a>
             <figcaption>
-                <p class="step">{{counter_section}}</p>
+                {% unless include.singlecol %}<p class="step">{{counter_section}}</p>{% endunless %}
                 {{ include.description | markdownify }}
             </figcaption>
         </figure>

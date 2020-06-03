@@ -1,5 +1,38 @@
 
 (function ($) {
+    var initMobileNav = function() {
+        $('.button-collapse').sideNav();
+        $('.carousel').carousel();
+        $('#nav-mobile a').click(function () {
+            $("#sidenav-overlay").click();
+        });
+    };
+
+    var initFancyBox = function() {
+        $('[data-fancybox="gallery"]').fancybox({
+            caption : function( instance, item ) {
+                return $(this).next('figcaption').html();
+            }
+        });
+    }
+
+    var initVersioning = function() {
+        var currentPageVersion;
+        $.get('/version', function(data) {
+            currentPageVersion = data;
+            setInterval(function () {
+                $.get('/version', function(data) {
+                    if (data != currentPageVersion) {
+                        currentPageVersion = data;
+                        if (confirm('Nová verze návodu k dispozici, aktualizovat?')) {
+                            location.reload(true);
+                        }
+                    }
+                });
+            }, 3 * 60 * 1000);
+        });
+    }
+
     var initSteps = function() {
         var globalCounter = 0;
 
@@ -32,38 +65,7 @@
         });
     };
 
-    $(function () {
-
-        $('.button-collapse').sideNav();
-        $('.carousel').carousel();
-        $('#nav-mobile a').click(function () {
-            $("#sidenav-overlay").click();
-        });
-
-        var currentPageVersion;
-        $.get('/version', function(data) {
-            currentPageVersion = data;
-            setInterval(function () {
-                $.get('/version', function(data) {
-                    if (data != currentPageVersion) {
-                        currentPageVersion = data;
-                        if (confirm('Nová verze návodu k dispozici, aktualizovat?')) {
-                            location.reload(true);
-                        }
-                    }
-                });
-            }, 3 * 60 * 1000);
-        });
-
-        $('[data-fancybox="gallery"]').fancybox({
-            caption : function( instance, item ) {
-                return $(this).next('figcaption').html();
-            }
-        });
-
-        if(window.location.pathname.indexOf("/guide/") !== -1)
-            initSteps();
-
+    var initLinenos = function() {
         document.querySelectorAll("[data-linenos-offset]").forEach(function(el) {
             var offset = parseInt(el.dataset.linenosOffset, 10);
             var pre = el.querySelector("pre.lineno")
@@ -74,12 +76,47 @@
             }
             pre.textContent = newtext;
         })
+    }
 
-        document.addEventListener("scroll", onDocumentScroll);
+    var initSpoilers = function() {
+        document.querySelectorAll(".spoiler .highlight").forEach(function(el) {
+            var pre = el.querySelector("pre.highlight")
+            pre.classList.add("hide")
+            pre.style.borderTop = "1px solid #ccc"
+            pre.style.marginTop = "0px";
 
-    }); // end of document ready
-})(jQuery); // end of jQuery name space
+            var div = document.createElement("div")
+            div.style.padding = "8px"
 
+            var show = document.createElement("a");
+            show.classList.add("btn-small")
+            show.addEventListener("click", function() {
+                pre.classList.toggle("hide")
+            })
+            show.textContent = "Ukázat řešení"
+
+            div.appendChild(show);
+            el.insertBefore(div, el.childNodes[0]);
+        });
+    }
+
+    $(function () {
+        initMobileNav();
+        initFancyBox();
+
+        if(window.location.pathname !== "/")
+            initVersioning();
+
+        if(window.location.pathname.indexOf("/guide/") !== -1) {
+            initSteps();
+            document.addEventListener("scroll", onDocumentScroll);
+        }
+
+        initLinenos();
+        initSpoilers();
+
+    });
+})(jQuery);
 
 function onJumpToStepClick() {
     var res = window.prompt("Zadejte číslo kroku (příklad: A-1, K-12, s1, ...)")
