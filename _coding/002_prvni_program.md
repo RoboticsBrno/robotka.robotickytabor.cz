@@ -26,7 +26,7 @@ Tak, a teď postupně:
 #include "robotka.h"
 ```
 Soubor začíná **#include** příkazy, které určují, co všechno ve vašem programu
-můžete dělat. Nám zatím bude stačít pouze `robotka.h`.
+můžete používat. Nám zatím bude stačít pouze `robotka.h`.
 
 #### Funkce
 ```cpp
