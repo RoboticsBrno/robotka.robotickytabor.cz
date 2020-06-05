@@ -372,4 +372,11 @@ td.rouge-code  {
 
 .spoiler {
     border-left: 3px solid #f0506e;
+
+    pre.highlight {
+        border-top: 1px solid #ccc;
+        margin-top: 0px;
+        transition-duration: 200ms;
+        transition-property: filter;
+    }
 }

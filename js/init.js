@@ -79,19 +79,25 @@
     }
 
     var initSpoilers = function() {
+        var blur = "blur(8px)"
         document.querySelectorAll(".spoiler .highlight").forEach(function(el) {
             var pre = el.querySelector("pre.highlight")
-            pre.classList.add("hide")
-            pre.style.borderTop = "1px solid #ccc"
-            pre.style.marginTop = "0px";
+            if(!pre) return
+
+            pre.style.filter = blur
 
             var div = document.createElement("div")
             div.style.padding = "8px"
 
             var show = document.createElement("a");
             show.classList.add("btn-small")
-            show.addEventListener("click", function() {
-                pre.classList.toggle("hide")
+            show.addEventListener("click", function(ev) {
+                ev.preventDefault()
+                if(pre.style.filter.indexOf("blur") !== -1) {
+                    pre.style.filter = ""
+                } else {
+                    pre.style.filter = blur
+                }
             })
             show.textContent = "Ukázat řešení"
 
