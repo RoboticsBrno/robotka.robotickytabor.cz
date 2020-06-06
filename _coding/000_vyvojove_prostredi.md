@@ -13,7 +13,9 @@ Programy pro robotku budeme psát ve Visual Studiu Code a použijeme rozšířen
 #### Visual Studio Code
 Visual Studio Code je editor od firmy Microsoft. Je zdarma a funguje na Windows, Linuxu i Macu. Stáhněte si ho a nainstalujte ho.
 
+{% div class="center-align mv-xl" %}
 <a class="waves-effect waves-light btn-large" href="https://code.visualstudio.com/Download" target="_blank">Stáhnout Visual Studio Code</a>
+{% enddiv %}
 
 
 #### PlatformIO IDE
