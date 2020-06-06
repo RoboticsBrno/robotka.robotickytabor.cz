@@ -14,19 +14,19 @@ void setup() {
     rkConfig cfg;
     rkSetup(cfg);
     
-    rkLedBlue(true); // tento řádek přidáme my - zatím ne, nejprve si pročti tuto kapitolu!
+    rkLedBlue(true); // tento řádek přidáš ty - zatím ne, nejprve si pročti tuto kapitolu!
 }
 ```
 
-Tak málo stačí, aby se vaše Robotka probrala k životu, a dala vám to najevo!
+Tak málo stačí, aby se tvoje Robotka probrala k životu, a dala ti to najevo!
 Tak, a teď postupně:
 
 #### #include příkazy
 ```cpp
 #include "robotka.h"
 ```
-Soubor začíná **#include** příkazy, které určují, co všechno ve vašem programu
-můžete používat. Nám zatím bude stačít pouze `robotka.h`.
+Soubor začíná **#include** příkazy, které určují, co všechno ve svém programu
+můžeš používat. Nám zatím bude stačít pouze `robotka.h`.
 
 #### Funkce
 ```cpp
@@ -36,12 +36,12 @@ void setup() {
 ```
 {:data-linenos-offset="3"}
 
-To, co vidíme zde, je **funkce**. Funkce jsou kusy kódu, které můžete opakovaně
-spustit tak, že znáte jejich jméno. Kód každé funkce je ohraničen znaky { a },
+To, co vidíš zde, je **funkce**. Funkce jsou kusy kódu, které můžeš opakovaně
+spustit tak, že znáš jejich jméno. Kód každé funkce je ohraničen znaky { a },
 a uvnitř také odsazen.
 Tato funkce se jmenuje `setup`, a Robotka ji sama **spustí vždy po zapnutí**.
 
-_Poznáte v našem prvním programu i druhou funkci?_
+_Poznáš v našem prvním programu i druhou funkci?_
 
 #### Proměnné
 ```cpp
@@ -61,8 +61,8 @@ mezi další typy, které budeme za chvilku používat patří:
 *  `std::string` - textový řetězec, např. `"Ahoj!"`.
 
 
-**Jméno** proměnné volíte vy. Mělo by to být něco, co vystihuje účel dané proměnné,
-aby jste si je navzájem nepletli. **Může obsahovat pouze písmena bez háčků a čárek,
+**Jméno** proměnné volíš ty. Mělo by to být něco, co vystihuje účel dané proměnné,
+aby se navzájem nepletly. **Může obsahovat pouze písmena bez háčků a čárek,
 podtržítka a čísla**, ale číslem nesmí začínat.
 
 #### rkSetup
@@ -73,7 +73,7 @@ podtržítka a čísla**, ale číslem nesmí začínat.
 {:data-linenos-offset="4"}
 
 Na řádku 5 je zavolání funkce, v tomto případě funkce pojmenované `rkSetup`. Tuto funkci jsme si
-"přivezli" pomocí `#include "robotka.h"` na prvním řádku programu, což můžete poznat podle toho,
+"přivezli" pomocí `#include "robotka.h"` na prvním řádku programu, což můžeš poznat podle toho,
 že její jméno začíná na písmena `rk`.
 
 Předáváme jí proměnnou s nastavením pojmenovanou `cfg` (zatím v nastavení nic neměníme).
@@ -83,7 +83,7 @@ Předáváme jí proměnnou s nastavením pojmenovanou `cfg` (zatím v nastaven�
 že je pro vás vše řádně nastaveno a připraveno.
 
 
-#### Váš kód
+#### Tvůj kód
 Konečně se dostáváme k tomu zajímavému, Robotka bude něco dělat!
 
 ```cpp
@@ -91,31 +91,37 @@ Konečně se dostáváme k tomu zajímavému, Robotka bude něco dělat!
 ```
 {:data-linenos-offset="7"}
 
-Přepište tento řádek na správné místo do vašeho programu (před `}`, která ukončuje
+Přepiš tento řádek na správné místo do tvého programu (před `}`, která ukončuje
 funkci `setup` - pokud nevíš kam, koukni se na celý program na začátku této kapitoly).
 
 {:.info}
 {% include image.html
     url="img/guides/first_prog_02a.png"
     description=
-        "Všimněte si, že při psaní vám VSCode napovídá. Stačí napsat `rk` a už uvidíte všechny metody, které můžete používat na ovládání Robotky."
+        "Všimni si, že při psaní ti VSCode napovídá. Stačí napsat `rk` a už uvidíš všechny metody, které můžeš používat na ovládání Robotky."
     singlecol=true
  %}
 
-{:.info}
+{:class="info mb-xl"}
 {% include image.html
     url="img/guides/first_prog_02b.png"
     description=
-        "Když na nějakou metodu najedete myší, VSCode vám také ukáže, co daná metoda dělá. Všechny tyto informace **[najdete také v dokumentaci](https://roboticsbrno.github.io/RB3201-RBControl-Roboruka-library/modules.html)**."
+        "Když na nějakou metodu najedeš myší, VSCode ti také ukáže, co daná metoda dělá. Všechny tyto informace **[najdeš také v dokumentaci](https://roboticsbrno.github.io/RB3201-RBControl-Roboruka-library/modules.html)**."
     singlecol=true
  %}
 
+{:.important}
+**Nyní program nahraj do Robotky** kliknutím na šipku vlevo dole, stejně jako v kapitole [Dálkové ovládání]({{"/coding/001_dalkove_ovladani.html#nahrání-programu-do-robotky"|relative_url}}).
+Měla by se rozsvítit modrá LED.
+
 <br>
 
-{:.lead}
-Zkuste rozsvítit i ostatní barvy LED!
+#### Úkol
 
-Použijte napovídání ve VSCode a zavolejte další funkce na rozsvícení ostatních LED.
+{:.lead}
+Zkus rozsvítit i ostatní barvy LED!
+
+Použij napovídání ve VSCode a zavolej další funkce na rozsvícení ostatních LED.
 
 {:.spoiler}
 ```cpp
