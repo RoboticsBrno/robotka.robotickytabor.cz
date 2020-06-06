@@ -174,7 +174,8 @@ _Následují doplňující informace, pokud vám vše funguje, můžete je přes
    }
     ```
 
-    V tomto režimu
+    V tomto režimu, kdy je WiFi nastavená přímo v kódu, je Bluetooth na Robotce úplně vypnutý,
+    a nelze tedy nastavení měnit z aplikace RBController.
 
 
 {% enddiv %}
