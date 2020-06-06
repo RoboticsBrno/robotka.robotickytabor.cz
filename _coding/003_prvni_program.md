@@ -41,8 +41,6 @@ spustit tak, že znáš jejich jméno. Kód každé funkce je ohraničen znaky {
 a uvnitř také odsazen.
 Tato funkce se jmenuje `setup`, a Robotka ji sama **spustí vždy po zapnutí**.
 
-_Poznáš v našem prvním programu i druhou funkci?_
-
 #### Proměnné
 ```cpp
     rkConfig cfg;
