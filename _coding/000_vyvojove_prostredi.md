@@ -4,9 +4,8 @@ layout: coding
 fullwidth: true
 ---
 
+{% div class="coding-container-narrow mb-xl" %}
 # {{ page.title | escape }}
-
-
 
 {:.lead}
 Programy pro robotku budeme psát ve Visual Studiu Code a použijeme rozšíření PlatformIO IDE.
@@ -19,6 +18,8 @@ Visual Studio Code je editor od firmy Microsoft. Je zdarma a funguje na Windows,
 
 #### PlatformIO IDE
 PlatformIO IDE je rozšíření pro VSCode, které umožňuje programování velké řady mikroprocesorů, včetně ESP32, které je v Robotce.
+
+{% enddiv %}
 
 {% include image.html
     url="img/guides/code_01.png"

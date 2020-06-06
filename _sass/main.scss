@@ -284,6 +284,7 @@ hr {
         width: 50px;
         text-align: center;
         font-size: 30px;
+        margin-top: -8px;
         font-weight: 800;
         color: #f0506e;
     }
@@ -348,6 +349,13 @@ td.rouge-code  {
         font-size: 130%;
         margin-top: 32px;
     }
+}
+
+.coding-container-narrow {
+    max-width: 850px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .con-guide {

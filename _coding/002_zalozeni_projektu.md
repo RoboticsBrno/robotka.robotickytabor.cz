@@ -4,13 +4,18 @@ layout: coding
 fullwidth: true
 ---
 
+{% div class="coding-container-narrow mb-xl" %}
+
 # {{ page.title | escape }}
 
 {:.lead}
-Jako další založíme projekt podle naší šablony pro Robotku.
+Robotka kromě dálkového ovládání zvládne dělat věci i úplně sama, když ji naprogramujeme.
 
+Nejprve musíme založit nový projekt, ve kterém budeme programovat.
 
 TODO: Update obrázků, linků
+
+{% enddiv %}
 
 {% include image.html
     url="img/guides/demo_prog_00.png"

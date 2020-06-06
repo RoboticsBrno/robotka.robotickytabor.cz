@@ -37,10 +37,12 @@
                 <img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/' | append: include.url | relative_url }}" alt=""
                     class="responsive-img{% if include.url contains '.png' %} crisp{%endif%}">
             </a>
+            {% if include.description %}
             <figcaption>
                 {% unless include.singlecol %}<p class="step">{{counter_section}}</p>{% endunless %}
                 {{ include.description | markdownify }}
             </figcaption>
+            {% endif %}
         </figure>
     </div>
 </div>

@@ -17,10 +17,10 @@ layout: default
 
 <div class="bgwrap">
     <div class="main">
-        <div class="container con-guide coding-container" {% unless page.fullwidth %}style="max-width: 850px"{% endunless %}>
+        <div class="container con-guide coding-container{% unless page.fullwidth %} coding-container-narrow{% endunless %}">
             {{ content }}
 
-            <div style="margin: 96px 0;">
+            <div class="coding-container-narrow mv-xxl">
                 <h1> </h1>
                 {% for it in items %}
                     {% assign next = items[forloop.index] %}
