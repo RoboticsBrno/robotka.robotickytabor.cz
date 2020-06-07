@@ -89,7 +89,7 @@ a dálkové ovládání. **Mezi nimy je prostor pro zpracovávání událostí.*
     }
     ```
 
-    Události využívají tzv. _lambda_ funkcí - malinkaté funkce, které vytvoříte syntaxí `[&](<parametry>){ <kód> }`.
+    Události využívají tzv. _lambda funkce_ - malinkaté funkce, které vytvoříte syntaxí `[&](<parametry>){ <kód> }`.
     V případě návrháře budou parametry vždy `(<Typ widgetu> &widget)` - v tomto případě je typ `Joystick`.
     Kód, který je pak v těle funkce, se vykoná vždy, když daná událost nastane.<br>
     Zde nastavujeme výkon motorů podle toho, v jaké poloze je `Joystick1`.
@@ -128,3 +128,53 @@ Nahrej program do Robotky a vyzkoušej, jestli funguje. Výsledkem by mělo být
 že zelená LED svítí, dokud držíš tlačítko v aplikaci stisknuté.
 
 #### Zobrazování dat z Robotky
+
+Komunikace může probíhat i druhým směrem, můžeš tak zobrazovat informace z Robotky
+na tvém telefonu. Zkusíme to nejprve s napětím baterie.
+
+V návrháři **přidej do layoutu jeden _Text_ widget** a nastav mu ID, například
+`napetiMv`. Layout opět zkopíruj do svého projektu.
+
+Kód bude vypadat takto (reagování na události vynecháno):
+
+```cpp
+    auto builder = Layout.begin();
+    ...
+    builder.commit();
+
+    while(true) {
+        Layout.napetiMv.setText(fmt::format("{} mV", rkBatteryVoltageMv()));
+        delay(500);
+    }
+```
+
+Přidali jsme nekonečnou smyčku, která každých 500 ms (půl vteřiny) **nastaví obsah _Textu_ s ID `napetiMv`.**
+
+* Posílání dat do telefonu přijde, narozdíl od zpracování událostí, až **pod řádek `builder.commit();`**.
+* Lze nastavovat spoustu jiných parametrů, zkus napsat `Layout.napetiMv.` a bude ti napovězeno, co všechno můžeš použít.
+* Funkce `fmt::format` převede výsledek funkce `rkBatteryVoltageMv()`, což je `int`, na textový řetězec (`std::string`)
+  a přidá za něj jednotku mV (millivolty).
+* `fmt:format` má jako první parametr "šablonu", v našem případě `"{} mV"`. Všechny `{}` v šabloně jsou nahrazeny hodnotou
+  dalších parametrů, v našem případě je `{}` nahrazeno výsledkem `rkBatteryVoltageMv()`. V šabloně může být vice než jeden `{}`.
+
+
+Data lze zobrazovat i ze zpracování událostí. Následující kód také funguje, protože _lambda funkce_ událostí jsou volány
+až po té, co proběhne `builder.commit();`.
+
+```cpp
+    auto builder = Layout.begin();
+
+    builder.Joystick1
+        .onPositionChanged([&](Joystick &joy) {
+            Layout.textJoystick.setText(fmt::format("{}x{}", joy.x(), joy.y()));
+        });
+
+    builder.commit();
+```
+
+
+#### Dokumentace
+
+* [Seznam všech možných událostí](https://roboticsbrno.github.io/Esp32-RBGridUI/group__event.html)
+* [Seznam widgetů](https://roboticsbrno.github.io/Esp32-RBGridUI/group__widgets__constructed.html) - po kliknutí
+  na určitý typ je vidět, co všechno na něm jde nastavovat.

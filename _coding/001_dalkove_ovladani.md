@@ -85,11 +85,11 @@ s Androidem.
 Stáhněte si ji a nainstalujte.
 
 {% div class="row mv-xl" %}
-{% div class="col s6 center-align" %}
+{% div class="col s12 l6 center-align" %}
 <a class="waves-effect waves-light btn-large green darken-1" href="https://play.google.com/store/apps/details?id=com.tassadar.rbcontroller">Stáhnout pro Android</a>
 <div class="mt-xs grey-text text-darken-1">(nebo hledejte <i>RBController</i> v Play Store aplikaci)</div>
 {% enddiv %}
-{% div class="col s6 center-align" %}
+{% div class="col s12 l6 center-align" %}
 <a class="btn-large blue darken-1" href="https://github.com/RoboticsBrno/rbcontroller-electron/releases/download/v1.3.0/rbcontroller-electron.Setup.1.3.0.exe">Stáhnout pro Windows</a>
 {% enddiv %}
 {% enddiv %}
