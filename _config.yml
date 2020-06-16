@@ -16,8 +16,8 @@ collections:
   coding:
       output: true
 
-plugins:
-    - jekyll-minifier
+#plugins:
+#   - jekyll-minifier
 
 kramdown:
     syntax_highlighter: rouge
