@@ -42,15 +42,6 @@ Připravíme si pilník nebo brusný papír, ostrý nůž (ideálně skalpel) a 
 %}
 
 {% include image.html
-    url="/img/guides/PODVOZEK-7.jpg"
-    description=
-        " "
-    url2="/img/guides/PODVOZEK-8.jpg"
-    description=
-        " "
-%}
-
-{% include image.html
     url="/img/guides/PODVOZEK-9.jpg"
     description=
         " "
@@ -63,28 +54,28 @@ Připravíme si pilník nebo brusný papír, ostrý nůž (ideálně skalpel) a 
     url="/img/guides/PODVOZEK-11.jpg"
     description=
         " "
-    url2="/img/guides/PODVOZEK-12.jpg"
+    url2="/img/guides/PODVOZEK-13.jpg"
     description=
         " "
 %}
 
 {% include image.html
-    url="/img/guides/PODVOZEK-13.jpg"
-    description=
-        " "
-    url2="/img/guides/PODVOZEK-14.jpg"
-    description=
-        " "
-%}
-
-{% include image.html
-    url="/img/guides/PODVOZEK-15.jpg"
+    url="/img/guides/PODVOZEK-14.jpg"
     description=
         " "
     url2="/img/guides/PODVOZEK-16.jpg"
     description=
         " "
 %}
+
+<!-- {% include image.html
+    url="/img/guides/PODVOZEK-15.jpg"
+    description=
+        " "
+    url2="/img/guides/PODVOZEK-16.jpg"
+    description=
+        " "
+%} -->
 
 {% include image.html
     url="/img/guides/PODVOZEK-17.jpg"
