@@ -25,7 +25,7 @@ TODO: Update obrázků, linků
 {% include image.html
     url="img/guides/demo_prog_00.png"
     description=
-        "Pokud ho ještě nemáte, stáhněte si [ZIP se souborem příkladů pro Robotku](https://github.com/RoboticsBrno/roboruka-examples/archive/stable.zip)
+        "Pokud ho ještě nemáte, stáhněte si [ZIP se souborem příkladů pro Robotku](https://github.com/RoboticsBrno/robotka-examples/archive/master.zip)
         a někam ho rozbalte tak, aby jste ho zase našli.
 
 <div class=\"important\">Pozor: PlatformIO má chybu - nedokáže pracovat s diakritikou v cestě k projektu. <b>Všechny projekty musí být uloženy v cestě bez háčků a čárek!</b><br>

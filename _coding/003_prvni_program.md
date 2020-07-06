@@ -104,7 +104,7 @@ funkci `setup` - pokud nevíš kam, koukni se na celý program na začátku tét
 {% include image.html
     url="img/guides/first_prog_02b.png"
     description=
-        "Když na nějakou metodu najedeš myší, VSCode ti také ukáže, co daná metoda dělá. Všechny tyto informace **[najdeš také v dokumentaci](https://roboticsbrno.github.io/RB3201-RBControl-Roboruka-library/modules.html)**."
+        "Když na nějakou metodu najedeš myší, VSCode ti také ukáže, co daná metoda dělá. Všechny tyto informace **[najdeš také v dokumentaci](https://roboticsbrno.github.io/RB3204-RBCX-Robotka-library/modules.html)**."
     singlecol=true
  %}
 
