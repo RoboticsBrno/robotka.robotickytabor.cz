@@ -54,7 +54,7 @@ Má to dvě části, _datový typ_ (`rkConfig`) a _jméno_ (`cfg`).
 je to nastavení celé Robotky,
 mezi další typy, které budeme za chvilku používat patří:
 *  `int` - celé číslo, např. `42`,
-*  `float` - číslo s desetinnou čárkou, např. `3.14`,
+*  `float` - číslo s desetinnou čárkou (pro účely programování desetinnou tečkou), např. `3.14`,
 *  `bool` - ano/ne, může nabývat pouze hodnot `true` nebo `false`,
 *  `std::string` - textový řetězec, např. `"Ahoj!"`.
 
@@ -96,7 +96,7 @@ funkci `setup` - pokud nevíš kam, koukni se na celý program na začátku tét
 {% include image.html
     url="img/guides/first_prog_02a.png"
     description=
-        "Všimni si, že při psaní ti VSCode napovídá. Stačí napsat `rk` a už uvidíš všechny metody, které můžeš používat na ovládání Robotky."
+        "Všimni si, že při psaní ti VSCode napovídá. Stačí napsat `rk` a už uvidíš všechny metody, které můžeš používat na ovládání Robotky. Pokud se tak nestane nabídku vyvoláš stisknutím `Ctrl + Space`"
     singlecol=true
  %}
 
