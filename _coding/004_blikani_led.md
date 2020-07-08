@@ -168,7 +168,7 @@ void setup() {
 }
 ```
 
-#### Úkol
+##### Úkol
 
 {:.lead}
 Zkus přidat do předchozíko programu rozsvícení žluté LED proměnná `number` bude rovna 4!
