@@ -224,7 +224,102 @@ void setup() {
 }
 ```
 
+#### Logické operátory
 
+Občas nám nestačí ani "složitější" logické výrazy, a proto potřebujeme složené logické výrazy, k jejich vytváření slouží logické operátory.
+Mezi tyto operátory patří _AND:_`&&`, _OR:_`||` a _NOT:_`!`.
+
+```cpp
+(true && true) == true
+(true && false) == false
+(false && false) == false
+
+(true || true) == true
+(true || false) == true
+(false || false) == false
+
+(!true) == false
+(!false) == true 
+```
+{:.lead}
+Pojďme si vyzkoušet jejich použití!
+
+Napíšeme si program, který pokud `number` je mezi hodnotami 5 a 20 rozsvítí modrou LED.
+
+```cpp
+#include "robotka.h"
+
+int number = 10;
+
+void setup() {
+    rkConfig cfg;
+    rkSetup(cfg);
+
+    if((number < 20) && (number > 5)) {
+        rkLedBlue(true);
+    }
+}
+```
+
+{:.lead}
+Pojďme si samostatně vyzkoušet jejich použití!
+
+Zkus rozšířit předchozí program o tři další rozsahy. 10-50 pro zelenou, 2-4 pro červenou a 0-100 pro žlutou.
+
+{:.spoiler}
+```cpp
+#include "robotka.h"
+
+int number = 10;
+
+void setup() {
+    rkConfig cfg;
+    rkSetup(cfg);
+
+    if((number < 20) && (number > 5)) {
+        rkLedBlue(true);
+    }
+    if((number < 50) && (number > 10)) {
+        rkLedBlue(true);
+    }
+    if((number < 4) && (number > 2)) {
+        rkLedBlue(true);
+    }
+    if((number < 100) && (number > 0)) {
+        rkLedBlue(true);
+    }
+}
+```
+
+{:.lead}
+Jednoduché? Další je na cestě!
+
+Zkus napsat program, který rozsvítí modrou LED pouze pokud je `number` rovno jednomu z čísel {1, 8, 9, 13, 21, 57} za použití pouze jednoho `if`.
+
+{:.spoiler}
+```cpp
+#include "robotka.h"
+
+int number = 10;
+
+void setup() {
+    rkConfig cfg;
+    rkSetup(cfg);
+
+    if((number == 1) || (number == 8) || (number == 9) || (number == 13) || (number == 21) || (number == 57)) {
+        rkLedBlue(true);
+    }
+}
+```
+
+#### Cyklus while
+
+Nyní se konečně dostaneme k blikající LED!
+
+V jazyce _C++_ jsou 2 základní cykly.
+Jako první se podíváme na cyklus `while` (druhému typu cyklu se budeme věnovat v další kapitole). 
+
+Cyklus `while` bývá také nazýván _cyklus řízený podmínkou_, proč je zřejmé již z následující ukázky. Ta vytvoří _nekonečný cyklus_, neboť jeho podmínka bude vždy pravdivá, toho se dá využít, pokud chceme, aby se nám program opakoval neustále dokola.
 
 ```cpp
 #include "robotka.h"
@@ -241,3 +336,5 @@ void setup() {
     }
 }
 ```
+
+Výsledkem nahrání tohoto programu bude slibovaná blikající modrá LED.
