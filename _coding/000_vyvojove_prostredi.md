@@ -18,6 +18,17 @@ Visual Studio Code je editor od firmy Microsoft. Je zdarma a funguje na Windows,
 {% enddiv %}
 
 
+#### Ovladače pro Robotku
+Aby se tvůj počítač domluvil s Robotkou přes USB, potřebuje ovladače.
+
+{:.important}
+Pokud máš **Windows 10 nebo Linux**, můžeš tuto sekci **přeskočit** - ovladač je už zabudovaný.
+
+Pro Windows 7 a 8 si [ovladač stáhni zde](http://tasemnice.eu/perm/en.stsw-stm32102.zip).
+
+ZIP rozbal a spusť správný .exe soubor podle toho, zda máš Windows 7 nebo 8 a jestli 32 bit nebo 64 bit verzi (pravděpodobně máš 64bit).
+
+
 #### PlatformIO IDE
 PlatformIO IDE je rozšíření pro VSCode, které umožňuje programování velké řady mikroprocesorů, včetně ESP32, které je v Robotce.
 
