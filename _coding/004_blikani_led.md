@@ -7,11 +7,11 @@ layout: coding
 
 
 {:.lead}
-Nyní se podíváme jak řídit běh programu.
+Nyní se podíváme, jak řídit běh programu.
 Program můžeme pozastavit, rozvětvit, či zopakovat.
 
 #### Pozastavení
-Začneme funkcí `delay`, ta pozastaví běh programu na dobu uvedenou v parametru (závorkách), hodnota je udávána v milisekundách, neboli tisícinách vteřiny.
+Začneme funkcí `delay`, ta pozastaví běh programu na dobu uvedenou v parametru (závorkách). Hodnota je udávána v milisekundách, neboli tisícinách vteřiny.
 
 Napíšeme si program, který nejprve rozsvítí a následně po půl vteřině zhasne modrou LED.
 
@@ -53,7 +53,7 @@ void setup() {
 ```
 
 #### Větvení
-C++ obsahuje dva přostředky pro rozvětvení programu, tou jednoduší a univezrálnější je `if`.
+C++ obsahuje dva prostředky pro rozvětvení programu, tou jednodušší a univerzálnější je `if`.
 
 ```cpp
 #include "robotka.h"
@@ -72,8 +72,8 @@ void setup() {
     rkLedBlue(false);
 }
 ```
-Zde využijeme našich znalostí z předchozí kapitoly a vytvoříme si _proměnou_ `controlVariable` a přiřadili jí _hodnotu_ `true`.
-Pokud program necháme beze změny modrá led se rozsvítí a násleně se po jedna a půl vteřině opět vypne.
+Zde využijeme našich znalostí z předchozí kapitoly a vytvoříme si _proměnnou_ `controlVariable` a přiřadíme jí _hodnotu_ `true`.
+Pokud program necháme beze změny, modrá LED se rozsvítí a následně se po jedné a půl vteřině vypne.
 
 ##### Úkol
 
@@ -104,8 +104,9 @@ void setup() {
 }
 ```
 
-Struktura `if` se dá dále rozvíjet pomocí `else`.
+Struktura `if` se dá dále rozvíjet pomocí větvě `else` nebo `else if`.
 Pokud neplatí podmínka v `if`, provede se kód v `else`.
+Pokud potřebujeme více podmínek, můžeme je napsat do větvě `else if`. Nejprve se porovná podmínka uvedená v `if`, poté se postupně projdou větvě `else if` a pokud žádná z podnímek neplatí, vykoná se příkaz ve větvi `else`.
 
 ```cpp
 #include "robotka.h"
@@ -126,11 +127,11 @@ void setup() {
 
 #### Relační operátory
 
-Ne vždy nám však stačí pouze jednoduché proměnné typu `bool`, pro vytváření "složitějších" logický výrazů nám slouží _relační operátory_, nebo také _porovnávací_ operátory.
+Ne vždy nám však stačí pouze jednoduché proměnné typu `bool`, pro vytváření složitějších logických výrazů nám slouží _relační operátory_, nebo také _porovnávací_ operátory.
 Mezi tyto operátory patří: `<=`, `<`, `>=`, `>`, které jsou běžně používané i mimo programování.
 Oproti zápisu používanému například v matematice je zde rozdíl v operátorech rovná se: `==` a nerovná se: `!=`.
 
-Pojďme jsi je ukázat v programu.
+Pojďme si je ukázat v programu.
 
 ```cpp
 #include "robotka.h"
@@ -171,7 +172,7 @@ void setup() {
 ##### Úkol
 
 {:.lead}
-Zkus přidat do předchozíko programu rozsvícení žluté LED proměnná `number` bude rovna 4!
+Zkus přidat do předchozího programu rozsvícení žluté LED. Proměnná `number` bude rovna 4!
 
 {:.spoiler}
 ```cpp
@@ -226,8 +227,7 @@ void setup() {
 
 #### Logické operátory
 
-Občas nám nestačí ani "složitější" logické výrazy, a proto potřebujeme složené logické výrazy, k jejich vytváření slouží logické operátory.
-Mezi tyto operátory patří _AND:_`&&`, _OR:_`||` a _NOT:_`!`.
+Občas nám nestačí ani "složitější" logické výrazy, a proto potřebujeme logické výrazy. K jejich vytváření slouží logické operátory, které jsou: _AND:_`&&`, _OR:_`||` a _NOT:_`!`.
 
 ```cpp
 (true && true) == true
@@ -244,7 +244,7 @@ Mezi tyto operátory patří _AND:_`&&`, _OR:_`||` a _NOT:_`!`.
 {:.lead}
 Pojďme si vyzkoušet jejich použití!
 
-Napíšeme si program, který pokud `number` je mezi hodnotami 5 a 20 rozsvítí modrou LED.
+Napíšeme si program, který bude dělat následující: pokud proměnná `number` je mezi hodnotami 5 až 20, tak rozsvítí modrou LED.
 
 ```cpp
 #include "robotka.h"
@@ -294,7 +294,7 @@ void setup() {
 {:.lead}
 Jednoduché? Další je na cestě!
 
-Zkus napsat program, který rozsvítí modrou LED pouze pokud je `number` rovno jednomu z čísel {1, 8, 9, 13, 21, 57} za použití pouze jednoho `if`.
+Zkus napsat program, který rozsvítí modrou LED pouze tehdy, pokud je `number` rovno jednomu z čísel {1, 8, 9, 13, 21, 57} za použití pouze jednoho `if`.
 
 {:.spoiler}
 ```cpp
@@ -319,7 +319,7 @@ Nyní se konečně dostaneme k blikající LED!
 V jazyce _C++_ jsou 2 základní cykly.
 Jako první se podíváme na cyklus `while` (druhému typu cyklu se budeme věnovat v další kapitole). 
 
-Cyklus `while` bývá také nazýván _cyklus řízený podmínkou_, proč je zřejmé již z následující ukázky. Ta vytvoří _nekonečný cyklus_, neboť jeho podmínka bude vždy pravdivá, toho se dá využít, pokud chceme, aby se nám program opakoval neustále dokola.
+Cyklus `while` bývá také nazýván _cyklus řízený podmínkou_, proč tomu tak je, je zřejmé již z následující ukázky. Ta vytvoří _nekonečný cyklus_, neboť jeho podmínka bude vždy pravdivá. Toho se dá využít, pokud chceme, aby se nám program opakoval neustále dokola.
 
 ```cpp
 #include "robotka.h"
@@ -337,4 +337,4 @@ void setup() {
 }
 ```
 
-Výsledkem nahrání tohoto programu bude slibovaná blikající modrá LED.
+Výsledkem nahrání tohoto programu bude slibovaná donekonečna blikající modrá LED.
