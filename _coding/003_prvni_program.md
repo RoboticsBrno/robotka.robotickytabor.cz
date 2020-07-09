@@ -5,7 +5,7 @@ layout: coding
 
 # {{ page.title | escape }}
 
-e se nejdříve podívat na celý program:
+Pojďme se nejdříve podívat na celý program:
 
 ```cpp
 #include "robotka.h"
@@ -27,11 +27,7 @@ Tak málo stačí, aby se tvoje Robotka probrala k životu, a dala ti to najevo!
 #include "robotka.h"
 ```
 Soubor začíná **#include** příkazy, které určují, co všechno ve svém programu
-<<<<<<< Updated upstream
 můžeš používat. Nám zatím bude stačí pouze `robotka.h`.
-=======
-můžeš používat. Nám zatím bude stačit pouze `robotka.h`.
->>>>>>> Stashed changes
 
 #### Funkce
 ```cpp

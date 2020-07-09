@@ -7,7 +7,7 @@ layout: coding
 
 #### Výpis do sériové linky
 
-Nyní jsme se dostali do fáze kdy nám rozsvěcení LED na některé příklady stačit nebude, proto si představíme funkci `printf`, ta bere právě jeden parametr ve formě textového řetězce, jedná se o tzv. formátovací řetězec, ten může vypadat následujícím způsobem:
+Nyní jsme se dostali do fáze kdy nám rozsvěcení LED na některé příklady stačit nebude, proto si představíme funkci `printf`. Ta bere právě jeden parametr ve formě textového řetězce - jedná se o tzv. formátovací řetězec. Ten může vypadat následujícím způsobem:
 
 ```cpp
 #include "robotka.h"
@@ -20,7 +20,7 @@ void setup() {
 }
 ```
 
-S tímto typem výpisu si však vystačíme málokdy, ve většině případů potřebujeme vypisovat i nějaké hodnoty, to nám umožňují formátovací direktivy a volitelné parametry `printf`.
+S tímto typem výpisu si však vystačíme málokdy. Ve většině případů potřebujeme vypisovat i nějaké hodnoty a to nám umožňují takzvané formátovací direktivy a volitelné parametry `printf`.
 
 ```cpp
 #include "robotka.h"
@@ -36,22 +36,22 @@ void setup() {
 }
 ```
 Formátovací direktivou v tomto příkladu je `%d`.
-Formátovací direktiva vždy začíná `%` následují znaky poté udávají konkrétní parametry této direktivy, poslední znak této direktivy udává datový typ vypisované proměnné, v našem případě se jedná o `i` neboli integer.
+Formátovací direktiva vždy začíná `%`, následují znaky, které poté udávají konkrétní parametry této direktivy. Její poslední znak udává datový typ vypisované proměnné, v našem případě se jedná o `i` neboli integer (`int`).
 
-Kromě formátovací direktivy je však potřeba přidat také další parametr do `printf`, který udává, které proměnné se vlastně mají vypsat a to v pořadí v jakém jsou uvedené ve formátovacím řetězci.
+Kromě formátovací direktivy je však potřeba přidat také další parametr do, který udává jaké proměnné se vlastně mají vypsat a to v pořadí v jakém jsou uvedené ve formátovacím řetězci.
 
-Více o formátovacích řetězcích najdete na [wikipedii](https://cs.wikipedia.org/wiki/Printf#Formátovací_řetězec)
+Více o formátovacích řetězcích najdete na [wikipedii](https://cs.wikipedia.org/wiki/Printf#Formátovací_řetězec).
 
 {:.important}
 Při výpisu **std::string** je potřeba dopsat za jméno proměnné **.c_str()**!
-Pokud tak neučiníte Bude vám funkce vypisovat nesmysly, může dokonce "shodit" celý program.
+Pokud tak neučiníte Bude vám funkce vypisovat nesmysly, může dokonce "rozbít" celý program.
 ```cpp
     std::string myString = "Hi there";
     printf("%s", myString.c_str());
 ```
 
 {:.lead}
-Zkus si s pomocí wikipedie vypsat i hodnoty jiných datových typů!
+Zkus si s pomocí wikipedie vypsat i hodnoty jiných datových typů.
 
 {:.spoiler}
 ```cpp
@@ -73,7 +73,7 @@ void setup() {
 ```
 
 Dále máme také přístup k speciálním znakům, jako je nový řádek, tabulátor a další.
-Nám bude prozatím stačit nový řádek: `\n` a tabulár `\t`. 
+Nám bude prozatím stačit nový řádek: `\n` a tabulátor `\t`. 
 
 ```cpp
 #include "robotka.h"
@@ -90,7 +90,7 @@ void setup() {
 
 Často potřebujeme v programu něco spočítat.
 K tomu slouží aritmetické operátory.
-Kromě základních operacích (`+`, `-`, `*`, `/`) máme k dispozici i _modulo_ `%`, které slouží k určení zbytku po dělení, používá se stejně jako ostatní aritmetické operátory.
+Kromě základních operací (`+`, `-`, `*`, `/`) máme k dispozici i _modulo_ `%`, které slouží k určení zbytku po dělení. Používá se stejně jako ostatní aritmetické operátory.
 
 ```cpp
 2 + 3 == 5
@@ -128,6 +128,7 @@ Je to proto, že výsledek `6 / 5` není celé, ale desetinné číslo.
 
 {:.info}
 Pokud bychom výsledek **neceločíselného dělení** ukládali do **celočíselné proměnné**, dojde k oříznutí **(nikoliv zaokrouhlení)** čísla.
+Přebytečná místa budou tedy jednoduše odstraněna, což může zkreslit výsledné číslo.
 ```cpp
     int number = 9 / 5;
     number == 1
@@ -136,8 +137,8 @@ Pokud bychom výsledek **neceločíselného dělení** ukládali do **celočíse
 #### Aritmetické přiřazovací operátory
 
 Při programování je nutné si uvědomovat, že samotným jeho účelem je zjednodušit člověku práci.
-Je tedy samozřejmé, že si programátoři snaží snížit počet znaků, které musí napsat, primárně zbavením se redundantních (opakujících se) částí.
-Vezměme jednoduchý příklad, ve kterém zvyšujeme hodnotu proměnné number o 2:
+Je tedy samozřejmé, že se programátoři snaží snížit počet znaků, které musí napsat (primárně zbavením se opakujících se částí).
+Vezměme jednoduchý příklad, ve kterém zvyšujeme hodnotu proměnné `number` o 2:
 
 ```cpp
 #include "robotka.h"
@@ -153,7 +154,7 @@ void setup() {
 }
 ```
 
-Je zde vidět, že se nám opakuje proměnná number, což je přesně ona redundantnost jíž se snažíme zbavit, využijeme proto operátoru který nám _C++_ nabízí:
+Je zde vidět, že se nám opakuje proměnná `number`, což je přesně ona "opakování", jemuž se snažíme vyhnout. Využijeme proto operátoru, který nám _C++_ nabízí:
 
 ```cpp
 #include "robotka.h"
@@ -220,14 +221,14 @@ void setup() {
 ```
 
 {:.info}
-Mezi přiřazovací operátory také nám již známe `=`.
+Mezi přiřazovací operátory patří také nám již známé `=`.
 Patří sem také další operátory, o těch si ale povíme později.
 
 #### Unární operátory
 
-Speciální kategorií operátorů jsou **unární operátory**, ty na rozdíl od nám dosud známých používají pouze jeden parametr, zatímco ty nám dosud známé přebírají dva parametry, jeden zleva a druhý zprava.
+Speciální kategorií operátorů jsou **unární operátory**. Operátory, které dosud známe přebírají dva parametry (jeden zleva, druhý zprava). Narozdíl od nich používají unární operátory pouze jeden parametr. 
 
-Existují dva unární operátory, a také vznikly jako snaha o zkrácení psaného kódu.
+Existují dva unární operátory, vznikly jako snaha o zkrácení psaného kódu.
 První je `++` a druhý je `--`.
 Nepoužívají se však ve výrazech, ale pouze jako příkazy, viz ukázku.
 `++` přičte k proměnné 1 a `--` 1 odečte.
@@ -243,7 +244,7 @@ number == 5
 ##### Úkol
 
 {:.lead}
-Vyzkoušej si s pomocí nově nabytých vědomostí napsat cyklus while, který vypíše "Hello world!" přesně 5x.
+Vyzkoušej si s pomocí nově nabytých vědomostí napsat cyklus `while`, který vypíše "Hello world!" přesně 5x.
 
 {:.spoiler}
 ```cpp
@@ -264,11 +265,11 @@ void setup() {
 #### For cyklus
 
 Aniž by jsi to věděl, jsi si v předchozím úkolu napsal vlastní verzi **for cyklu**.
-For cyklus se používá, pokud víme kolikrát se má daná část kódu opakovat, říká se mu proto **proměnnou řízený cyklus**.
-Když se podíváme na naši verzi for cyklu zjistíme, že for cyklus obsahuje 3 nepostradatelné části:
+"For" cyklus se používá, pokud víme kolikrát se má daná část kódu opakovat, říká se mu proto **proměnou řízený cyklus**.
+Když se podíváme na naši verzi for cyklu zjistíme, že obsahuje 3 nepostradatelné části:
 
-1. definici řídící proměnné s počáteční hodnotou
-2. určení maxima/podmínky ukončení cyklu
+1. vytvoření řídící proměnné s počáteční hodnotou
+2. určení maxima, nebo podmínky ukončení cyklu
 3. určení **kroku**, kolik se přičte/odečte při každém opakování
 
 ```cpp
@@ -302,14 +303,14 @@ void setup() {
 ```
 
 {:.important}
-Všimni si, že parametry for cyklu jsou odděleny středníky a nikoliv čárkami, je to proto, že se jedná o příkazy nikoliv výrazy/proměnné.
+Všimni si, že parametry for cyklu jsou odděleny středníky a nikoliv čárkami, je to proto, že se jedná o příkazy, nikoliv výrazy/proměnné.
 
 {:.info}
-Nejběžněji používané jméno řídící proměnné je i, doporučuji ho používat neboť bude jednodušší tvému kódu rozumět. Toto neplatí u více vnořených for cyklů!
+Nejběžněji používané jméno řídící proměnné je i, doporučuji ho používat neboť bude jednodušší tvému kódu rozumět. **Toto neplatí u více vnořených for cyklů!**
 
 ##### Úkol
 
-Vyzkoušej si napsat program který postupně s 250ms zpožděním rozsvítí všechny LED.
+Vyzkoušej si napsat program, který postupně s 250ms zpožděním rozsvítí všechny LED.
 Pro toto použití je zde funkce `rkLedById`, první parametrem této funkce je id LED kterou chceme ovládat, druhým parametrem je stav, který chceme do LED nastavit.
 První LED má id 1 a poslední 4.
 
@@ -346,7 +347,7 @@ void setup() {
 ##### Úkol
 
 {:.lead}
-Zkus LED ve stejném pořadí po 2 vteřinách také vypnout!
+Zkus LED ve stejném pořadí po 2 vteřinách také vypnout.
 
 {:.spoiler}
 ```cpp
@@ -367,7 +368,7 @@ void setup() {
 }
 ```
 
-Stejně jako může for cyklus přičítat, může také odečítat a tudíž "jet" v opačném pořadí.
+Stejně jako může for cyklus přičítat, může také odečítat a tudíž fungovat v opačném pořadí.
 
 {:.lead}
 Zkus otočit pořadí ve kterém se LED zapínají a vypínají.
