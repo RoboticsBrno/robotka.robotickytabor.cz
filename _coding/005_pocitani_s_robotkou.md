@@ -316,13 +316,15 @@ První LED má id 1 a poslední 4.
 Analýza:
 
 {:.spoiler}
-První id je 1 tudíž i počáteční hodnota bude 1.
+```cpp
+// První id je 1 tudíž i počáteční hodnota bude 1.
 
-Poslední id je 4, máme tedy na výběr dvě možnosti:
-1. v podmínce použijeme `<` a k maximálnímu id přičteme 1 (i < 5)
-2. v podmínce použijeme `<=` a maximální hodnotu zachováme (i <= 4)
+// Poslední id je 4, máme tedy na výběr dvě možnosti:
+// 1. v podmínce použijeme `<` a k maximálnímu id přičteme 1 (i < 5)
+// 2. v podmínce použijeme `<=` a maximální hodnotu zachováme (i <= 4)
 
-Budeme postupovat po 1 tudíž na krok použijeme příkaz `i++`
+// Budeme postupovat po 1 tudíž na krok použijeme příkaz `i++`
+```
 
 Řešení:
 
