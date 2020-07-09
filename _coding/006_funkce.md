@@ -238,7 +238,7 @@ bool dividable(int i_divident, int i_divisor){
 int sum(int a, int b); 
 
 void setup() {
-
+    printf("Sum of 2 and 3 is: %i", sum(2, 3));
 }
 
 int sum(int a, int b) {
