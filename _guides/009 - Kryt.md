@@ -86,7 +86,7 @@ name: Kryt
 %}
 
 {% include image.html
-    url="/img/guides/KRYT-19.JPG"
+    url="/img/guides/KRYT-19.jpg"
     description=
         ""
     url2="/img/guides/KRYT-20.jpg"
