@@ -3,7 +3,10 @@ name: Kompletace podvozku
 ---
 ### {{ page.name | escape }}
 
-#### Napájení RBCX
+#### Napájení RBCX - NAFOTIT ZNOVU !!!
+Dráty musí mířit směrem nahoru
+
+1,5 * delka motokabelu = baterkový kabel
 {% include image.html
     url="/img/guides/ELEKTRO-1.jpg"
     description=
