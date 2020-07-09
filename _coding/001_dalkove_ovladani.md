@@ -14,7 +14,7 @@ Program, která jsme pro vás nachystali, bude fungovat jako dálkové ovládán
 a vy budete Robotku řídit z vašeho telefonu nebo počítače.
 
 
-TODO: Update obrázků, linků
+***TODO: Update obrázků, linků***
 
 
 #### Otevření projektu
@@ -29,11 +29,11 @@ TODO: Update obrázků, linků
         a někam ho rozbalte tak, aby jste ho zase našli.
 
 <div class=\"important\">Pozor: PlatformIO má chybu - nedokáže pracovat s diakritikou v cestě k projektu. <b>Všechny projekty musí být uloženy v cestě bez háčků a čárek!</b><br>
-Pokud vaše uživatelské jméno obsahuje diakritiku, tak nemůžete používat <i>Plochu</i> ani složku <i>Dokumenty</i>, ale musíte vytvořit například <kbd>C:\Robotka\examples</kbd>.</div>"
+Pokud vaše uživatelské jméno obsahuje diakritiku, tak nemůžete používat <i>Plochu</i> ani složku <i>Dokumenty</i>, ale musíte vytvořit například <b><kbd>C:\Robotka\examples</kbd></b>.</div>"
 
     url2="img/guides/demo_prog_01.png"
     description2=
-        "Ve _File_ menu ve VSCode zvolte _Open Folder..._ a otevřete složku `rbcontroller-android-app`, která je uvnitř balíčku příkladů."
+        "Ve _File_ menu ve VSCode zvolte _Open Folder..._ a otevřete složku <b>`rbcontroller-android-app`</b>, která je uvnitř balíčku příkladů."
  %}
 
 {% include image.html
@@ -43,7 +43,7 @@ Pokud vaše uživatelské jméno obsahuje diakritiku, tak nemůžete používat 
 
     url2="img/guides/demo_prog_03.png"
     description2=
-        "Otevřete soubor `src/main.cpp` a najdětě v něm podle obrázku funkci `setup()`."
+        "Otevřete soubor <b>`src/main.cpp`</b> a najdětě v něm podle obrázku funkci <b>`setup()`</b>."
  %}
 
 
@@ -78,11 +78,11 @@ a potom **klikněte na šipku vlevo dole ve Visual Studiu Code:**
 
 
 #### Aplikace RBController
-Robotka je teď připravena, ale musíme si stáhnout ještě ovládací aplikaci RBControl.
-Existují dvě verze, pro Android (**doporučená**) a pro Windows, pokud nemáte telefon
+Program pro Robotku máme připravený, ale musíme si ještě stáhnout ovládací aplikaci RBControl.
+Existují dvě verze - pro Android (**doporučená**) a pro Windows, pokud nemáte telefon
 s Androidem.
 
-Stáhněte si ji a nainstalujte.
+Stáhněte si a nainstalujte si jednu z nich.
 
 {% div class="row mv-xl" %}
 {% div class="col s12 l6 center-align" %}
@@ -94,13 +94,13 @@ Stáhněte si ji a nainstalujte.
 {% enddiv %}
 {% enddiv %}
 
-Aplikace se vás při spuštění zeptá na vaše jméno. Zadejte **to, co jste napsali do `cfg.owner`** (v tomto návodu je to _Darbujan_).
+Aplikace se vás při spuštění zeptá na vaše jméno. Zadejte **stejné, které jste napsali do <b>`cfg.owner`</b>** (v tomto návodu je to **_Darbujan_**).
 
 
 #### Připojení k Robotce
 Robotka ve výchozím stavu vytváří vlastní WiFi síť, která se jmenuje podle toho,
 jaké jste pro Robotku v kódu nastavili jméno. Například pro kód v tomto návodu by se jmenovala
-_Darbujan-Robocop_. Výchozí heslo je `flusflus`.
+_Darbujan-Robocop_. Výchozí heslo je <b>`flusflus`</b>.
 
 1. **Android:** RBController by měl vše zvládnout sám. Stačí zapnout Robotku,
    a pokud jste vyplnili vaše jméno stejně v aplikaci i v Robotce,
