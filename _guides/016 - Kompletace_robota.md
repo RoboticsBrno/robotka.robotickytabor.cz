@@ -7,7 +7,7 @@ name: Kompletace celého robota
 {% include image.html
     url="/img/guides/SROUBY-1.jpg"
     description=
-        ""
+        "Pomocí šroubů M4x45 přišroubujte palubu"
     url2="/img/guides/SROUBY-2.jpg"
     description2=
         " "

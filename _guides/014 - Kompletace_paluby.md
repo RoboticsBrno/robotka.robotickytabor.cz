@@ -99,7 +99,7 @@ name: Kompletace palubu
 {% include image.html
     url="/img/guides/UPEVNENI_RBCX-1.jpg"
     description=
-        ""
+        "Pomocí šroubů M3x5 přišroubujte RBCX"
     url2="/img/guides/UPEVNENI_RBCX-2.jpg"
     description2=
         " "
