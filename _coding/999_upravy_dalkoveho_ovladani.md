@@ -6,7 +6,7 @@ layout: coding
 # {{ page.title | escape }}
 
 {:.lead}
-Jak upravit to, co vidíte na telefonu nebo počítači v aplikaci RBController.
+Jak upravit to, co vidíte na telefonu nebo počítači v aplikaci RBController?
 
 {:.important}
 Tato kapitola předpokládá, že upravuješ `rbcontroller-android-app` z našeho balíku
