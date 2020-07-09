@@ -10,8 +10,8 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
     description=
         " "
     url2="/img/guides/PALUBA-2.jpg"
-    description=
-        " "
+    description2=
+        "Obruste oba dílky 26 ze strany kde je popisek"
 %}
 
 {% include image.html
@@ -19,16 +19,16 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
     description=
         " "
     url2="/img/guides/PALUBA-4.jpg"
-    description=
-        " "
+    description2=
+        "<div class=\"alert\">Dílek R10 nelepte</div>"
 %}
 
 {% include image.html
     url="/img/guides/PALUBA-5.jpg"
     description=
-        " "
+        "Přilepte díl R26"
     url2="/img/guides/PALUBA-6.jpg"
-    description=
+    description2=
         " "
 %}
 
@@ -37,7 +37,7 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
     description=
         " "
     url2="/img/guides/PALUBA-8.jpg"
-    description=
+    description2=
         " "
 %}
 
@@ -46,7 +46,7 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
     description=
         " "
     url2="/img/guides/PALUBA-10.jpg"
-    description=
+    description2=
         " "
 %}
 
@@ -55,7 +55,7 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
     description=
         " "
     url2="/img/guides/PALUBA-12.jpg"
-    description=
+    description2=
         " "
 %}
 
@@ -64,8 +64,8 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
     description=
         " "
     url2="/img/guides/PALUBA-14.jpg"
-    description=
-        " "
+    description2=
+        "Díl L26 přilepte za pomoci díku L10 stejně jako na druhé straně"
 %}
 
 {% include image.html
@@ -73,7 +73,7 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
     description=
         " "
     url2="/img/guides/PALUBA-16.jpg"
-    description=
+    description2=
         " "
 %}
 
