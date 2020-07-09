@@ -5,7 +5,7 @@ layout: coding
 
 # {{ page.title | escape }}
 
-Pojďmě se nejdříve podívat na celý program:
+e se nejdříve podívat na celý program:
 
 ```cpp
 #include "robotka.h"
@@ -26,7 +26,7 @@ Tak, a teď postupně:
 #include "robotka.h"
 ```
 Soubor začíná **#include** příkazy, které určují, co všechno ve svém programu
-můžeš používat. Nám zatím bude stačít pouze `robotka.h`.
+můžeš používat. Nám zatím bude stačí pouze `robotka.h`.
 
 #### Funkce
 ```cpp
