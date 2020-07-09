@@ -9,25 +9,25 @@ name: Motory
 {% include image.html
     url="/img/guides/MOTORY-1.jpg"
     description=
-        " "
+        "Pokud z desky vyčuhují malé výčnělky jako na obrázky odstraňte je pomocí kleští"
     url2="/img/guides/MOTORY-2.jpg"
     description2=
-        "Obruste oba dílky 26 ze strany kde je popisek"
+        ""
 %}
 
 {% include image.html
     url="/img/guides/MOTORY-3.jpg"
     description=
-        " "
+        "Půjčte si přípravek na pájení"
     url2="/img/guides/MOTORY-4.jpg"
     description2=
-        "<div class=\"alert\">Dílek R10 nelepte</div>"
+        ""
 %}
 
 {% include image.html
     url="/img/guides/MOTORY-5.jpg"
     description=
-        "Přilepte díl R26"
+        ""
     url2="/img/guides/MOTORY-6.jpg"
     description2=
         " "
@@ -39,7 +39,7 @@ name: Motory
         " "
     url2="/img/guides/MOTORY-8.jpg"
     description2=
-        " "
+        "Pomocí štípacích kleští odstraňte přečnívající nožičky"
 %}
 
 {% include image.html
