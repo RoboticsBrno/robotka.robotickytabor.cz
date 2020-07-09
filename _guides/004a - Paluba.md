@@ -5,6 +5,7 @@ name: Paluba
 
 Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připevňovat senzory, nebo různé konstrukce.
 
+
 {% include image.html
     url="/img/guides/PALUBA-1.jpg"
     description=
@@ -81,4 +82,6 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
     url="/img/guides/PALUBA-17.jpg"
     description=
         " "
+
 %}
+
