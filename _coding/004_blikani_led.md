@@ -106,7 +106,9 @@ void setup() {
 
 Struktura `if` se dá dále rozvíjet pomocí větvě `else` nebo `else if`.
 Pokud neplatí podmínka v `if`, provede se kód v `else`.
-Pokud potřebujeme více podmínek, můžeme je napsat do větvě `else if`. Nejprve se porovná podmínka uvedená v `if`, poté se postupně projdou větvě `else if` a pokud žádná z podnímek neplatí, vykoná se příkaz ve větvi `else`.
+
+Pokud potřebujeme více podmínek, můžeme je napsat do větvě `else if`.
+Nejprve se porovná podmínka uvedená v `if`, poté se postupně projdou větvě `else if` a pokud žádná z podmínek neplatí, vykoná se příkaz ve větvi `else`.
 
 ```cpp
 #include "robotka.h"
