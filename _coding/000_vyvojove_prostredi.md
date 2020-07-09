@@ -8,7 +8,7 @@ fullwidth: true
 # {{ page.title | escape }}
 
 {:.lead}
-Programy pro robotku budeme psát ve Visual Studiu Code a použijeme rozšíření PlatformIO IDE.
+Programy pro robotku budeme psát ve **Visual Studiu Code** a použijeme rozšíření PlatformIO IDE.
 
 #### Visual Studio Code
 Visual Studio Code je editor od firmy Microsoft. Je zdarma a funguje na Windows, Linuxu i Macu. Stáhněte si ho a nainstalujte ho.
@@ -26,7 +26,8 @@ Pokud máš **Windows 10 nebo Linux**, můžeš tuto sekci **přeskočit** - ovl
 
 Pro Windows 7 a 8 si [ovladač stáhni zde](http://tasemnice.eu/perm/en.stsw-stm32102.zip).
 
-ZIP rozbal a spusť správný .exe soubor podle toho, zda máš Windows 7 nebo 8 a jestli 32 bit nebo 64 bit verzi (pravděpodobně máš 64bit).
+ZIP rozbal a spusť správný .exe soubor podle toho, zda máš Windows 7 nebo 8 a jestli 32 bit nebo 64 bit verzi (pravděpodobně máš 64bit). 
+Pokud nevíš, jak to zjistit, podívej se [sem](https://support.microsoft.com/cs-cz/help/13443/windows-which-version-am-i-running).
 
 
 #### PlatformIO IDE

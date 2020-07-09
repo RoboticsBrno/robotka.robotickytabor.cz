@@ -5,7 +5,7 @@ layout: coding
 
 # {{ page.title | escape }}
 
-Pojďmě se nejdříve podívat na celý program:
+e se nejdříve podívat na celý program:
 
 ```cpp
 #include "robotka.h"
@@ -19,14 +19,19 @@ void setup() {
 ```
 
 Tak málo stačí, aby se tvoje Robotka probrala k životu, a dala ti to najevo!
-Tak, a teď postupně:
+
+##### Tak, a teď postupně:
 
 #### #include příkazy
 ```cpp
 #include "robotka.h"
 ```
 Soubor začíná **#include** příkazy, které určují, co všechno ve svém programu
-můžeš používat. Nám zatím bude stačít pouze `robotka.h`.
+<<<<<<< Updated upstream
+můžeš používat. Nám zatím bude stačí pouze `robotka.h`.
+=======
+můžeš používat. Nám zatím bude stačit pouze `robotka.h`.
+>>>>>>> Stashed changes
 
 #### Funkce
 ```cpp
@@ -37,9 +42,9 @@ void setup() {
 {:data-linenos-offset="3"}
 
 To, co vidíš zde, je **funkce**. Funkce jsou kusy kódu, které můžeš opakovaně
-spustit tak, že znáš jejich jméno. Kód každé funkce je ohraničen znaky { a },
+spustit tak, že znáš jejich jméno. Kód každé funkce je ohraničen složenými závorkami **{** a **}**,
 a uvnitř také odsazen.
-Tato funkce se jmenuje `setup`, a Robotka ji sama **spustí vždy po zapnutí**.
+Tato funkce se jmenuje <b>`setup`</b>, a Robotka ji sama **spustí vždy po zapnutí**.
 
 #### Proměnné
 ```cpp
@@ -47,16 +52,16 @@ Tato funkce se jmenuje `setup`, a Robotka ji sama **spustí vždy po zapnutí**.
 ```
 {:data-linenos-offset="4"}
 
-Zde vytváříme proměnnou, pojmenovaný kousek dat v našem programu.
-Má to dvě části, _datový typ_ (`rkConfig`) a _jméno_ (`cfg`).
+Zde vytváříme proměnnou, tedy pojmenovaný kousek dat v našem programu.
+Má to dvě části - _datový typ_ (<b>`rkConfig`</b>) a _jméno_ (<b>`cfg`</b>).
 
-**Datový typ** udává, co za data se skrývá v naší proměnné. V případě `rkConfig`
+**Datový typ** udává, co za data se skrývá v naší proměnné. V případě <b>`rkConfig`</b>
 je to nastavení celé Robotky,
 mezi další typy, které budeme za chvilku používat patří:
-*  `int` - celé číslo, např. `42`,
-*  `float` - číslo s desetinnou čárkou (pro účely programování desetinnou tečkou), např. `3.14`,
-*  `bool` - ano/ne, může nabývat pouze hodnot `true` nebo `false`,
-*  `std::string` - textový řetězec, např. `"Ahoj!"`.
+*  <b>`int`</b> - celé číslo, např. <b>`42`</b>,
+*  <b>`float`</b> - číslo s desetinnou čárkou (pro účely programování desetinnou tečkou), např. <b>`3.14`</b>,
+*  <b>`bool`</b> - ano/ne, může nabývat pouze hodnot <b>`true`</b> nebo <b>`false`</b>,
+*  <b>`std::string`</b> - textový řetězec, např. <b>`"Ahoj!"`</b>.
 
 
 **Jméno** proměnné volíš ty. Mělo by to být něco, co vystihuje účel dané proměnné,
