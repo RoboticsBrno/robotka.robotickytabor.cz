@@ -11,7 +11,7 @@ Nyní se podíváme, jak řídit běh programu.
 Program můžeme pozastavit, rozvětvit, či zopakovat.
 
 #### Pozastavení
-Začneme funkcí `delay`, ta pozastaví běh programu na dobu uvedenou v parametru (závorkách). Hodnota je udávána v milisekundách, neboli tisícinách vteřiny.
+Začneme funkcí `delay`. Ta pozastaví běh programu na dobu uvedenou v parametru (závorkách). Hodnota je udávána v milisekundách, neboli tisícinách vteřiny.
 
 Napíšeme si program, který nejprve rozsvítí a následně po půl vteřině zhasne modrou LED.
 
@@ -31,7 +31,7 @@ void setup() {
 ##### Úkol
 
 {:.lead}
-Zkus upravit tento řádek v kódu tak, aby LED svítila dvě vteřiny!
+Zkus upravit tento řádek v kódu tak, aby LED svítila dvě vteřiny.
 
 ```cpp
     delay(500);
@@ -108,7 +108,7 @@ Struktura `if` se dá dále rozvíjet pomocí větvě `else` nebo `else if`.
 Pokud neplatí podmínka v `if`, provede se kód v `else`.
 
 Pokud potřebujeme více podmínek, můžeme je napsat do větvě `else if`.
-Nejprve se porovná podmínka uvedená v `if`, poté se postupně projdou větvě `else if` a pokud žádná z podmínek neplatí, vykoná se příkaz ve větvi `else`.
+Nejprve se porovná podmínka uvedená v `if` a pokud neplatí, postupně projdou větvě `else if`. Pokud i žádná z dalších podmínek neplatí, vykoná se příkaz ve větvi `else`.
 
 ```cpp
 #include "robotka.h"
@@ -321,7 +321,7 @@ Nyní se konečně dostaneme k blikající LED!
 V jazyce _C++_ jsou 2 základní cykly.
 Jako první se podíváme na cyklus `while` (druhému typu cyklu se budeme věnovat v další kapitole). 
 
-Cyklus `while` bývá také nazýván _cyklus řízený podmínkou_, proč tomu tak je, je zřejmé již z následující ukázky. Ta vytvoří _nekonečný cyklus_, neboť jeho podmínka bude vždy pravdivá. Toho se dá využít, pokud chceme, aby se nám program opakoval neustále dokola.
+Cyklus `while` bývá také nazýván _cyklus řízený podmínkou_, proč tomu tak uvidíš v následující ukázce. Ta vytvoří _nekonečný cyklus_, neboť jeho podmínka bude vždy pravdivá. Toho se dá využít, pokud chceme, aby se nám program opakoval neustále dokola.
 
 ```cpp
 #include "robotka.h"
