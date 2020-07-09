@@ -7,9 +7,9 @@ layout: coding
 
 #### Definice vs Deklarace
 Předtím, než zažneme s funkcemi, si musíme vysvětlit pár pojmů.
-V _C++_ se rozlišujeme mezi deklarací a definicí.
-Deklarace pouze říká robotu, že proměnná/funkce existuje a jak vypadá.
-Definice přímo určuje jakou hodnotu bude proměnná na začátku mít, nebo co bude funkce dělat.
+V _C++_ se rozlišuje mezi **deklarací** a **definicí**.
+**Deklarace** pouze říká, že proměnná/funkce existuje a jak vypadá.
+**Definice** přímo určuje jakou hodnotu bude proměnná na začátku mít, nebo co bude funkce dělat.
 
 ```cpp
 int a; //declaration
@@ -17,7 +17,7 @@ int b = 10;//definition
 ```
 
 {:.important}
-Když robot "čte" program činí tak od vrchu dolů, což může být problém.
+Když robot "čte" program, dělá tak od vrchu dolů, což může být problém.
 
 Příklad 1:
 ```cpp
@@ -29,7 +29,7 @@ void setup() {
     rkLedById(a, true);
 }
 ```
-Tento program bude fungovat bez problému.
+Program výše bude fungovat bez problému.
 
 Příklad 2:
 ```cpp
@@ -44,9 +44,9 @@ void setup() {
 }
 ```
 
-Tento program fungovat nebude, protože proměnná a je použita dříve než je definovaná/deklarována.
+Tento program fungovat nebude, protože proměnná a je použita dříve než je definována.
 
-V těchto dvou příklade to může vypadat jednoduše, ale u funkcí to nemusí být tak zřejmé.
+V těchto dvou příkladech to může vypadat jednoduše, ale u funkcí to nemusí být tak zřejmé.
 
 Příklad 1:
 ```cpp
@@ -96,13 +96,13 @@ Tento program fungovat bude, i přestože funkce je definovaná až potom co je 
 #### Funkce bez parametrů a návratové hodnoty
 
 Nejjednoduššími funkcemi jsou funkce bez parametrů a návratové hodnoty.
-Jejich prototyp vypadá následovně:
+Jejich předpis vypadá následovně:
 ```cpp
 void name(){
     //code here
 }
 ```
-Jako obvykle si jméno volíme samy.
+Jako obvykle si jméno volíme sami.
 
 #### Parametry funkce
 
@@ -136,8 +136,9 @@ void showLoading(bool i_state, bool i_downward, int i_delay) {
 ```
 
 Důvod pro používání krásně demonstruje předchozí příklad.
-Funkce nám umožní rozdělit kód na menší lépe srozumitelné bloky, nemusíme se tedy při jejich psaní starat o zbytek kódu, ale staráme se pouze o kód funkce.
-Další výhodou je opakovatelnost, funkce můžeme využít víc jak jednou, což je výhoda, neboť je výhodnější opakovat jeden řádek kódu místo spousty.
+Funkce nám umožní rozdělit kód na menší, lépe srozumitelné bloky. 
+Nemusíme se tedy při jejich psaní starat o zbytek kódu, ale staráme se pouze o kód funkce.
+Další výhodou je opakovatelnost - funkce můžeme využít víc jak jednou, což je výhoda, neboť je mnohem jednodušší opakovat jeden řádek kódu místo spousty dalších.
 
 #### Výchozí hodnoty parametrů
 
@@ -168,21 +169,21 @@ void showLoading(bool i_state, bool i_downward, int i_delay) {
 }
 ```
 
-Tím že jsme nastavili výchozí parametry jsme si potenciálně ušetřili vypisování dvou parametrů při každém volání.
+Tím, že jsme nastavili výchozí parametry jsme si potenciálně ušetřili vypisování dvou parametrů při každém volání.
 Není vhodné nastavovat všem parametrům výchozí hodnotu, čiňte tak jenom u parametrů jejichž hodnota by byla ve většině případů stejná.
 
 {:.important}
 Jakmile nastavíte jednomu parametru výchozí hodnotu, všechny parametry, které následují za ním ji musí mít nastavenou také.
-Jinak by počítač nepoznal, který hodnota náleží kterému parametru!
+Jinak by počítač nepoznal, která hodnota náleží kterému parametru!
 
 {:.info}
 Výchozí parametry jsou použity třeba u zapínání LED.
-Na zapínání led tedy stačí volat `rkLedBlue()` místo `rkLedBlue(true)`.
+Na zapínání LED tedy stačí volat `rkLedBlue()` místo `rkLedBlue(true)`.
 U vypínání je ale stále potřeba psát parametr: `rkLedBlue(false)`.
 
 ##### Úkol
 
-Zkus napsat funkci která vypíše do sériové linky vypíše jestli je zadané číslo bezezbytku dělitelné jiným zadaným číslem.
+Zkus napsat funkci která do sériové linky vypíše, jestli je zadané číslo beze zbytku dělitelné jiným zadaným číslem.
 
 Parametry:
 * dělenec
@@ -211,7 +212,7 @@ void dividable(int i_divident, int i_divisor){
 
 #### Funkce s návratovou hodnotou
 
-Občas se nám hodí, když funkce může vrátit nějaký výsledek, ku příkladu, pokud bychom chtěli dosazovat do nějakého vzorce.
+Občas se nám hodí, když funkce může vrátit nějaký výsledek, kupříkladu pokud bychom chtěli dosazovat do nějakého vzorce.
 
 Tyto funkce potřebují udat datový typ, který budou vracet. Poslední příkaz každé větve potom bude `return` následované proměnnou jejíž hodnotu chceme vracet.
 
