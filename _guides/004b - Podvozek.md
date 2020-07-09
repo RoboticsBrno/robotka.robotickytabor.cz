@@ -223,27 +223,27 @@ Připravíme si pilník nebo brusný papír, ostrý nůž (ideálně skalpel) a 
 {% include image.html
     url="/img/guides/PODVOZEK-49-edit.jpg"
     description=
-        "<div class=\"alert\">Pod naklepávací matky kápněte vteřiňák a nasaďte je</div>"
+        "<div class=\"alert\">Pracujte pod dohledem vedoucího</div>
+Pod naklepávací matky kápněte vteřiňák a nasaďte je"
+    url2="/img/guides/PODVOZEK-51.jpg"
+    description2=
+        "Všechny matky je potřeba zalisovat ve svěráku"
+%}
+
+{% include image.html
+    url="/img/guides/PODVOZEK-52.jpg"
+    description=
+        ""
+    url2="/img/guides/PODVOZEK-53.jpg"
+    description2=
+        " "
+%}
+
+{% include image.html
+    url="/img/guides/PODVOZEK-54.jpg"
+    description=
+        " "
     url2="/img/guides/PODVOZEK-50.jpg"
-    description2=
-        " "
-%}
-
-{% include image.html
-    url="/img/guides/PODVOZEK-51.jpg"
-    description=
-        "Matky je potřeba zalisovat ve svěráku
-<div class=\"alert\">Pracujte pod dohledem vedoucího</div>"
-    url2="/img/guides/PODVOZEK-52.jpg"
-    description2=
-        " "
-%}
-
-{% include image.html
-    url="/img/guides/PODVOZEK-53.jpg"
-    description=
-        " "
-    url2="/img/guides/PODVOZEK-54.jpg"
     description2=
         " "
 %}

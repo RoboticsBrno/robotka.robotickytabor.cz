@@ -52,16 +52,16 @@ name: Kolečka
 {% include image.html
     url="/img/guides/KOLA-11.jpg"
     description=
-        "Do každé "
+        "Do každé dírky kápněte tekutý vteřiňák"
     url2="/img/guides/KOLA-12.jpg"
     description2=
-        " "
+        "Poté kápněte vteřiňák do středového náboje"
 %}
 
 {% include image.html
     url="/img/guides/KOLA-13.jpg"
     description=
-        " "
+        "Vytvrďte aktivátorem"
     url2="/img/guides/KOLA-14.jpg"
     description2=
         " "
@@ -82,16 +82,16 @@ name: Kolečka
         " "
     url2="/img/guides/KOLA-18.jpg"
     description2=
-        " "
+        "Slepte vteřiňákem viz další bod"
 %}
 
 {% include image.html
-    url="/img/guides/KOLA-19.jpg"
+    url="/img/guides/KOLA-19-edit.JPG"
     description=
-        " "
+        "Na míst šipek naneste lepidlo"
     url2="/img/guides/KOLA-20.jpg"
     description2=
-        " "
+        "Vytvrďte aktivátorem"
 %}
 
 {% include image.html
