@@ -86,7 +86,7 @@ name: Kolečka
 %}
 
 {% include image.html
-    url="/img/guides/KOLA-19-edit.JPG"
+    url="/img/guides/KOLA-19-edit.jpg"
     description=
         "Na míst šipek naneste lepidlo"
     url2="/img/guides/KOLA-20.jpg"

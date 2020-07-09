@@ -64,16 +64,16 @@ name: Kryt
         ""
     url2="/img/guides/KRYT-16.jpg"
     description2=
-        "Mezi magnety vložte plíšek pro vytvoření mezery"
+        "Mezi magnety vložte plíšek pro vytvoření mezery, zatím nelepíme"
 %}
 
 {% include image.html
     url="/img/guides/KRYT-14.jpg"
     description=
-        " "
+        "Naneste lepidlo na volný magnet"
     url2="/img/guides/KRYT-15.jpg"
     description2=
-        ""
+        "Zaklopte krytem"
 %}
 
 {% include image.html
