@@ -25,7 +25,7 @@ name: Kompletace paluby
 {% include image.html
     url="/img/guides/SLOUP-5.jpg"
     description=
-        "Zařízněte a zabrušte pilníkem"
+        "Zařízněte a zabrušte brusnou destičkou"
     url2="/img/guides/SLOUP-6.jpg"
     description2=
         " "
