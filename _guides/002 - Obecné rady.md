@@ -43,3 +43,21 @@ Při skládání nasucho si všimni, které plochy se sebe dotýkají - to jsou 
     description2=
         "Příliš lepidla - většina ho byla vytlačena ven."
 %}
+
+#### Koutový spoj
+
+{% include image.html 
+    url="img/guides/KOUTAK-1.jpg" 
+    description=
+        ""
+    url2="/img/guides/KOUTAK-2.jpg" 
+    description2=
+        "Správný koutový spoj"
+%}
+
+{% include image.html 
+    url="img/guides/PODVOZEK-16.jpg" 
+    description=
+        "Pokud vým vyteče moc lepidla, odstraňte ho pomocí kapesníku"
+
+%}

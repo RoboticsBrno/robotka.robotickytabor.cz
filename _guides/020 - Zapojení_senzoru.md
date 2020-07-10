@@ -4,8 +4,12 @@ name: Senzory
 ### {{ page.name | escape }}
 
 #### Zapojení RGB LED pásku 
+
+- 1x RGB LED pásek
+- 1x třípinový kabel
+
 {% include image.html
-    url="/img/guides/ULTRAZVUK.jpg"
+    url="/img/guides/LED.jpg"
     description=
         ""
     url2="/img/guides/SENZORY-1.jpg"
@@ -57,7 +61,7 @@ name: Senzory
 - 2x čtyřpinový kabel 
 
 {% include image.html
-    url="/img/guides/LED.jpg"
+    url="/img/guides/ULTRAZVUK.jpg"
     description=
         ""
     url2="/img/guides/SENZORY-10.jpg"
@@ -120,7 +124,7 @@ name: Senzory
 - 2x třípinový kabel
 
 {% include image.html
-    url="/img/guides/SENZORY-18.jpg"
+    url="/img/guides/CARA.jpg"
     description=
         ""
     url2="/img/guides/SENZORY-21.jpg"

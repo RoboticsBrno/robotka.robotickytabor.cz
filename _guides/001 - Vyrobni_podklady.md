@@ -1,8 +1,8 @@
-<!-- ---
-name: Výrobní podklady
-title: Výrobní podklady
 ---
-### {{ page.name | escape }}
+# name: Výrobní podklady
+# title: Výrobní podklady
+---
+<!-- ### {{ page.name | escape }}
 Zde si můžeš stáhnout výrobní podklady na laser pro Robotku. Zároveň zde najdeš výrobní podklady pro desku plošných spojů. 
 
 ##### Zdrojové soubory
