@@ -43,10 +43,10 @@ name: Motory
 %}
 
 {% include image.html
-    url="/img/guides/MOTORY-9.jpg"
+    url="/img/guides/MOTORY-9-edit.jpg"
     description=
-        " "
-    url2="/img/guides/MOTORY-10.jpg"
+        "Ohněte kontakty motoru"
+    url2="/img/guides/MOTORY-10-edit.jpg"
     description2=
         " "
 %}
@@ -57,7 +57,7 @@ name: Motory
         " "
     url2="/img/guides/MOTORY-12.jpg"
     description2=
-        " "
+        "Použijte šroubky M3x25 a matky M3"
 %}
 
 {% include image.html
@@ -66,7 +66,7 @@ name: Motory
         " "
     url2="/img/guides/MOTORY-14.jpg"
     description2=
-        "Díl L26 přilepte za pomoci díku L10 stejně jako na druhé straně"
+        ""
 %}
 
 {% include image.html

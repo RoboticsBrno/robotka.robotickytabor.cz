@@ -8,7 +8,7 @@ name: Kompletace paluby
     url="/img/guides/SLOUP-1.jpg"
     description=
         ""
-    url2="/img/guides/SLOUP-2.jpg"
+    url2="/img/guides/SLOUP--2.jpg"
     description2=
         " "
 %}
