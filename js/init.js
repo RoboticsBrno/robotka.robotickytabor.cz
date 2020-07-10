@@ -152,6 +152,11 @@ function onDocumentScroll() {
     scrollReactionTimeout = setTimeout(onScrollFinished, 300);
 }
 
+var defaultDuration = 500
+var edgeOffset = 30
+var sidenav = document.getElementById("sidenav")
+var guideScroller = zenscroll.createScroller(sidenav, defaultDuration, edgeOffset)
+
 function onScrollFinished() {
     var list = document.querySelectorAll("figure[id^=\"step-\"]");
     var len = list.length;
@@ -166,4 +171,29 @@ function onScrollFinished() {
             break;
         }
     }
+
+    var list = document.querySelectorAll("h3,h4");
+    var len = list.length;
+    var minElement = list[0];
+    var minPos = minElement.getBoundingClientRect().top;
+    for(var i = 1; i < len; ++i) {
+        var el = list[i];
+        var bounding = el.getBoundingClientRect();
+        if (Math.abs(bounding.top) < Math.abs(minPos) && bounding.top < 0) {
+            minElement = el;
+            minPos = bounding.top;
+        }
+    }
+    var allLinks = document.querySelectorAll(".sidenav a");
+    var targetHref = encodeURIComponent(minElement.id.toLowerCase());
+    for ( var i = 0; i != allLinks.length; i++ ) {
+        allLinks[i].classList.remove("sidenavHighglight");
+        if (allLinks[i].href.toLowerCase().endsWith(targetHref.toLowerCase())) {
+            allLinks[i].classList.add("sidenavHighglight");
+            guideScroller.center(allLinks[i]);
+        }
+    }
+
 }
+
+onScrollFinished();

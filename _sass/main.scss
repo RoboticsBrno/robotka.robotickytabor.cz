@@ -395,3 +395,7 @@ td.rouge-code  {
         transition-property: filter;
     }
 }
+
+.sidenavHighglight {
+    background: lighten(#26547c, 60%);
+}
