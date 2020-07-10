@@ -1,32 +1,32 @@
 ---
-name: Kompletace palubu
+name: Kompletace paluby
 ---
 ### {{ page.name | escape }}
 
 #### Sloupky pro RBCX
 {% include image.html
-    url="/img/guides/SLOUPKY-1.jpg"
+    url="/img/guides/SLOUP-1.jpg"
     description=
         ""
-    url2="/img/guides/SLOUPKY-2.jpg"
+    url2="/img/guides/SLOUP-2.jpg"
     description2=
         " "
 %}
 
 {% include image.html
-    url="/img/guides/SLOUPKY-3.jpg"
+    url="/img/guides/SLOUP-3.jpg"
     description=
         ""
-    url2="/img/guides/SLOUPKY-4.jpg"
+    url2="/img/guides/SLOUP-4.jpg"
     description2=
         " "
 %}
 
 {% include image.html
-    url="/img/guides/SLOUPKY-5.jpg"
+    url="/img/guides/SLOUP-5.jpg"
     description=
         "Zařízněte a zabrušte pilníkem"
-    url2="/img/guides/SLOUPKY-6.jpg"
+    url2="/img/guides/SLOUP-6.jpg"
     description2=
         " "
 %}
