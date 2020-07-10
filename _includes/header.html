@@ -27,6 +27,8 @@
 
             {% assign coding = site.data.collectionMenus.coding[0] %}
             <li><a href="{{ coding.doc.url | relative_url }}">Programování</a></li>
+            {% assign inspiration = site.data.collectionMenus.inspiration[0] %}
+            <li><a href="{{ inspiration.doc.url | relative_url }}">Inspirace</a></li>
           </ul>
 
           <ul id="nav-mobile" class="side-nav">
@@ -55,6 +57,8 @@
 
             {% assign coding = site.data.collectionMenus.coding[0] %}
             <li><a href="{{ coding.doc.url | relative_url }}">Programování</a></li>
+            {% assign inspiration = site.data.collectionMenus.inspiration[0] %}
+            <li><a href="{{ inspiration.doc.url | relative_url }}">Inspirace</a></li>
           </ul>
 
           {% if page.name == 'guide.md' %}
