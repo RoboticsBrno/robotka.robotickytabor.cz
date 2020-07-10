@@ -10,7 +10,7 @@ fullwidth: true
 {:.lead}
 Nahrajeme do Robotky předpřipravený program, abychom vyzkoušeli, jestli Robotka správně funguje.
 
-Program, která jsme pro vás nachystali, bude fungovat jako dálkové ovládání,
+Program, který jsme pro vás nachystali, bude fungovat jako dálkové ovládání,
 a vy budete Robotku řídit z vašeho telefonu nebo počítače.
 
 
