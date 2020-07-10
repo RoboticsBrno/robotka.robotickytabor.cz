@@ -57,7 +57,7 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
         " "
     url2="/img/guides/PALUBA-12.jpg"
     description2=
-        " "
+        "Díl L26 přilepte za pomoci díku L10 stejně jako na druhé straně"
 %}
 
 {% include image.html
@@ -66,7 +66,7 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
         " "
     url2="/img/guides/PALUBA-14.jpg"
     description2=
-        "Díl L26 přilepte za pomoci díku L10 stejně jako na druhé straně"
+        ""
 %}
 
 {% include image.html

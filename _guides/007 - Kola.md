@@ -5,22 +5,14 @@ name: Kolečka
 
 
 {% include image.html
-    url="/img/guides/KOLA-1.jpg"
+    url="/img/guides/KOLA-2.jpg"
     description=
         "<div class=\"alert\">Dokud nebudete vyzváni prosím nic nelepte</div>"
-    url2="/img/guides/KOLA-2.jpg"
-    description2=
-        " "
-%}
-
-{% include image.html
-    url="/img/guides/KOLA-3.jpg"
-    description=
-        " "
     url2="/img/guides/KOLA-4.jpg"
     description2=
         " "
 %}
+
 
 {% include image.html
     url="/img/guides/KOLA-5.jpg"
@@ -43,28 +35,28 @@ name: Kolečka
 {% include image.html
     url="/img/guides/KOLA-9.jpg"
     description=
-        "Zatlačte na kolečko pro správné srovnání v přípravku"
+        ""
     url2="/img/guides/KOLA-10.jpg"
     description2=
-        " "
+        "Zatlačte na kolečko pro správné srovnání v přípravku"
 %}
 
 {% include image.html
     url="/img/guides/KOLA-11.jpg"
     description=
-        "Do každé dírky kápněte tekutý vteřiňák "
+        ""
     url2="/img/guides/KOLA-12.jpg"
     description2=
-        "Poté kápněte vteřiňák do středového náboje"
+        "Do každé dírky kápněte tekutý vteřiňák     "
 %}
 
 {% include image.html
     url="/img/guides/KOLA-13.jpg"
     description=
-        "Vytvrďte aktivátorem"
+        "Poté kápněte vteřiňák do středového náboje"
     url2="/img/guides/KOLA-14.jpg"
     description2=
-        " "
+        "Vytvrďte aktivátorem "
 %}
 
 {% include image.html
@@ -91,19 +83,15 @@ name: Kolečka
         "Na míst šipek naneste lepidlo"
     url2="/img/guides/KOLA-20.jpg"
     description2=
-        "Vytvrďte aktivátorem"
+        ""
 %}
 
 {% include image.html
     url="/img/guides/KOLA-21.jpg"
     description=
-        " "
+        "Vytvrďte aktivátorem "
     url2="/img/guides/KOLA-22.jpg"
     description2=
         " "
 %}
 
-
-Motor
-
-Upevneni do paluby
