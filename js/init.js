@@ -10,6 +10,8 @@
 
     var initFancyBox = function() {
         $('[data-fancybox="gallery"]').fancybox({
+            padding: 0,
+            margin: 0,
             caption : function( instance, item ) {
                 return $(this).next('figcaption').html();
             }
