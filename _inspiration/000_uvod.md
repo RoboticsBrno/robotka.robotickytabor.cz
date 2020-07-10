@@ -6,6 +6,8 @@ layout: inspiration
 
 # {{ page.title | escape }}
 
+#### Představení
+
 {:.lead}
 Tato část slouží jako seznam nápadů pro práci s robotkou.
 
