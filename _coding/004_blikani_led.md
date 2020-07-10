@@ -58,14 +58,15 @@ C++ obsahuje dva prostředky pro rozvětvení programu, tou jednodušší a univ
 ```cpp
 #include "robotka.h"
 
-bool controlVariable = true;
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
+    
+    bool controlVariable = true;
+    bool buttonState = rkButtonIsPressed();
 
-    rkLedBlue(true);
-    if(controlVariable) {
+    rkLedBlue(controlVariable);
+    if(buttonState) {
         delay(1000);
     }
     delay(500);
@@ -89,11 +90,11 @@ Upravte tento řádek v kódu tak, aby LED svítila pouze půl vteřiny!
 ```cpp
 #include "robotka.h"
 
-bool controlVariable = false;
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
+
+    bool controlVariable = false;
 
     rkLedBlue(true);
     if(controlVariable) {
@@ -113,11 +114,11 @@ Nejprve se porovná podmínka uvedená v `if` a pokud neplatí, postupně projdo
 ```cpp
 #include "robotka.h"
 
-bool controlVariable = false;
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
+
+    bool controlVariable = false;
 
     if(controlVariable) {
         rkLedBlue(true);
@@ -138,11 +139,11 @@ Pojďme si je ukázat v programu.
 ```cpp
 #include "robotka.h"
 
-int number = 10;
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
+
+    int number = 10;
 
     if(number == 5) {
         rkLedBlue(true);
@@ -155,11 +156,11 @@ Tato nově nabytá znalost nám umožní ukázat si, že `if` a `else` lze zkomb
 ```cpp
 #include "robotka.h"
 
-int number = 10;
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
+
+    int number = 10;
 
     if(number == 5) {
         rkLedBlue(true);
@@ -180,11 +181,11 @@ Zkus přidat do předchozího programu rozsvícení žluté LED. Proměnná `num
 ```cpp
 #include "robotka.h"
 
-int number = 10;
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
+
+    int number = 10;
 
     if(number == 5) {
         rkLedBlue(true);
@@ -207,11 +208,11 @@ Zkus upravit předchozí program tak, aby pro čísla menší než 20 svítila m
 ```cpp
 #include "robotka.h"
 
-int number = 10;
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
+
+    int number = 10;
 
     if(number < 20) {
         rkLedBlue(true);
@@ -251,14 +252,14 @@ Napíšeme si program, který bude dělat následující: pokud proměnná `numb
 ```cpp
 #include "robotka.h"
 
-int number = 10;
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
-    if((number < 20) && (number > 5)) {
-        rkLedBlue(true);
+    int batteryState = rkBatteryPercent();
+
+    if((batteryState < 100) && (batteryState > 10)) {
+        rkLedGreen(true);
     }
 }
 ```
@@ -266,30 +267,45 @@ void setup() {
 {:.lead}
 Pojďme si samostatně vyzkoušet jejich použití!
 
-Zkus rozšířit předchozí program o tři další rozsahy. 10-50 pro zelenou, 2-4 pro červenou a 0-100 pro žlutou.
+Zkus rozšířit předchozí program o tři další rozsahy. 100-76% pro zelenou, 75-26% pro žlutou a 25-0% pro červenou.
 
 {:.spoiler}
 ```cpp
 #include "robotka.h"
 
-int number = 10;
+void setup() {
+    rkConfig cfg;
+    rkSetup(cfg);
+
+    int batteryState = rkBatteryPercent();
+
+    if(batteryState > 75) {
+        rkLedGreen(true);
+    }
+    if((batteryState <= 75) && (batteryState > 25)) {
+        rkLedYellow(true);
+    }
+    if(batteryState <= 25) {
+        rkLedRed(true);
+    }
+}
+```
+
+Alternativní přístup:
+
+{:.spoiler}
+```cpp
+#include "robotka.h"
 
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
-    if((number < 20) && (number > 5)) {
-        rkLedBlue(true);
-    }
-    if((number < 50) && (number > 10)) {
-        rkLedBlue(true);
-    }
-    if((number < 4) && (number > 2)) {
-        rkLedBlue(true);
-    }
-    if((number < 100) && (number > 0)) {
-        rkLedBlue(true);
-    }
+    int batteryState = rkBatteryPercent();
+
+    rkLedGreen(batteryState > 75);
+    rkLedYellow((batteryState <= 75) && (batteryState > 25));
+    rkLedRed(batteryState <= 25);
 }
 ```
 
@@ -302,11 +318,11 @@ Zkus napsat program, který rozsvítí modrou LED pouze tehdy, pokud je `number`
 ```cpp
 #include "robotka.h"
 
-int number = 10;
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
+
+    int number = 10;
 
     if((number == 1) || (number == 8) || (number == 9) || (number == 13) || (number == 21) || (number == 57)) {
         rkLedBlue(true);
