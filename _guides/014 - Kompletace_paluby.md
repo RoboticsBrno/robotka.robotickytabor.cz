@@ -85,7 +85,7 @@ name: Kompletace palubu
 {% include image.html
     url="/img/guides/HMATNIK-1.jpg"
     description=
-        "Zařízněte a zabrušte pilníkem"
+        ""
     url2="/img/guides/HMATNIK-2.jpg"
     description2=
         " "
