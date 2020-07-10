@@ -3,7 +3,7 @@ name: Podvozek
 ---
 ### {{ page.name | escape }}
 
-Připravíme si pilník nebo brusný papír, ostrý nůž (ideálně skalpel) a lepidlo Herkules.
+**Připravíme si pilník nebo brusný papír, ostrý nůž (ideálně skalpel) a lepidlo Herkules.**
 
 {% include image.html
     url="/img/guides/PODVOZEK-1.jpg"
@@ -11,7 +11,7 @@ Připravíme si pilník nebo brusný papír, ostrý nůž (ideálně skalpel) a 
         " "
     url2="/img/guides/PODVOZEK-2.jpg"
     description2=
-        "<div class=\"alert\">Dílky nelepíme, pouze skládáme nasucho! Přilepíme je později</div>"
+        "<div class=\"alert\">Dílky nelepíme, pouze skládáme nasucho! Přilepíme je později.</div>"
 %}
 
 {% include image.html

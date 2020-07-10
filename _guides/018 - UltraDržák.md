@@ -3,8 +3,8 @@ name: Držáky ultrazvukových senzorů
 ---
 ### {{ page.name | escape }}
 
-Aneb ultradržáky ultrasonických ultrasenzorů.
-Díky nim budeme moci zjišťovat ultrapozici naší ultrarobotky v ultraprostoru. :-)
+**Aneb ultradržáky ultrasonických ultrasenzorů.**
+**Díky nim budeme moci zjišťovat ultrapozici naší ultrarobotky v ultraprostoru. :-)**
 
 {% include image.html
     url="/img/guides/ULTRAZVUK-1.jpg"
@@ -43,7 +43,7 @@ Díky nim budeme moci zjišťovat ultrapozici naší ultrarobotky v ultraprostor
 
 #### Montáž na Robotčinu palubu
 
-Nyní připevníme ultrazvukové senzory na Robotku. Budeme na to potřebovat tavnou pistoli.
+**Nyní připevníme ultrazvukové senzory na Robotku. Budeme na to potřebovat tavnou pistoli.**
 
 {% include image.html
     url="/img/guides/ULTRAZVUK-8.jpg"

@@ -7,7 +7,7 @@ name: Kolečka
 {% include image.html
     url="/img/guides/KOLA-2.jpg"
     description=
-        "<div class=\"alert\">Dokud nebudete vyzváni prosím nic nelepte</div>"
+        "<div class=\"alert\">Nic nelepte, dokud nebudete vyzváni!</div>"
     url2="/img/guides/KOLA-4.jpg"
     description2=
         " "
@@ -47,7 +47,7 @@ name: Kolečka
         ""
     url2="/img/guides/KOLA-12.jpg"
     description2=
-        "Do každé dírky kápněte tekutý vteřiňák     "
+        "Do každé dírky kápněte řídký vteřiňák"
 %}
 
 {% include image.html
@@ -74,13 +74,13 @@ name: Kolečka
         " "
     url2="/img/guides/KOLA-18.jpg"
     description2=
-        "Slepte vteřiňákem viz další bod"
+        "Slepte vteřiňákem (viz další bod)"
 %}
 
 {% include image.html
     url="/img/guides/KOLA-19-edit.jpg"
     description=
-        "Na míst šipek naneste lepidlo"
+        "Naneste lepidlo na místa, kam ukazují šipky"
     url2="/img/guides/KOLA-20.jpg"
     description2=
         ""
@@ -89,7 +89,7 @@ name: Kolečka
 {% include image.html
     url="/img/guides/KOLA-21.jpg"
     description=
-        "Vytvrďte aktivátorem "
+        "Vytvrďte aktivátorem"
     url2="/img/guides/KOLA-22.jpg"
     description2=
         " "

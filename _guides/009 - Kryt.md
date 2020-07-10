@@ -16,7 +16,7 @@ name: Kryt
 {% include image.html
     url="/img/guides/KRYT-3.jpg"
     description=
-        " "
+        "Štípačkami odstříháme boční výstupky dílků č. 14 "
     url2="/img/guides/KRYT-4.jpg"
     description2=
         "Vznikne vám 8 zobáčků"
@@ -28,7 +28,7 @@ name: Kryt
         "Přilepte zobáček pouze k palubě"
     url2="/img/guides/KRYT-6.jpg"
     description2=
-        "Přilepte zobáček pouze k palubě"
+        "Přilepte zobáček opět pouze k palubě"
 %}
 
 {% include image.html
@@ -55,7 +55,7 @@ name: Kryt
         "Magnet přichytněte na šroub M4"
     url2="/img/guides/KRYT-12.jpg"
     description2=
-        "Naneste kapku vteřiňáku"
+        "Opatrně naneste kapku vteřiňáku"
 %}
 
 {% include image.html
@@ -64,7 +64,7 @@ name: Kryt
         ""
     url2="/img/guides/KRYT-16.jpg"
     description2=
-        "Mezi magnety vložte plíšek pro vytvoření mezery, zatím nelepíme"
+        "Mezi magnety vložte plíšek pro vytvoření mezery, zatím nic nelepíme"
 %}
 
 {% include image.html

@@ -9,7 +9,7 @@ name: Motory
 {% include image.html
     url="/img/guides/MOTORY-1.jpg"
     description=
-        "Pokud z desky vyčuhují malé výčnělky jako na obrázky odstraňte je pomocí kleští"
+        "Pokud z desky vystupují malé výčnělky jako na obrázku, odstraňte je pomocí kleští"
     url2="/img/guides/MOTORY-2.jpg"
     description2=
         ""
@@ -45,7 +45,7 @@ name: Motory
 {% include image.html
     url="/img/guides/MOTORY-9-edit.jpg"
     description=
-        "Ohněte kontakty motoru"
+        "Opatrně ohněte kontakty motoru"
     url2="/img/guides/MOTORY-10-edit.jpg"
     description2=
         " "
