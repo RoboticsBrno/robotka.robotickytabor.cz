@@ -14,9 +14,6 @@ Program, která jsme pro vás nachystali, bude fungovat jako dálkové ovládán
 a vy budete Robotku řídit z vašeho telefonu nebo počítače.
 
 
-***TODO: Update obrázků, linků***
-
-
 #### Otevření projektu
 
 
