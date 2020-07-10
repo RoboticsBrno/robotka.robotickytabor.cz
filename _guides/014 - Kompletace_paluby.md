@@ -75,6 +75,9 @@ name: Kompletace paluby
     url="/img/guides/SVETLOVOD-9.jpg"
     description=
         ""
+    url2="/img/guides/SVETLOVOD-10.jpg"
+    description2=
+        "Takhle krásně to svítí :-)"        
 %}
 
 ---
@@ -137,7 +140,7 @@ name: Kompletace paluby
 {% include image.html
     url="/img/guides/DRAT-1.jpg"
     description=
-        ""
+        "Protáhněte kabel pod deskou"
     url2="/img/guides/DRAT-2.jpg"
     description2=
         " "
