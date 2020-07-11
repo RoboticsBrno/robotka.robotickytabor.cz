@@ -97,8 +97,8 @@ void setup() {
     bool controlVariable = true;
     
     // do promenne buttonState ulozime informaci,
-    // jestli je prave ted stisknute spodni tlacitko
-    bool buttonState = rkButtonIsPressed(BTN_DOWN);
+    // jestli je prave ted stisknute horni tlacitko
+    bool buttonState = rkButtonIsPressed(BTN_UP);
 
     rkLedBlue(controlVariable);
     if(buttonState) {
@@ -130,7 +130,7 @@ void setup() {
     rkSetup(cfg);
 
     bool controlVariable = false;
-    bool buttonState = rkButtonIsPressed(BTN_DOWN);
+    bool buttonState = rkButtonIsPressed(BTN_UP);
 
     rkLedBlue(controlVariable);
     if(buttonState) {
