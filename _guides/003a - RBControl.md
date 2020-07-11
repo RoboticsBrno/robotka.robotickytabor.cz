@@ -73,3 +73,21 @@ name: RBCX
     description=
         "Spínaný zdroj máme připojený k desce."
 %}
+
+{% include image.html
+    url="/img/guides/piezo1.jpg"
+    description=
+        "Vezměte si piezo sirénku a podívejte se, kde je označené plus (+)."
+    url2="/img/guides/piezo2.jpg"
+    description2=
+        "Vložte piezo sirénku do DPS a dejte pozor na polaritu (na správné otočení). Sirénku připájejte."
+%}
+
+{% include image.html
+    url="/img/guides/piezo3.jpg"
+    description=
+        "Máme hotovo! Zkontrolujte si, že horní strana desky vypadá přesně takto."
+    url2="/img/guides/piezo4.jpg"
+    description2=
+        "Máme hotovo! Zkontrolujte si, že spodní strana desky vypadá přesně takto."
+%}
