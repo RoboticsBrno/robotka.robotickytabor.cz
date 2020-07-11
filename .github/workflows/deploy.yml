@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Install graphicsmagick
-        run: sudo apt-get install graphicsmagick
+        run: sudo apt-get install graphicsmagick libxml2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7 # Not needed with a .ruby-version file
       - name: Checkout
         uses: actions/checkout@v2
       - uses: actions/cache@v1
@@ -21,7 +24,10 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Add version
         run: echo "${GITHUB_SHA}" > version
-      - uses: lemonarc/jekyll-action@1.0.0
+      - name: Install gems
+        run: bundle install
+      - name: Generate
+        run: bundle exec jekyll build
       - name: Deploy
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
