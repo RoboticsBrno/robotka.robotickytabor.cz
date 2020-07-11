@@ -3,7 +3,6 @@ on:
   push:
     branches: [master]
 env:
-  NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
   JEKYLL_ENV: "production"
 jobs:
   publish:
