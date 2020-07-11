@@ -115,7 +115,7 @@ Měla by se rozsvítit modrá LED.
 
 <br>
 
-#### Úkol
+#### Úkol 1
 
 {:.lead}
 Zkus rozsvítit i ostatní barvy LED!
