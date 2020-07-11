@@ -31,11 +31,10 @@ jobs:
         run: bundle exec jekyll build
       - name: Deploy
         if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          target_branch: gh-pages
-          build_dir: _site
-          repo: RoboticsBrno/robotka.robotickytabor.cz-ghpages
-          jekyll: false
-        env:
-          GH_PAT: ${{ secrets.DEPLOY_PAT }}
+          ACCESS_TOKEN: ${{ secrets.DEPLOY_PAT }}
+          BRANCH: gh-pages
+          FOLDER: _site
+          REPOSITORY_NAME: RoboticsBrno/robotka.robotickytabor.cz-ghpages
+          SINGLE_COMMIT: true
