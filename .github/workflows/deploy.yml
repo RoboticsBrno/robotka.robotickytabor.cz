@@ -24,7 +24,9 @@ jobs:
       - name: Add version
         run: echo "${GITHUB_SHA}" > version
       - name: Install gems
-        run: bundle install
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
       - name: Generate
         run: bundle exec jekyll build
       - name: Deploy
@@ -36,4 +38,4 @@ jobs:
           repo: RoboticsBrno/robotka.robotickytabor.cz-ghpages
           jekyll: false
         env:
-          GITHUB_PAT: ${{ secrets.DEPLOY_PAT }}
+          GH_PAT: ${{ secrets.DEPLOY_PAT }}
