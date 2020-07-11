@@ -143,6 +143,7 @@ name: Kompletace paluby
         "Protáhněte kabel pod deskou"
     url2="/img/guides/DRAT-2.jpg"
     description2=
-        " "
+        "Přišroubujte dráty do svorkovnice<br>
+         Hnědý drát na B-, červený na Bmid a oranžový na B+"
 %}
 
