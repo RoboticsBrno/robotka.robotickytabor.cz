@@ -28,10 +28,10 @@ name: Kompletace celého robota
 {% include image.html
     url="/img/guides/MOTORY_DRATY-1.jpg"
     description=
-        ""
+        "Připojte motory do konektorů M1 a M4"
     url2="/img/guides/MOTORY_DRATY-2.jpg"
     description2=
-        " "
+        ""
 %}
 
 
