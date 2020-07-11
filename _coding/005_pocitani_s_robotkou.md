@@ -20,6 +20,8 @@ void setup() {
 }
 ```
 
+Text uzavíráme do uvozovek a znaky `\n` na konci textu označují přechod na nový řádek. Dokud není řádek kompletní, nic se nevypisuje.
+
 S tímto typem výpisu si však vystačíme málokdy. Ve většině případů potřebujeme vypisovat i nějaké hodnoty a to nám umožňují takzvané formátovací direktivy a volitelné parametry `printf`.
 
 ```cpp
@@ -32,7 +34,7 @@ void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
-    printf("My favourite number is: %i and I am %i years old.", favouriteNumber, age);
+    printf("Moje oblibene cislo je: %i mam %i let.\n", favouriteNumber, age);
 }
 ```
 Formátovací direktivou v tomto příkladu je `%d`.
@@ -47,7 +49,7 @@ Při výpisu **std::string** je potřeba dopsat za jméno proměnné **.c_str()*
 Pokud tak neučiníte Bude vám funkce vypisovat nesmysly, může dokonce "rozbít" celý program.
 ```cpp
     std::string myString = "Hi there";
-    printf("%s", myString.c_str());
+    printf("%s\n", myString.c_str());
 ```
 
 {:.lead}
@@ -66,9 +68,9 @@ void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
-    printf("My favourite number is: %i and I am %i years old.", favouriteNumber, age);
-    printf("Value of pi is: %f", pi);
-    printf("My program says: %s", text.c_str());
+    printf("Moje oblibene cislo je: %i a mam %i let.\n", favouriteNumber, age);
+    printf("Hodnota cisla PI je: %f\n", pi);
+    printf("Muj program rika: %s\n", text.c_str());
 }
 ```
 
@@ -82,7 +84,7 @@ void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
-    printf("This is on first line.\nThis is on second line.");
+    printf("This is on first line.\nThis is on second line.\n");
 }
 ```
 
@@ -110,18 +112,18 @@ void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
-    printf("2 + 3 = %d", 2 + 3);
-    printf("2 - 3 = %d", 2 - 3);
-    printf("2 * 3 = %d", 2 * 3);
-    printf("6 / 5 = %f", 6 / 5);
-    printf("5 % 2 = %d", 5 % 2);
+    printf("2 + 3 = %d\n", 2 + 3);
+    printf("2 - 3 = %d\n", 2 - 3);
+    printf("2 * 3 = %d\n", 2 * 3);
+    printf("6 / 5 = %f\n", 6 / 5);
+    printf("5 % 2 = %d\n", 5 % 2);
 }
 ```
 
 {:.important}
 Proč je na 10. řádku direktiva pro desetinné a nikoliv celé číslo?
 ```cpp
-    printf("6 / 5 = %f", 6 / 5);
+    printf("6 / 5 = %f\n", 6 / 5);
 ```
 {:data-linenos-offset="10"}
 Je to proto, že výsledek `6 / 5` není celé, ale desetinné číslo.
@@ -151,7 +153,7 @@ void setup() {
 
     number = number + 2;
     // number += 2; 
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
 }
 ```
 
@@ -170,15 +172,15 @@ void setup() {
     rkSetup(cfg);
 
     number = number + 10;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
     number = number - 2;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
     number = number / 2;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
     number = number * 2;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
     number = number % 3;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
 }
 ```
 
@@ -193,15 +195,15 @@ void setup() {
     rkSetup(cfg);
 
     number += 10;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
     number -= 2;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
     number /= 2;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
     number *= 2;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
     number %= 3;
-    printf("Result is: %i", number);
+    printf("Vysledek je: %i\n", number);
 }
 ```
 
@@ -241,7 +243,7 @@ void setup() {
     rkSetup(cfg);
 
     while(number < 5) {
-        printf("Hello world!");
+        printf("Hello world!\n");
         number++;
     }
 }
@@ -266,7 +268,7 @@ void setup() {
     rkSetup(cfg);
 
     while(number < 5) { //určení maxima
-        printf("Hello world!");
+        printf("Hello world!\n");
         number++; //určení kroku
     }
 }
@@ -282,7 +284,7 @@ void setup() {
     rkSetup(cfg);
 
     for(int i = 0; i < 5; i++) {
-        printf("Hello world!");
+        printf("Hello world!\n");
     }
 }
 ```

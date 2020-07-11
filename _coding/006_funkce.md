@@ -53,7 +53,7 @@ Příklad 1:
 #include "robotka.h"
 
 void writeHi() {
-    printf("Hi!");
+    printf("Hi!\n");
 }
 
 void setup() {
@@ -71,7 +71,7 @@ void setup() {
 }
 
 void writeHi() {
-    printf("Hi!");
+    printf("Hi!\n");
 }
 ```
 Tento program fungovat nebude, protože funkce a je volána dříve než je definovaná/deklarována.
@@ -87,7 +87,7 @@ void setup() {
 }
 
 void writeHi() {
-    printf("Hi!");
+    printf("Hi!\n");
 }
 ```
 
@@ -203,9 +203,9 @@ void setup() {
 
 void dividable(int i_divident, int i_divisor){
     if(!(i_divident % i_divisor)) {
-        printf("%i is dividable by %i", i_divident, i_divisor);
+        printf("%i je delitelne %i\n", i_divident, i_divisor);
     } else {
-        printf("%i is not dividable by %i", i_divident, i_divisor);
+        printf("%i neni delitelne %i\n", i_divident, i_divisor);
     }
 }
 ```
@@ -239,7 +239,7 @@ bool dividable(int i_divident, int i_divisor){
 int sum(int a, int b); 
 
 void setup() {
-    printf("Sum of 2 and 3 is: %i", sum(2, 3));
+    printf("Soucet 2 + 3 = %i\n", sum(2, 3));
 }
 
 int sum(int a, int b) {
