@@ -83,7 +83,7 @@ name: Podvozek
         " "
     url2="/img/guides/PODVOZEK-18.jpg"
     description2=
-        "Stejným způsobem uděláme i druhou stranu"
+        "Stejným způsobem uděláme i druhou stranu (stále nic nelepíme)"
 %}
 
 {% include image.html
@@ -107,7 +107,7 @@ name: Podvozek
 {% include image.html
     url="/img/guides/PODVOZEK-23.jpg"
     description=
-        " "
+        "Přilepte oba dílky k palubě"
     url2="/img/guides/PODVOZEK-24.jpg"
     description2=
         " "
@@ -159,7 +159,7 @@ name: Podvozek
 {% include image.html
     url="/img/guides/PODVOZEK-35.jpg"
     description=
-        "<div class=\"alert\">Kvůli tlusté matičce je nutné zahloubit dílek 24 pomocí záhlubníku</div>"
+        "<div class=\"alert\">Kvůli tlusté matičce je nutné zahloubit dílek 24 pomocí záhlubníku<br>Vedoucí ti s tím pomůže</div>"
         
     url2="/img/guides/PODVOZEK-36.jpg"
     description2=

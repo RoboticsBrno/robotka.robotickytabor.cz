@@ -7,7 +7,7 @@ name: Motory
 
 
 {% include image.html
-    url="/img/guides/MOTORY-1.jpg"
+    url="/img/guides/MOTORY-1-edit.jpg"
     description=
         "Pokud z desky vystupují malé výčnělky jako na obrázku, odstraňte je pomocí kleští"
     url2="/img/guides/MOTORY-2.jpg"
@@ -52,7 +52,7 @@ name: Motory
 %}
 
 {% include image.html
-    url="/img/guides/MOTORY-11.jpg"
+    url="/img/guides/MOTORY-11-edit.jpg"
     description=
         " "
     url2="/img/guides/MOTORY-12.jpg"
@@ -63,7 +63,7 @@ name: Motory
 {% include image.html
     url="/img/guides/MOTORY-13.jpg"
     description=
-        " "
+        "<div class=\"alert\">Změna: Šroubky prosím vkládejte naopak, tak aby nahoru vylézaly matice</div>"
     url2="/img/guides/MOTORY-14.jpg"
     description2=
         ""
@@ -93,21 +93,21 @@ name: Motory
         " "
     url2="/img/guides/MOTORY-20.jpg"
     description2=
-        " "
+        "Vyšroubujte šroubek"
 %}
 
 {% include image.html
     url="/img/guides/MOTORY-21.jpg"
     description=
-        " "
+        "<div class=\"alert\">Motory v žádném případě nelepit k robotovi - je tam pouze zasunutý</div>"
     url2="/img/guides/MOTORY-22.jpg"
     description2=
-        " "
+        "Zašroubujte šroubek"
 %}
 
 {% include image.html
     url="/img/guides/MOTORY-23.jpg"
     description=
-        " "
+        "Vložte stejným způsobem i druhý motor"
 
 %}

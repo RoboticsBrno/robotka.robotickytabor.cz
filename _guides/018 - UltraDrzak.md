@@ -50,16 +50,13 @@ name: Držáky ultrazvukových senzorů
     url="/img/guides/ULTRAZVUK-8.jpg"
     description=
         " "
-    url2="/img/guides/ULTRAZVUK-9.jpg"
+    url2="/img/guides/ULTRAZVUK-10.jpg"
     description=
         " "
 %}
 
 {% include image.html
-    url="/img/guides/ULTRAZVUK-10.jpg"
-    description=
-        " "
-    url2="/img/guides/ULTRAZVUK-11.jpg"
+    url="/img/guides/ULTRAZVUK-11.jpg"
     description=
         " "
 %}

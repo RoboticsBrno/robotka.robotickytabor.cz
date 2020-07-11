@@ -8,7 +8,7 @@ name: Kompletace podvozku
 {% include image.html
     url="/img/guides/ELEKTRO-1.jpg"
     description=
-        ""
+        "Délka kabelu je cca 30cm"
     url2="/img/guides/ELEKTRO-2.jpg"
     description2=
         " "
@@ -38,7 +38,8 @@ name: Kompletace podvozku
         ""
     url2="/img/guides/ELEKTRO-8.jpg"
     description2=
-        "<div class=\"alert\">Pracujte pod dohledem vedoucího</div>"
+        "Do dírek vložte šroubky pro přesné zapozicování děr a poté destičku zalepte vteřiňákem a vytáhněte šroubky
+<div class=\"alert\">Pracujte pod dohledem vedoucího</div>"
 %}
 
 ---
@@ -46,9 +47,9 @@ name: Kompletace podvozku
 #### Upevnění kartáčků
 
 {% include image.html
-    url="/img/guides/KARTACEK-1.jpg"
+    url="/img/guides/KARTACEK-1-edit.jpg"
     description=
-        ""
+        "Kartáčky zasuňte na místo šipek"
     url2="/img/guides/KARTACEK-2.jpg"
     description2=
         "<div class=\"alert\">Pracujte pod dohledem vedoucího</div>"

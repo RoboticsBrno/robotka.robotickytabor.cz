@@ -13,6 +13,8 @@ Pro sestavení Robotky budeš potřebovat:
 * pájku,
 * lepidlo na dřevo (Herkules).
 
+**Pokud nebude uvedeno jinak, všechny dřevěné dílky se lepí k sobě!**
+
 ##### Lepení dílů k sobě
 Všechny dílky obsahují zámečky, které ti umožní dílky přesně napozicovat a často vyloučí i špatné složení. Díky zámečkům si můžeš zkusit některé kroky prvně "nasucho" bez lepidla a následně po ověření toho, že do sebe zapadají, je můžeš natřít lepidlem.
 

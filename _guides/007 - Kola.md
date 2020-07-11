@@ -62,10 +62,10 @@ name: Kolečka
 {% include image.html
     url="/img/guides/KOLA-15.jpg"
     description=
-        " "
+        "<div class=\"alert\">Nákolky zatím nelepte, zalepíme je později</div>"
     url2="/img/guides/KOLA-16.jpg"
     description2=
-        " "
+        ""
 %}
 
 {% include image.html
@@ -80,18 +80,18 @@ name: Kolečka
 {% include image.html
     url="/img/guides/KOLA-19-edit.jpg"
     description=
-        "Naneste lepidlo na místa, kam ukazují šipky"
-    url2="/img/guides/KOLA-20.jpg"
+        "Naneste vteřinové lepidlo na místa, kam ukazují šipky"
+    url2="/img/guides/KOLA-21.jpg"
     description2=
-        ""
+        "Vytvrďte aktivátorem"
 %}
 
 {% include image.html
-    url="/img/guides/KOLA-21.jpg"
+    url="/img/guides/KOLA-22.jpg"
     description=
-        "Vytvrďte aktivátorem"
-    url2="/img/guides/KOLA-22.jpg"
+        ""
+    url2="/img/guides/KOLA-23.jpg"
     description2=
-        " "
+        "Proces opakujte znovu a vyrobte druhé kolečko"
 %}
 

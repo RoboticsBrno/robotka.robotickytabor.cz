@@ -1,5 +1,5 @@
 ---
-name: Senzory
+name: Senzory a příslušenství
 ---
 ### {{ page.name | escape }}
 

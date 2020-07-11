@@ -91,7 +91,7 @@ name: Kompletace paluby
         ""
     url2="/img/guides/HMATNIK-2.jpg"
     description2=
-        " "
+        "<div class=\"alert\">Dílek pouze vložte, nelepte!</div>"
 %}
 
 ---
@@ -125,7 +125,7 @@ name: Kompletace paluby
         ""
     url2="/img/guides/KRYT_USB-2.jpg"
     description2=
-        " "
+        "Na plastový dílek kápněte vteřiňákem a přileppte jej"
 %}
 
 {% include image.html

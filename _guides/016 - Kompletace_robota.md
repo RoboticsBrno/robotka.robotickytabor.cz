@@ -40,10 +40,10 @@ name: Kompletace celého robota
 {% include image.html
     url="/img/guides/BATERKA-1.jpg"
     description=
-        ""
+        "Připojení baterky"
     url2="/img/guides/BATERKA-2.jpg"
     description2=
-        " "
+        "<div class=\"alert\">Baterku v žádném případě nelepte k robotovi</div>"
 %}
 
 {% include image.html
@@ -58,7 +58,7 @@ name: Kompletace celého robota
 {% include image.html
     url="/img/guides/BATERKA-4.jpg"
     description=
-        ""
+        "Odpjení baterky"
     url2="/img/guides/BATERKA-1.jpg"
     description2=
         " "        
