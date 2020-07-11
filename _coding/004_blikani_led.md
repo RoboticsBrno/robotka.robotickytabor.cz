@@ -10,6 +10,35 @@ layout: coding
 Nyní se podíváme, jak řídit běh programu.
 Program můžeme pozastavit, rozvětvit, či zopakovat.
 
+#### Komentáře
+V průběhu programování je slušnost popsat svůj program pomocí komentářů. Funguje to podobně jako v prodejně aut. Auto sice každý vidí, ale nezná potřebné informace s nim spojené, jako je rychlost, náhon, co je zapotřebí do auta tankovat a tak dále. Komentář je pro nás, robot ho ignoruje. 
+
+Typty komentářů: 
+1. jednořádkové
+Označují se `//` a cokoliv za těmito lomítky až do konce řádku.
+2. víceřádkové
+Pro vložení více řádků do komentáře se používá `/*` značící začátek komentáře a `*/` označuje konec komentáře.
+
+Příklad:
+```cpp
+#include "robotka.h"
+
+void setup() {
+    rkConfig cfg;
+    rkSetup(cfg);
+
+    // jeden radek komentare
+
+    /*
+        vice radku
+        komentaru
+    */
+
+
+}
+```
+
+
 #### Pozastavení
 Začneme funkcí `delay`. Ta pozastaví běh programu na dobu uvedenou v parametru (závorkách). Hodnota je udávána v milisekundách, neboli tisícinách vteřiny.
 
@@ -54,6 +83,8 @@ void setup() {
 
 #### Větvení
 C++ obsahuje dva prostředky pro rozvětvení programu, tou jednodušší a univerzálnější je `if`.
+
+Podobně jako na silnici vidíme před každou odbočkou ceduli s informacemi, kam která odbočka vede, chceme i v programu vidět, co která část dělá. Abychom se v programu neztratili, je opět vhodné napsat do komentáře, co která větev dělá.
 
 ```cpp
 #include "robotka.h"
@@ -126,7 +157,7 @@ void setup() {
     int batteryState = rkBatteryPercent();
 
     // Podle toho, jak moc je nabita baterie, rozsvitime zelenou, zlutou nebo cervenou LED.
-    if(batteryState > 50) {
+    if(batteryState > 50) { // pokud batteryState je vetsi nez 50, viz dalsi sekce
         rkLedBlue(true);
     } else if (batteryState > 25) {
         rkLedYellow(true);
@@ -141,6 +172,9 @@ void setup() {
 Ne vždy nám stačí jednoduché proměnné typu `bool`, pro vytváření složitějších logických výrazů nám slouží _relační operátory_, nebo také _porovnávací_ operátory.
 Mezi tyto operátory patří: `<=`, `<`, `>=`, `>`, které jsou běžně používané i mimo programování.
 Oproti zápisu používanému v matematice je zde rozdíl v operátorech rovná se: `==` a nerovná se: `!=`.
+
+{:.important}
+`=` označuje přiřazení hodnoty do proměnné, například `number =  2`, ale `==` označuje porovnání, jehož výsledkem je pravda (true) nebo nepravda (false).
 
 Pojďme si je ukázat v programu.
 
@@ -238,7 +272,7 @@ void setup() {
 
 #### Logické operátory
 
-Občas nám nestačí ani "složitější" logické výrazy, a proto potřebujeme logické výrazy. K jejich vytváření slouží logické operátory, které jsou: _AND:_`&&`, _OR:_`||` a _NOT:_`!`.
+Občas nám nestačí ani "složitější" logické výrazy, a proto potřebujeme logické výrazy. K jejich vytváření slouží logické operátory, které jsou: _AND:_`&&`, _OR:_`||` a _NOT:_`!`. Význam těchto operátorů odpovídá českým spojkám _AND_ ~ _a_, _OR_ ~ _nebo_, _NOT_ ~ předpona _ne_. Spojka _AND_ říká, že musí platit obě strany podmínky. Naopak u spojky _OR_ stačí, aby platila jen jedna část. Negace _NOT_ říká, že chceme přesně pravý opak podobně jako u české předpony _ne_.
 
 ```cpp
 (true && true) == true

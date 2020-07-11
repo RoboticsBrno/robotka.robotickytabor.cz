@@ -150,27 +150,12 @@ void setup() {
     rkSetup(cfg);
 
     number = number + 2;
+    // number += 2; 
     printf("Result is: %i", number);
 }
 ```
 
-Je zde vidět, že se nám opakuje proměnná `number`, což je přesně ona "opakování", jemuž se snažíme vyhnout. Využijeme proto operátoru, který nám _C++_ nabízí:
-
-```cpp
-#include "robotka.h"
-
-void setup() {
-    int number = 2;
-
-    rkConfig cfg;
-    rkSetup(cfg);
-
-    number += 2;
-    printf("Result is: %i", number);
-}
-```
-
-Stejně to funguje i s ostatními aritmetickými operátory.
+Přičtení hodnoty 2 k proměnné number je možné provést i její zkrácenou verzí `number += 2;`, která je ukázána v předchozím kódu. Stejně tak to platí i pro ostatní operátory, nappříklad vynásobení proměnné number číslem 2: `number *= 2;`.
 
 {:.lead}
 Vyzkoušej si upravit následující kód upravit tak, aby byly použity **přiřazovací operátory**.
