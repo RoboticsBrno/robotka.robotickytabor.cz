@@ -181,7 +181,7 @@ Výchozí parametry jsou použity třeba u zapínání LED.
 Na zapínání LED tedy stačí volat `rkLedBlue()` místo `rkLedBlue(true)`.
 U vypínání je ale stále potřeba psát parametr: `rkLedBlue(false)`.
 
-##### Úkol
+##### Úkol 1
 
 Zkus napsat funkci která do sériové linky vypíše, jestli je zadané číslo beze zbytku dělitelné jiným zadaným číslem.
 

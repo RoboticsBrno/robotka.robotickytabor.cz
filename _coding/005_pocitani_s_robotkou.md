@@ -228,7 +228,7 @@ number--;
 number == 5
 ```
 
-##### Úkol
+##### Úkol 1
 
 {:.lead}
 Vyzkoušej si s pomocí nově nabytých vědomostí napsat cyklus `while`, který vypíše "Hello world!" přesně 5x.
@@ -295,7 +295,7 @@ Všimni si, že parametry for cyklu jsou odděleny středníky a nikoliv čárka
 {:.info}
 Nejběžněji používané jméno řídící proměnné je i, doporučuji ho používat neboť bude jednodušší tvému kódu rozumět. **Toto neplatí u více vnořených for cyklů!**
 
-##### Úkol
+##### Úkol 2
 
 Vyzkoušej si napsat program, který postupně s 250ms zpožděním rozsvítí všechny LED.
 Pro toto použití je zde funkce `rkLedById`, první parametrem této funkce je id LED kterou chceme ovládat, druhým parametrem je stav, který chceme do LED nastavit.
@@ -331,7 +331,7 @@ void setup() {
 }
 ```
 
-##### Úkol
+##### Úkol 3
 
 {:.lead}
 Zkus LED ve stejném pořadí po 2 vteřinách také vypnout.

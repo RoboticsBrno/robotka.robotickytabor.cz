@@ -57,7 +57,7 @@ void setup() {
 }
 ```
 
-##### Úkol
+##### Úkol 1
 
 {:.lead}
 Zkus upravit tento řádek v kódu tak, aby LED svítila dvě vteřiny.
@@ -111,7 +111,7 @@ void setup() {
 Zde využijeme našich znalostí z předchozí kapitoly a vytvoříme si _proměnnou_ `controlVariable` a přiřadíme jí _hodnotu_ `true`.
 Pokud program necháme beze změny, modrá LED se rozsvítí a následně se po jedné a půl vteřině vypne.
 
-##### Úkol
+##### Úkol 2
 
 {:.lead}
 Upravte tento řádek v kódu tak, aby LED svítila pouze půl vteřiny a potom zhasla, pokud bylo stisknuté horní tlačítko.
@@ -129,11 +129,7 @@ void setup() {
     rkConfig cfg;
     rkSetup(cfg);
     
-    // vytvorime si promennou controlVariable a priradime do ni hodnotu true (logicka jednicka)
     bool controlVariable = false;
-    
-    // do promenne buttonState ulozime informaci,
-    // jestli je prave ted stisknute horni tlacitko
     bool buttonState = rkButtonIsPressed(BTN_UP);
 
     rkLedBlue(true);
@@ -218,7 +214,7 @@ void setup() {
 }
 ```
 
-##### Úkol
+##### Úkol 3
 
 {:.lead}
 Zkus přidat do předchozího programu rozsvícení žluté LED v případě, že proměnná `number` bude rovna 4.
