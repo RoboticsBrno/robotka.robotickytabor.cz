@@ -125,7 +125,8 @@ name: Kompletace paluby
         ""
     url2="/img/guides/KRYT_USB-2.jpg"
     description2=
-        "Na plastový dílek kápněte vteřiňákem a přileppte jej"
+        "Na plastový dílek kápněte vteřiňákem a přileppte jej
+<div class=\"alert\">Pozor aby vteřiňák nezatekl do konektoru</div>"
 %}
 
 {% include image.html
@@ -134,7 +135,7 @@ name: Kompletace paluby
         ""
 %}
 
-#### Připojení baterky
+#### Připojení napájení
 
 
 {% include image.html
@@ -146,4 +147,5 @@ name: Kompletace paluby
         "Přišroubujte dráty do svorkovnice<br>
          Hnědý drát na B-, červený na Bmid a oranžový na B+"
 %}
+
 

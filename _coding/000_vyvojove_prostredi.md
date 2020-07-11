@@ -12,10 +12,12 @@ Programy pro robotku budeme psát ve **Visual Studiu Code** a použijeme rozší
 
 #### Visual Studio Code
 Visual Studio Code je editor od firmy Microsoft. Je zdarma a funguje na Windows, Linuxu i Macu. Stáhněte si ho a nainstalujte ho.
-
+ddde
 {% div class="center-align mv-xl" %}
-<a class="waves-effect waves-light btn-large" href="https://code.visualstudio.com/Download" target="_blank">Stáhnout Visual Studio Code</a>
+<a class="waves-effect waves-light btn-large green" href="http://soubory.tabor/VSCode-win.exe" target="_blank">Visual Studio Code (tábor) - WINDOWS</a>
+<a class="waves-effect waves-light btn-large" href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code (oficiální)</a>
 {% enddiv %}
+
 
 
 #### Ovladače pro Robotku
