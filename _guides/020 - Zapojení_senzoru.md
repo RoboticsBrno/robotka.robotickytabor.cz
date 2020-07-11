@@ -48,7 +48,7 @@ name: Senzory a příslušenství
     url="/img/guides/SENZORY-8.jpg"
     description=
         ""
-    url2="/img/guides/SENZORY-9.jpg"
+    url2="/img/guides/SENZORY-9-edit.jpg"
     description2=
         " "
 %}
@@ -73,7 +73,7 @@ name: Senzory a příslušenství
     url="/img/guides/SENZORY-11.jpg"
     description=
         ""
-    url2="/img/guides/SENZORY-12.jpg"
+    url2="/img/guides/SENZORY-12-edit.jpg"
     description2=
         " "
 %}
@@ -102,7 +102,7 @@ name: Senzory a příslušenství
 %}
 
 {% include image.html
-    url="/img/guides/SENZORY-15.jpg"
+    url="/img/guides/SENZORY-15-edit.jpg"
     description=
         ""
     url2="/img/guides/SENZORY-16.jpg"
@@ -145,7 +145,7 @@ name: Senzory a příslušenství
     url="/img/guides/SENZORY-24.jpg"
     description=
         ""
-    url2="/img/guides/SENZORY-25.jpg"
+    url2="/img/guides/SENZORY-25-edit.jpg"
     description2=
         " "
 %}
