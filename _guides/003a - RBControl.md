@@ -40,3 +40,36 @@ name: RBCX
     description2=
         "Nakonec připájejte všechny součástky k desce."
 %}
+
+{% include image.html
+    url="/img/guides/stepdown1.jpg"
+    description=
+        "Nachystejte si spínaný zdroj a konektor v podobě zahnutých pinheadů."
+    url2="/img/guides/stepdown2.jpg"
+    description2=
+        "Nasaďte konektor přesně podle obrázku. Pokud ho nasadíte opačně, součástka se vám potom nevejde na desku."
+%}
+
+{% include image.html
+    url="/img/guides/stepdown3.jpg"
+    description=
+        "Připájejte konektor podle obrázku."
+    url2="/img/guides/stepdown4.jpg"
+    description2=
+        "Spínaný zdroj vložte do desky plošných spojů přesně podle obrázku."
+%}
+
+{% include image.html
+    url="/img/guides/stepdown5.jpg"
+    description=
+        "Připájejte spínaný zdroj k desce z druhé strany."
+    url2="/img/guides/stepdown6.jpg"
+    description2=
+        "Přečnívající konce drátků ucvakněte pomocí štípaček."
+%}
+
+{% include image.html
+    url="/img/guides/stepdown7.jpg"
+    description=
+        "Spínaný zdroj máme připojený k desce."
+%}
