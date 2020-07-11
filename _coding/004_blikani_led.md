@@ -217,7 +217,7 @@ void setup() {
 ##### Úkol
 
 {:.lead}
-Zkus přidat do předchozího programu rozsvícení žluté LED. Proměnná `number` bude rovna 4!
+Zkus přidat do předchozího programu rozsvícení žluté LED v případě, že proměnná `number` bude rovna 4.
 
 {:.spoiler}
 ```cpp
@@ -244,7 +244,7 @@ void setup() {
 {:.lead}
 Uděláme to zajímavější, co myslíš?
 
-Zkus upravit předchozí program tak, aby pro čísla menší než 20 svítila modrá LED, pro čísla větší nebo rovna 20 červená LED a zároveň pro čísla menší nebo rovna 15 svítila žlutá a zároveň pro čísla větší než 25 svítila zelená LED.
+Zkus upravit předchozí program tak, aby pro čísla menší než 20 svítila modrá LED, pro čísla větší nebo rovna 20 červená LED a zároveň pro čísla menší nebo rovna 15 svítila žlutá a pro čísla větší než 25 svítila zelená LED.
 
 {:.spoiler}
 ```cpp
@@ -261,7 +261,8 @@ void setup() {
     } else {
         rkLedRed(true);
     }
-    if(number < 15) {
+
+    if(number <= 15) {
         rkLedYellow(true);
     }
     if(number > 25) {
