@@ -13,8 +13,6 @@ Robotka kromě dálkového ovládání zvládne dělat věci i úplně sama, kdy
 
 Nejprve musíme založit nový projekt, ve kterém budeme programovat.
 
-***TODO: Update obrázků, linků***
-
 {% enddiv %}
 
 {% include image.html
