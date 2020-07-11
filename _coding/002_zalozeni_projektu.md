@@ -20,8 +20,8 @@ Nejprve musíme založit nový projekt, ve kterém budeme programovat.
 {% include image.html
     url="img/guides/demo_prog_00.png"
     description=
-        "Pokud ho ještě nemáte, stáhněte si [ZIP se souborem příkladů pro Robotku](https://github.com/RoboticsBrno/robotka-examples/archive/master.zip)
-        a někam ho rozbalte tak, aby jste ho zase našli.
+        "Stáhněte si [ZIP se souborem příkladů pro Robotku](https://github.com/RoboticsBrno/robotka-examples/archive/master.zip)
+        a někam ho rozbalte tak, abyste ho našli.
 
 <div class=\"important\">Pozor: PlatformIO má chybu - nedokáže pracovat s diakritikou v cestě k projektu. <b>Všechny projekty musí být uloženy v cestě bez háčků a čárek!</b><br>
 Pokud vaše uživatelské jméno obsahuje diakritiku, tak nemůžete používat <i>Plochu</i> ani složku <i>Dokumenty</i>, ale musíte vytvořit například <b><kbd>C:\Robotka\examples</kbd></b>.</div>

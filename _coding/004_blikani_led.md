@@ -62,8 +62,12 @@ void setup() {
     rkConfig cfg;
     rkSetup(cfg);
     
+    // vytvorime si promennou controlVariable a priradime do ni hodnotu true (logicka jednicka)
     bool controlVariable = true;
-    bool buttonState = rkButtonIsPressed();
+    
+    // do promenne buttonState ulozime informaci,
+    // jestli je prave ted stisknute spodni tlacitko
+    bool buttonState = rkButtonIsPressed(BTN_DOWN);
 
     rkLedBlue(controlVariable);
     if(buttonState) {
@@ -95,9 +99,10 @@ void setup() {
     rkSetup(cfg);
 
     bool controlVariable = false;
+    bool buttonState = rkButtonIsPressed(BTN_DOWN);
 
-    rkLedBlue(true);
-    if(controlVariable) {
+    rkLedBlue(controlVariable);
+    if(buttonState) {
         delay(1000);
     }
     delay(500);
@@ -109,7 +114,7 @@ Struktura `if` se dá dále rozvíjet pomocí větvě `else` nebo `else if`.
 Pokud neplatí podmínka v `if`, provede se kód v `else`.
 
 Pokud potřebujeme více podmínek, můžeme je napsat do větvě `else if`.
-Nejprve se porovná podmínka uvedená v `if` a pokud neplatí, postupně projdou větvě `else if`. Pokud i žádná z dalších podmínek neplatí, vykoná se příkaz ve větvi `else`.
+Nejprve se porovná podmínka uvedená v `if` a pokud neplatí, postupně se projdou větvě `else if`. Pokud i žádná z dalších podmínek neplatí, vykoná se příkaz ve větvi `else`.
 
 ```cpp
 #include "robotka.h"
@@ -118,21 +123,24 @@ void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
-    bool controlVariable = false;
+    int batteryState = rkBatteryPercent();
 
-    if(controlVariable) {
+    // Podle toho, jak moc je nabita baterie, rozsvitime zelenou, zlutou nebo cervenou LED.
+    if(batteryState > 50) {
         rkLedBlue(true);
+    } else if (batteryState > 25) {
+        rkLedYellow(true);
     } else {
-        rkLedRed(true);
+         rkLedRed(true);
     }
 }
 ```
 
 #### Relační operátory
 
-Ne vždy nám však stačí pouze jednoduché proměnné typu `bool`, pro vytváření složitějších logických výrazů nám slouží _relační operátory_, nebo také _porovnávací_ operátory.
+Ne vždy nám stačí jednoduché proměnné typu `bool`, pro vytváření složitějších logických výrazů nám slouží _relační operátory_, nebo také _porovnávací_ operátory.
 Mezi tyto operátory patří: `<=`, `<`, `>=`, `>`, které jsou běžně používané i mimo programování.
-Oproti zápisu používanému například v matematice je zde rozdíl v operátorech rovná se: `==` a nerovná se: `!=`.
+Oproti zápisu používanému v matematice je zde rozdíl v operátorech rovná se: `==` a nerovná se: `!=`.
 
 Pojďme si je ukázat v programu.
 
@@ -247,7 +255,7 @@ Občas nám nestačí ani "složitější" logické výrazy, a proto potřebujem
 {:.lead}
 Pojďme si vyzkoušet jejich použití!
 
-Napíšeme si program, který bude dělat následující: pokud proměnná `number` je mezi hodnotami 5 až 20, tak rozsvítí modrou LED.
+Napíšeme si program, který zjistí zbývající energii baterie v procentech a pokud je mezi 10-100%, tak rozsvítí zelenou LED.
 
 ```cpp
 #include "robotka.h"
@@ -267,7 +275,7 @@ void setup() {
 {:.lead}
 Pojďme si samostatně vyzkoušet jejich použití!
 
-Zkus rozšířit předchozí program o tři další rozsahy. 100-76% pro zelenou, 75-26% pro žlutou a 25-0% pro červenou.
+Zkus rozšířit předchozí program o tři další rozsahy. 100-76% pro zelenou, 75-26% pro žlutou a 25-0% pro červenou LED.
 
 {:.spoiler}
 ```cpp
@@ -281,11 +289,9 @@ void setup() {
 
     if(batteryState > 75) {
         rkLedGreen(true);
-    }
-    if((batteryState <= 75) && (batteryState > 25)) {
+    } else if(batteryState > 25) {
         rkLedYellow(true);
-    }
-    if(batteryState <= 25) {
+    } else {
         rkLedRed(true);
     }
 }
