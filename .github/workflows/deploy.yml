@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Install graphicsmagick
-        run: sudo apt-get install graphicsmagick libxml2
+        run: sudo apt-get install graphicsmagick libxml2 libxslt1.1
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7 # Not needed with a .ruby-version file
