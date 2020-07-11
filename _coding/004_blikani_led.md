@@ -100,12 +100,12 @@ void setup() {
     // jestli je prave ted stisknute horni tlacitko
     bool buttonState = rkButtonIsPressed(BTN_UP);
 
-    rkLedBlue(controlVariable);
-    if(buttonState) {
+    rkLedBlue(true);
+    if(controlVariable) {
         delay(1000);
     }
     delay(500);
-    rkLedBlue(false);
+    rkLedBlue(buttonState);
 }
 ```
 Zde využijeme našich znalostí z předchozí kapitoly a vytvoříme si _proměnnou_ `controlVariable` a přiřadíme jí _hodnotu_ `true`.
@@ -114,7 +114,7 @@ Pokud program necháme beze změny, modrá LED se rozsvítí a následně se po 
 ##### Úkol
 
 {:.lead}
-Upravte tento řádek v kódu tak, aby LED svítila pouze půl vteřiny!
+Upravte tento řádek v kódu tak, aby LED svítila pouze půl vteřiny a potom zhasla, pokud bylo stisknuté horní tlačítko.
 
 ```cpp
     bool controlVariable = true;
@@ -128,16 +128,20 @@ Upravte tento řádek v kódu tak, aby LED svítila pouze půl vteřiny!
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
-
+    
+    // vytvorime si promennou controlVariable a priradime do ni hodnotu true (logicka jednicka)
     bool controlVariable = false;
+    
+    // do promenne buttonState ulozime informaci,
+    // jestli je prave ted stisknute horni tlacitko
     bool buttonState = rkButtonIsPressed(BTN_UP);
 
-    rkLedBlue(controlVariable);
-    if(buttonState) {
+    rkLedBlue(true);
+    if(controlVariable) {
         delay(1000);
     }
     delay(500);
-    rkLedBlue(false);
+    rkLedBlue(buttonState);
 }
 ```
 
