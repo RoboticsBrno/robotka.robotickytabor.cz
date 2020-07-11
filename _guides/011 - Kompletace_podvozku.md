@@ -20,7 +20,7 @@ name: Kompletace podvozku
         ""
     url2="/img/guides/ELEKTRO-4.jpg"
     description2=
-        " "
+        "Hnědý drát na MINUS, červený na MID a oranžový na PLUS"
 %}
 
 {% include image.html
