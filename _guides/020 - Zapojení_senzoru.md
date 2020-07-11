@@ -6,6 +6,7 @@ name: Senzory a příslušenství
 #### Zapojení RGB LED pásku 
 
 - 1x RGB LED pásek
+- 1x třípinový pinhead
 - 1x třípinový kabel
 
 {% include image.html
