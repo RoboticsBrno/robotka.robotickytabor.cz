@@ -21,7 +21,7 @@ name: Senzory a příslušenství
 {% include image.html
     url="/img/guides/SENZORY-2.jpg"
     description=
-        ""
+        "Prostřední pin musí být připájen na kontakt 4-7VDC, krejní piny na DIN a GND"
     url2="/img/guides/SENZORY-3.jpg"
     description2=
         " "
