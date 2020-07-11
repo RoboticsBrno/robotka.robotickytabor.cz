@@ -5,244 +5,131 @@ layout: coding
 
 # {{ page.title | escape }}
 
-#### Definice vs Deklarace
-Předtím, než zažneme s funkcemi, si musíme vysvětlit pár pojmů.
-V _C++_ se rozlišuje mezi **deklarací** a **definicí**.
-**Deklarace** pouze říká, že proměnná/funkce existuje a jak vypadá.
-**Definice** přímo určuje jakou hodnotu bude proměnná na začátku mít, nebo co bude funkce dělat.
-
-```cpp
-int a; //declaration
-int b = 10;//definition
-```
-
-{:.important}
-Když robot "čte" program, dělá tak od vrchu dolů, což může být problém.
-
-Příklad 1:
-```cpp
-#include "robotka.h"
-
-
-void setup() {
-    int a = 4;
-    rkLedById(a, true);
-}
-```
-Program výše bude fungovat bez problému.
-
-Příklad 2:
-```cpp
-#include "robotka.h"
-
-
-void setup() {
-    #include "robotka.h"
-
-    rkLedById(a, true);
-    int a = 4;
-}
-```
-
-Tento program fungovat nebude, protože proměnná a je použita dříve než je definována.
-
-V těchto dvou příkladech to může vypadat jednoduše, ale u funkcí to nemusí být tak zřejmé.
-
-Příklad 1:
-```cpp
-#include "robotka.h"
-
-void writeHi() {
-    printf("Hi!\n");
-}
-
-void setup() {
-    writeHi();
-}
-```
-Tento program bude fungovat bez problému.
-
-Příklad 2:
+#### Motivace
+Doteď jsme jednotlivé problémy řešili zadáním několika řádků s příkazy. Například pro blikání s LED jsme použili:
 ```cpp
 #include "robotka.h"
 
 void setup() {
-    writeHi();
+    rkConfig cfg;
+    rkSetup(cfg);
+    while(1){
+        rkLedBlue(true);
+        delay(500);
+        rkLedBlue(false);
+        delay(500);
+    }
 }
 
-void writeHi() {
-    printf("Hi!\n");
-}
 ```
-Tento program fungovat nebude, protože funkce a je volána dříve než je definovaná/deklarována.
-
-Příklad 3:
+Teď už víme, že pro rozblikání LED stačí provést opakovaně 4 dílčí kroky: rožni LED, počkej 0,5s, zhasni LED, počkej 0,5s. Pokud bychom se ovšem rozhodli, provést blikání na různých místech v programu podle hodnoty v proměnné, museli bychom tyto kroky rozkopírovat do všech těchto míst. Program by následně vypadal takto:  
 ```cpp
 #include "robotka.h"
 
-void writeHi();
-
 void setup() {
-    writeHi();
-}
+    rkConfig cfg;
+    rkSetup(cfg);
 
-void writeHi() {
-    printf("Hi!\n");
-}
-```
+    int pocet_bliknuti = 1;
 
-Tento program fungovat bude, i přestože funkce je definovaná až potom co je volána, protože je před tím, než je volána alespoň deklarovaná.
+    if(LED == 1){   // blikne 1x
+        rkLedBlue(true);
+        delay(500);
+        rkLedBlue(false);
+        delay(500);
+    }
+    else if(LED == 1){ // blikne 2x
+        // 1. bliknuti
+        rkLedGreen(true);
+        delay(500);
+        rkLedGreen(false);
+        delay(500);
 
-#### Funkce bez parametrů a návratové hodnoty
-
-Nejjednoduššími funkcemi jsou funkce bez parametrů a návratové hodnoty.
-Jejich předpis vypadá následovně:
-```cpp
-void name(){
-    //code here
-}
-```
-Jako obvykle si jméno volíme sami.
-
-#### Parametry funkce
-
-Důležitou součástí funkcí jsou parametry.
-Parametry jsou hodnoty, které funkci předáváme.
-Píší se do závorky za jméno funkce ve formátu deklarace proměnné.
-Příklad je upravená verze kódu pro postupné zapínání/vypínání LED.
-
-```cpp
-#include "robotka.h"
-
-void showLoading(bool i_state, bool i_downward, int i_delay);
-
-void setup() {
-    showLoading(true, false, 250);
-}
-
-void showLoading(bool i_state, bool i_downward, int i_delay) {
-    if(i_downward){
-        for(int i = 4; i > 0; i--) {
-            rkLedById(i, i_state);
-            delay(i_delay);
-        }
-    } else {
-        for(int i = 0; i < 5; i++) {
-            rkLedById(i, i_state);
-            delay(i_delay);
-        }
+        // 2. bliknuti
+        rkLedGreen(true);
+        delay(500);
+        rkLedGreen(false);
+        delay(500);
     }
 }
 ```
-
-Důvod pro používání krásně demonstruje předchozí příklad.
-Funkce nám umožní rozdělit kód na menší, lépe srozumitelné bloky. 
-Nemusíme se tedy při jejich psaní starat o zbytek kódu, ale staráme se pouze o kód funkce.
-Další výhodou je opakovatelnost - funkce můžeme využít víc jak jednou, což je výhoda, neboť je mnohem jednodušší opakovat jeden řádek kódu místo spousty dalších.
-
-#### Výchozí hodnoty parametrů
-
-Parametrům lze v deklaraci přiřadit výchozí hodnotu, díky tomu již nemusím daný parametr při volání funkce vyplňovat.
-
+Program je poměrně dlouhý a přitom by bylo možné zapsat ho pomocí funkcí například takto:
 ```cpp
 #include "robotka.h"
 
-void showLoading(bool i_state, bool i_downward = false, int i_delay = 255);
-
-void setup() {
-    showLoading(true);
-    showLoading(false);
+void blikni(){ // vytvoření funkce na blikani
+    rkLedBlue(true);
+    delay(500);
+    rkLedBlue(false);
+    delay(500);
 }
 
-void showLoading(bool i_state, bool i_downward, int i_delay) {
-    if(i_downward){
-        for(int i = 4; i > 0; i--) {
-            rkLedById(i, i_state);
-            delay(i_delay);
-        }
-    } else {
-        for(int i = 0; i < 5; i++) {
-            rkLedById(i, i_state);
-            delay(i_delay);
-        }
+void setup() {
+    rkConfig cfg;
+    rkSetup(cfg);
+
+    int pocet_bliknuti = 1;
+
+    if(LED == 1){   // blikne 1x
+        blikni();
+    }
+    else if(LED == 1){ // blikne 2x
+        // 1. bliknuti
+        blikni();
+
+        // 2. bliknuti
+        blikni();
     }
 }
 ```
+Hlavním úkolem funkcí je zabalit náš kód a nehledě na jeho délce (počtu příkazů), stačí použít pouze jméno této funkce a kulatých závorek.
 
-Tím, že jsme nastavili výchozí parametry jsme si potenciálně ušetřili vypisování dvou parametrů při každém volání.
-Není vhodné nastavovat všem parametrům výchozí hodnotu, čiňte tak jenom u parametrů jejichž hodnota by byla ve většině případů stejná.
+#### Definice
+Abychom mohli funkce vůbec používat, neboli volat, je důležité si ji vytvořit (definovat). Definice určuje, zda po zavolání dané funkce dostaneme nějaký výsledek (návratová hodnota) nebo zda pro očekává nějaké hodnoty pro svoji činnost (parametry). Funkci ze potřebí definovat před funkcí setup(), která se nachází v našem programu. Zjednodušeně vypadá definice funkce následovně:
 
-{:.important}
-Jakmile nastavíte jednomu parametru výchozí hodnotu, všechny parametry, které následují za ním ji musí mít nastavenou také.
-Jinak by počítač nepoznal, která hodnota náleží kterému parametru!
-
-{:.info}
-Výchozí parametry jsou použity třeba u zapínání LED.
-Na zapínání LED tedy stačí volat `rkLedBlue()` místo `rkLedBlue(true)`.
-U vypínání je ale stále potřeba psát parametr: `rkLedBlue(false)`.
-
-##### Úkol 1
-
-Zkus napsat funkci která do sériové linky vypíše, jestli je zadané číslo beze zbytku dělitelné jiným zadaným číslem.
-
-Parametry:
-* dělenec
-* dělitel
-    * výchozí hodnota 2 pro zjišťování sudosti a lichosti 
-
-{:.spoiler}
 ```cpp
-#include "robotka.h"
-
-void dividable(int i_divident, int i_divisor = 2);
-
-void setup() {
-    dividable(6, 3);
-    dividable(6);
-}
-
-void dividable(int i_divident, int i_divisor){
-    if(!(i_divident % i_divisor)) {
-        printf("%i je delitelne %i\n", i_divident, i_divisor);
-    } else {
-        printf("%i neni delitelne %i\n", i_divident, i_divisor);
-    }
+návratový_typ nazev_funkce( seznam_parametru ){ // vytvoření funkce na blikani
+    ...nas program...
 }
 ```
 
-#### Funkce s návratovou hodnotou
+Jednotlivé části jsou popsány v kapitolách níže.
 
-Občas se nám hodí, když funkce může vrátit nějaký výsledek, kupříkladu pokud bychom chtěli dosazovat do nějakého vzorce.
 
-Tyto funkce potřebují udat datový typ, který budou vracet. Poslední příkaz každé větve potom bude `return` následované proměnnou jejíž hodnotu chceme vracet.
+#### Návratová hodnota
+Návratová hodnota určuje, zda po provedení naší funkce dostaneme nějaký výsledek nebo ne. Například můžeme mít funkci `secti()`, u které budeme očekávat návratovou hodnotu a to typu celé číslo (int). Naopak u funkce `vypis_cislo()` nebudeme žádnou hodnotu očekávat, protože chceme aby pouze něco vypsala.
 
+Návratové typy jsou stejné, jaké jsme doteď používali u proměnných a to: `int` (celé číslo), `float` (desetinné číslo), `char` (znak) a `std::string`. U funkcí ovšem dostáváme jeden nový typ a to `void`. Tento typ nám říká, že nečekáme žádný výsledek po dokončení funkce.
+
+Příklad 1: Funkce typu `void` pro bliknutí:
 ```cpp
-#include "robotka.h"
-
-bool dividable(int i_divident, int i_divisor = 2);
-
-void setup() {
-    bool test;
-    test = dividable(6, 3);
-}
-
-bool dividable(int i_divident, int i_divisor){
-    bool out = false;
-    out = !(i_divident % i_divisor);
-    return out;
+void blikni(){ // vytvoření funkce na blikani
+    rkLedBlue(true);
+    delay(500);
+    rkLedBlue(false);
+    delay(500);
 }
 ```
 
+#### Parametry
+Pokud chceme zadat funkci nějaké hodnoty, se kterými chceme, aby pracovala, tak použijeme parametry. Funkce může mít parametry, ale také nemusí, záleží jak ji nadefinujeme. Například pro funkci, která má sčítat 2 celých čísel, u které čekáme návratový typ `int` může být definovaná:
+1. bez parametrů
 ```cpp
-#include "robotka.h"
+int secti(){ // vytvoření funkce na blikani
+    int cislo_1 = 10; 
+    int cislo_2 = 3;
 
-int sum(int a, int b); 
-
-void setup() {
-    printf("Soucet 2 + 3 = %i\n", sum(2, 3));
-}
-
-int sum(int a, int b) {
-    return a + b;
+    return cislo_1 + cislo_2;
 }
 ```
+
+2. s parametry
+```cpp
+int secti(int cislo_1, int cislo_2){ // vytvoření funkce na blikani
+    return cislo_1 + cislo_2;
+}
+```
+
+Rozdíl je v tom, že v první uvedené sčítací funkci dostaneme při každém volání číslo 13, zatím co u druhého příkladu je možné tyto dvě hodnoty zadat sám. Pokud tedy budu chtí sečíst číslo 5 a 9, zavolám funkci takto `int secti(5,9);` a tak dále. 
+
+Mohli jste si povšimnout nového slova `return`. Tento příkaz ukončí funkci a navrátí výsledek, který mu předáme. Například `return 5` vrátí číslo 5. Zjednodušeně si můžeme představit, že na místě, kde voláme funkci, například s celočíselnou návratovou hodnotou, bude nahrazena tato funkce za danou hodnotu. Příkladem může být například výraz `int soucet = secti(5,8);` bude nahrazeno za `int soucet = 13;`.
