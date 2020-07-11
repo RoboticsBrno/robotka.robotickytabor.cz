@@ -177,7 +177,7 @@ function onScrollFinished() {
     for(var i = 1; i < len; ++i) {
         var el = list[i];
         var bounding = el.getBoundingClientRect();
-        if (Math.abs(bounding.top) < Math.abs(minPos) && bounding.top < 0) {
+        if (bounding.top > minPos && bounding.top <= 10) {
             minElement = el;
             minPos = bounding.top;
         }
@@ -186,7 +186,7 @@ function onScrollFinished() {
     var targetHref = encodeURIComponent(minElement.id.toLowerCase());
     for ( var i = 0; i != allLinks.length; i++ ) {
         allLinks[i].classList.remove("sidenavHighglight");
-        if (allLinks[i].href.toLowerCase().endsWith(targetHref.toLowerCase())) {
+        if (allLinks[i].href.toLowerCase().endsWith("#" + targetHref.toLowerCase())) {
             allLinks[i].classList.add("sidenavHighglight");
             guideScroller.center(allLinks[i]);
         }
