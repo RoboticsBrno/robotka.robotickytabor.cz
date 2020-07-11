@@ -98,8 +98,6 @@ figcaption {
 }
 figure {
     margin: 0;
-    background: lighten(#26547c, 60%);
-    width: 100%;
     &.responsive {
         max-width: 50%;
         max-height: auto;

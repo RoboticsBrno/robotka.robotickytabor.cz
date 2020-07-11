@@ -1,8 +1,8 @@
 
 {% if include.url2 %}
-<div class="row" style="display: flex; flex: wrap;">
+<div class="row">
     {% assign counter_section = counter_section | plus: 1 %}
-    <div class="col l6 s12" style="display: flex; flex-grow: 0;">
+    <div class="col l6 s12">
         <figure class="figure">
             <a data-fancybox="gallery" href="{{ include.url | relative_url }}">
                 <img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/' | append: include.url | relative_url }}" alt=""
@@ -15,10 +15,10 @@
         </figure>
     </div>
     {% assign counter_section = counter_section | plus: 1 %}
-    <div class="col l6 s12" style="display: flex; flex-grow: 0;">
+    <div class="col l6 s12">
         <figure class="figure">
             <a data-fancybox="gallery" href="{{ include.url2 | relative_url }}">
-                <img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/' | append: include.url2 | relative_url }}" alt=""
+                <img src="{{ '/img/empty.gif' | relative_url }}" data-echo="{{ '/thumb/' | append: include.url2 | relative_url }}" alt="" 
                     class="responsive-img{% if include.url contains '.png' %} crisp{%endif%}">
             </a>
             <figcaption>
