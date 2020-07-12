@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% assign items = site.data.collectionMenus.assignments %}
+<div class="sidenav">
+    {% for it in items %}
+        <a href="{{ it.doc.url | relative_url }}">{{ forloop.index }}. {{ it.doc.title }}</a>
+        {% if page.url == it.doc.url %}
+            {% for c in it.children %}
+                <a href="#{{ c.label }}" style="margin-left: 18px; font-size: 80%"> {{ c.name }}</a>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+
+
+    <a style="margin: 32px 12px 0px 12px; padding: 0 2rem;" class="btn-small" href="https://roboticsbrno.github.io/RB3204-RBCX-Robotka-library/modules.html">Dokumentace</a>
+    <a style="margin: 8px 12px 24px 12px; padding: 0 2rem;" class="btn-small green darken-1" href="https://github.com/RoboticsBrno/robotka-examples/archive/master.zip">Příklady</a>
+
+</div>
+
+
+<div class="bgwrap">
+    <div class="main">
+        <div class="container con-guide coding-container{% unless page.fullwidth %} coding-container-narrow{% endunless %}">
+            {{ content }}
+
+            <div class="coding-container-narrow mv-xxl">
+                <h1> </h1>
+                {% for it in items %}
+                    {% assign next = items[forloop.index] %}
+                    {% if page.url == it.doc.url and next %}
+                        <h5 style="font-weight:400">Další kapitola: <a href="{{ next.doc.url | relative_url }}">{{next.doc.title}}</a></h5>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
