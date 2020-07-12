@@ -3,7 +3,7 @@ name: Kompletace paluby
 ---
 ### {{ page.name | escape }}
 
-#### Zpevnění paluby
+<!-- #### Zpevnění paluby
 {% include image.html
     url="/img/guides/VYZTUHA-1.jpg"
     description=
@@ -35,7 +35,7 @@ name: Kompletace paluby
     url="/img/guides/VYZTUHA-7.jpg"
     description=
         ""
-%}
+%} -->
 
 #### Sloupky pro RBCX
 {% include image.html
