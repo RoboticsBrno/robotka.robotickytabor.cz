@@ -17,6 +17,8 @@ collections:
       output: true
   inspiration:
       output: true
+  assignments:
+      output: true
 
 #plugins:
 #   - jekyll-minifier
