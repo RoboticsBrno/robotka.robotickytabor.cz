@@ -54,12 +54,12 @@ Při skládání nasucho si všimni, které plochy se sebe dotýkají - to jsou 
         "<div class=\"alert\">Pouze ukázka NELEPIT!</div>"
     url2="/img/guides/KOUTAK-2.jpg" 
     description2=
-        "Správný koutový spoj <div class=\"alert\">Pouze ukázka NELEPIT!</div>"
+        "<div class=\"alert\">Správný koutový spoj. Pouze ukázka NELEPIT!</div>"
 %}
 
 {% include image.html 
     url="img/guides/PODVOZEK-16.jpg" 
     description=
-        "Pokud vým vyteče moc lepidla, odstraňte ho pomocí kapesníku <div class=\"alert\">Pouze ukázka NELEPIT!</div>"
+        "<div class=\"alert\">Pokud vám vyteče moc lepidla, odstraňte ho pomocí kapesníku. Pouze ukázka NELEPIT!</div>"
 
 %}
