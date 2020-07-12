@@ -71,6 +71,8 @@ name: Kompletace paluby
         " "
 %}
 
+Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód GU3ODYGU, dostaneš frfník.
+
 {% include image.html
     url="/img/guides/SVETLOVOD-9.jpg"
     description=

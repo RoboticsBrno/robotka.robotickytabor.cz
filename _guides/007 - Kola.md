@@ -59,6 +59,8 @@ name: Kolečka
         "Vytvrďte aktivátorem "
 %}
 
+Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód VS478A2D, dostaneš frfník.
+
 {% include image.html
     url="/img/guides/KOLA-15.jpg"
     description=

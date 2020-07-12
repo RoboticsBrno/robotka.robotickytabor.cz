@@ -55,6 +55,8 @@ PlatformIO IDE je rozšíření pro VSCode, které umožňuje programování vel
         "... a také _PlatformIO Core_. Na pomalejším internetovém připojením to bude chvíli trvat."
  %}
 
+ Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód 55NIJNYW, dostaneš frfník.
+
  {% include image.html
     url="img/guides/code_05.png"
     description=

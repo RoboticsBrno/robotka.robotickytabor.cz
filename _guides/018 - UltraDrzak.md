@@ -60,3 +60,5 @@ name: Držáky ultrazvukových senzorů
     description=
         " "
 %}
+
+Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód 2T28JZP3, dostaneš frfník.
