@@ -27,10 +27,10 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
 {% include image.html
     url="/img/guides/PALUBA-5.jpg"
     description=
-        "Přilepte díl R26"
+        "<div class=\"alert\">Přilepte díl R26. POZOR!! Palubní deska musí být otočena popiskem dolů!</div>"
     url2="/img/guides/PALUBA-6.jpg"
     description2=
-        " "
+        ""
 %}
 
 {% include image.html
@@ -57,7 +57,7 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
         " "
     url2="/img/guides/PALUBA-12.jpg"
     description2=
-        "Díl L26 přilepte za pomoci dílu L10 stejně jako na druhé straně (nelepte jej)"
+        "Díl L26 přilepte za pomoci díku L10 stejně jako na druhé straně (nelepte jej)"
 %}
 
 {% include image.html

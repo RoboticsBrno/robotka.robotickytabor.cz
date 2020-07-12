@@ -51,15 +51,15 @@ Při skládání nasucho si všimni, které plochy se sebe dotýkají - to jsou 
 {% include image.html 
     url="img/guides/KOUTAK-1.jpg" 
     description=
-        ""
+        "<div class=\"alert\">Pouze ukázka NELEPIT!</div>"
     url2="/img/guides/KOUTAK-2.jpg" 
     description2=
-        "Správný koutový spoj"
+        "Správný koutový spoj <div class=\"alert\">Pouze ukázka NELEPIT!</div>"
 %}
 
 {% include image.html 
     url="img/guides/PODVOZEK-16.jpg" 
     description=
-        "Pokud vým vyteče moc lepidla, odstraňte ho pomocí kapesníku"
+        "Pokud vým vyteče moc lepidla, odstraňte ho pomocí kapesníku <div class=\"alert\">Pouze ukázka NELEPIT!</div>"
 
 %}
