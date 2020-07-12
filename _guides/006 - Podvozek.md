@@ -8,10 +8,10 @@ name: Podvozek
 {% include image.html
     url="/img/guides/PODVOZEK-1.jpg"
     description=
-        " "
+        "<div class=\"alert\">Ujistěte se, že dílky máte popisky nahoru!</div>"
     url2="/img/guides/PODVOZEK-2.jpg"
     description2=
-        "<div class=\"alert\">Dílky nelepíme, pouze skládáme nasucho! Přilepíme je později.</div>"
+        "<div class=\"alert\">Kromě dílků 4R dílky nelepíme, pouze skládáme nasucho! Přilepíme je později.</div>"
 %}
 
 {% include image.html
