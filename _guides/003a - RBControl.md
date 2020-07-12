@@ -23,8 +23,6 @@ name: RBCX
         "Ještě jednou si zkontrolujte, že součástky máte v desce zasunuté přesně takto. Pozor na správné otočení (polaritu) kondenzátorů, pozor na orientaci modré patice a bílých konektorů. Vše si důkladně zkontrolujte."
 %}
 
-Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód VLEC5F6C, dostaneš frfník.
-
 {% include image.html
     url="/img/guides/PCB5.jpg"
     description=
