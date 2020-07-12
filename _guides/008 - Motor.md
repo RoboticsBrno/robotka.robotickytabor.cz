@@ -33,8 +33,6 @@ name: Motory
         " "
 %}
 
-Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód ZH6IB7QD, dostaneš frfník.
-
 {% include image.html
     url="/img/guides/MOTORY-7.jpg"
     description=
