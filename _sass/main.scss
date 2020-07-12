@@ -234,6 +234,12 @@ hr {
     i {
         font-size: 40px !important;
     }
+
+    img {
+        max-height: 48px;
+        vertical-align: middle;
+        margin-right: 8px
+    }
 }
 
 @media (max-width: 600px) {
@@ -256,6 +262,10 @@ hr {
         font-size: 20px !important;
         i {
             font-size: 24px !important;
+        }
+
+        img {
+            max-height: 32px;
         }
     }
 }
