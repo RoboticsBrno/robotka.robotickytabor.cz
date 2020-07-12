@@ -22,7 +22,7 @@ void setup() {
 }
 
 ```
-Teď už víme, že pro rozblikání stačí provést opakovaně 4 dílčí kroky: rožni LED, počkej 0,5s, zhasni LED, počkej 0,5s. Pokud bychom se ovšem rozhodli, provést blikání na různých místech v programu podle hodnoty v proměnné, museli bychom tyto kroky vložit do všech těchto míst. Program by následně vypadal takto:  
+Teď už víme, že pro rozblikání stačí provést opakovaně 4 dílčí kroky: rozsviť LED, počkej 0,5 s, rozsviť LED, počkej 0,5 s. Pokud bychom se ovšem rozhodli, provést blikání na různých místech v programu podle hodnoty v proměnné, museli bychom tyto kroky vložit do všech těchto míst. Program by následně vypadal takto:  
 ```cpp
 #include "robotka.h"
 

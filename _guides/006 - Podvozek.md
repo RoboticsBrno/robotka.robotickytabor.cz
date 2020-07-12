@@ -20,13 +20,13 @@ name: Podvozek
         ""
     url2="/img/guides/PODVOZEK-4.jpg"
     description2=
-        " "
+        "Poté co jsme si dílky vyzkoušeli složit nasucho přilepíme pouze dílky 4L a 4R"
 %}
 
 {% include image.html
     url="/img/guides/PODVOZEK-5.jpg"
     description=
-        "Poté co jsme si dílky vyzkoušeli složit nasucho přilepíme pouze dílky 4L a 4R"
+        ""
     url2="/img/guides/PODVOZEK-6.jpg"
     description2=
         " "
