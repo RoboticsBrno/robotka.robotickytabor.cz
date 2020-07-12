@@ -86,8 +86,6 @@ name: Podvozek
         "Stejným způsobem uděláme i druhou stranu (stále nic nelepíme)"
 %}
 
-Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód KOCCP41R, dostaneš frfník.
-
 {% include image.html
     url="/img/guides/PODVOZEK-19.jpg"
     description=
