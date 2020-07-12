@@ -3,6 +3,40 @@ name: Kompletace paluby
 ---
 ### {{ page.name | escape }}
 
+<!-- #### Zpevnění paluby
+{% include image.html
+    url="/img/guides/VYZTUHA-1.jpg"
+    description=
+        ""
+    url2="/img/guides/VYZTUHA-2.jpg"
+    description2=
+        ""
+%}
+
+{% include image.html
+    url="/img/guides/VYZTUHA-3.jpg"
+    description=
+        ""
+    url2="/img/guides/VYZTUHA-4.jpg"
+    description2=
+        "<div class=\"alert\">Dílek pouze vložte, nelepte!</div>"
+%}
+
+{% include image.html
+    url="/img/guides/VYZTUHA-5.jpg"
+    description=
+        "Nalepte pouze dílek 30"
+    url2="/img/guides/VYZTUHA-6.jpg"
+    description2=
+        ""
+%}
+
+{% include image.html
+    url="/img/guides/VYZTUHA-7.jpg"
+    description=
+        ""
+%} -->
+
 #### Sloupky pro RBCX
 {% include image.html
     url="/img/guides/SLOUP-1.jpg"
@@ -70,6 +104,8 @@ name: Kompletace paluby
     description2=
         " "
 %}
+
+Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód GU3ODYGU, dostaneš frfník.
 
 {% include image.html
     url="/img/guides/SVETLOVOD-9.jpg"

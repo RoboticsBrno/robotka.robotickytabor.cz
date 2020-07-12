@@ -176,3 +176,5 @@ _Následují doplňující informace, pokud vám vše funguje, můžete je přes
 
 
 {% enddiv %}
+
+Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód KMS9Y22C, dostaneš frfník.
