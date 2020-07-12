@@ -32,7 +32,6 @@ Teď si sestavíme palubu robota (horní plochu), na kterou budeme poté připev
     description2=
         ""
 %}
-Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód KM4QE2PG, dostaneš frfník.
 
 {% include image.html
     url="/img/guides/PALUBA-7.jpg"

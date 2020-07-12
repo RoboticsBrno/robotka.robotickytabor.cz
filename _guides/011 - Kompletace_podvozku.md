@@ -54,5 +54,3 @@ name: Kompletace podvozku
     description2=
         "<div class=\"alert\">Pracujte pod dohledem vedoucího</div>"
 %}
-
-Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód EIBTP98W, dostaneš frfník.

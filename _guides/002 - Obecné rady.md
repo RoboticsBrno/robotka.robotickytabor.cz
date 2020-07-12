@@ -66,5 +66,3 @@ Při skládání nasucho si všimni, které plochy se sebe dotýkají - to jsou 
 <div class=\"alert\">Pouze ukázka, NELEPIT!</div>"
 
 %}
-{:.grey-text}
-Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód PUFOSC06, dostaneš frfník.

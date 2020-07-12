@@ -39,8 +39,6 @@ name: Battery pack
         ""
 %}
 
-Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód 4YALPPUO, dostaneš frfník.
-
 {% include image.html
     url="/img/guides/BATERKA-38.jpg"
     description=
