@@ -63,7 +63,7 @@ name: Motory
 {% include image.html
     url="/img/guides/MOTORY-13.jpg"
     description=
-        "<div class=\"alert\">Změna: Šroubky prosím vkládejte naopak, tak aby nahoru vylézaly matice</div>"
+        ""
     url2="/img/guides/MOTORY-14.jpg"
     description2=
         ""
