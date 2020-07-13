@@ -68,7 +68,7 @@ se neprovede nikdy, protože je podmínka nesplněna. S tímto typem podmínky p
 - `>` větší než
 - `<=` menší rovno než
 - `>=` větší rovno než
-
+ 
 {:.important}
 `=` označuje přiřazení hodnoty do proměnné, například `promenna =  2`, ale `==` označuje porovnání, jehož výsledkem je pravda (true) nebo nepravda (false).
 
