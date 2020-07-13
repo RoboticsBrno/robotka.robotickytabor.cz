@@ -11,18 +11,14 @@ Jsou situace, kdy potřebujeme nějaký kód opakovat. Například když jdeme p
 ```cpp
 #include "robotka.h"
 
-void blikni(){
-    rkLedBlue(true);
-    delay(500);
-    rkLedBlue(false);
-    delay(500);
-}
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
-    blikni();
+    rkLedBlue(true);
+    delay(500);
+    rkLedBlue(false);
+    delay(500);
 }
 ```
 
@@ -31,20 +27,24 @@ Pokud bychom chtěli bliknout 3x, tak napíšeme něco takovéhoto:
 ```cpp
 #include "robotka.h"
 
-void blikni(){
-    rkLedBlue(true);
-    delay(500);
-    rkLedBlue(false);
-    delay(500);
-}
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
-    blikni();
-    blikni();
-    blikni();
+    rkLedBlue(true);
+    delay(500);
+    rkLedBlue(false);
+    delay(500);
+
+    rkLedBlue(true);
+    delay(500);
+    rkLedBlue(false);
+    delay(500);
+
+    rkLedBlue(true);
+    delay(500);
+    rkLedBlue(false);
+    delay(500);
 }
 ```
 
@@ -63,20 +63,17 @@ Jednoduchým příkladem může být například blikání s LED, bliknout s LED
 ```cpp
 #include "robotka.h"
 
-void blikni(){
-    rkLedBlue(true);
-    delay(500);
-    rkLedBlue(false);
-    delay(500);
-}
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
     int cislo = 1000;
     while(cislo < 100){
-        blikni();
+        rkLedBlue(true);
+        delay(500);
+        rkLedBlue(false);
+        delay(500);
+
         cislo -= 1;
     }
 }
@@ -99,19 +96,15 @@ Následující program ukazuje, jak bliknout 10x s LED.
 ```cpp
 #include "robotka.h"
 
-void blikni(){
-    rkLedBlue(true);
-    delay(500);
-    rkLedBlue(false);
-    delay(500);
-}
-
 void setup() {
     rkConfig cfg;
     rkSetup(cfg);
 
     for(int pocet_bliku = 0; pocet_bliku < 10; pocet_bliku++){
-        blikni();
+        rkLedBlue(true);
+        delay(500);
+        rkLedBlue(false);
+        delay(500);
     }
 }
 ```

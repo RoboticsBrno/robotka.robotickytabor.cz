@@ -73,7 +73,7 @@ se neprovede nikdy, protože je podmínka nesplněna. Podle ukázky výše je pa
 `=` označuje přiřazení hodnoty do proměnné, například `promenna =  2;`, ale `==` označuje porovnání, jehož výsledkem je pravda `true` nebo nepravda `false`.
 
 {:.important}
-Výsledek výrazu, který je v proměnné, reprezentuje hodnotu pravda `true` nebo nepravdu `false`.
+Výsledek výrazu v proměnné nabývá hodnotu pravda `true` nebo nepravdu `false`.
 
 
 Ukázka relačních operátorů:
