@@ -5,7 +5,7 @@ layout: coding
 
 # {{ page.title | escape }}
 
-#### Výpis do sériové linky
+#### Sériová linka
 
 Nyní jsme se dostali do fáze, kdy nám rozsvěcení LED na některé příklady stačit nebude. Proto si představíme funkci `printf`. Ta bere minimálně jeden parametr ve formě textového řetězce - jedná se o tzv. formátovací řetězec. Ten může vypadat následujícím způsobem:
 

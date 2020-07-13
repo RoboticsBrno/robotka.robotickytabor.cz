@@ -1,5 +1,5 @@
 ---
-title: Blikání LED
+title: LEDky
 layout: coding
 ---
 
