@@ -21,3 +21,7 @@ lekce 1
 
 #### Odměna
 1 frfník
+
+<video width="100%" controls>
+  <source src="/video/guides/assignments_002.mp4" type="video/mp4">
+</video>
