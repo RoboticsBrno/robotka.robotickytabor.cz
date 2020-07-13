@@ -6,7 +6,7 @@ layout: coding
 # {{ page.title | escape }}
 
 #### Motivace
-V pruběhu programování je často nezbytné uchovat si nějakou hodnotu na budoucí použítí. Může se jednat o výsledek matematicé rovnice, počítadlo kroků, uchování minimální nebo maximální hodnoty a tak dále. Pro tento účel se používají proměnné. Můžeme si ji jednoduše představit jako přihrádku na ponožky. Jakmile si chceme ponožky někam uchovat, otevřeme přihrádku, do které následně tyto ponožky dáme. Jakmile si je chceme vzít, tak ji máme uchovanou v této přihrádce připravenou k použití.
+V průběhu programování je často nezbytné uchovat si nějakou hodnotu na budoucí použítí. Může se jednat o výsledek matematicé rovnice, počítadlo kroků, uchování minimální nebo maximální hodnoty a tak dále. Pro tento účel se používají proměnné. Můžeme si ji jednoduše představit jako pojmenovanou přihrádku na ponožky. Jakmile si chceme ponožky někam uchovat, otevřeme přihrádku se jménem "ponožky", do které je následně dáme. Jakmile si je chceme vzít, tak opět otevřeme přihrádku "ponožky" a dané ponožky si můžeme vzít.
 
 #### Vytvoření proměnné
 Proměnnou je možné vytvořit, takzvaně definovat, následující konstrukcí:

@@ -61,7 +61,7 @@ Tento if se provede vždy, protože je jeho podmínka rovna pravdě (`true`). Na
         ...kod, ktery se neprovede nidky...
     }
 ``` 
-se neprovede nikdy, protože je podmínka nesplněna. S tímto typem podmínky příliš nevystačíme a proto můžeme použít relační operátory, které nám pomohou vytvářet složitější podmínky. Mezi základní relační operátory patří:
+se neprovede nikdy, protože je podmínka nesplněna. Podle ukázky výše je patrné, že výsledek výrazu, který je do podmínky (kulatých závorek) vložen, musí reprezentovat hodnotu typu `bool`, neboli pravda `true` nebo nepravda `false`. Je tedy možné, vytvoři proměnnou typu `bool`, přiřadit do ní výraz, jehož výsledek je `true` nebo `false` a tuto proměnnou vložit do podmínky `if` nebo `else if `. S výše uvedenou podmínkou si dlouho nevystačíme a proto použijeme relační operátory, které nám pomohou vytvářet komplikovanější podmínky. Mezi základní relační operátory patří:
 - `==` označuje porovnávání, takže `1 == 1` označuje, že se 1 rovná 1
 - `!=` vykřičník před rovnítkem označuje opak, tudíž tento operátor značí nerovnost, tedy `1 != 2` označuje, že se 1 nerovná 2
 - `<` menší než
@@ -70,7 +70,11 @@ se neprovede nikdy, protože je podmínka nesplněna. S tímto typem podmínky p
 - `>=` větší rovno než
  
 {:.important}
-`=` označuje přiřazení hodnoty do proměnné, například `promenna =  2`, ale `==` označuje porovnání, jehož výsledkem je pravda (true) nebo nepravda (false).
+`=` označuje přiřazení hodnoty do proměnné, například `promenna =  2;`, ale `==` označuje porovnání, jehož výsledkem je pravda `true` nebo nepravda `false`.
+
+{:.important}
+Výsledek výrazu, který je v proměnné, reprezentuje hodnotu pravda `true` nebo nepravdu `false`.
+
 
 Ukázka relačních operátorů:
 ```cpp
