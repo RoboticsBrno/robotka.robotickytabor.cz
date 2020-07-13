@@ -1,5 +1,5 @@
 ---
-title: LEDky
+title: LED pásek
 layout: coding
 ---
 
