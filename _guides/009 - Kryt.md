@@ -112,8 +112,6 @@ name: Kryt
         " "
 %}
 
-Všiml jsi si tohoto, ozvi se a řekni Tomovi R. kód 625BY9WC, dostaneš frfník.
-
 {% include image.html
     url="/img/guides/KRYT-25.jpg"
     description=
