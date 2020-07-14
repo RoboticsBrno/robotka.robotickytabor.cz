@@ -26,5 +26,5 @@ lekce 2
 ##### Ukázka
 
 <video width="100%" controls>
-  <source src="/video/guides/assignments_004.mp4" type="video/mp4">
+  <source src="/video/guides/assignments_1_on_off_blink.mp4" type="video/mp4">
 </video>

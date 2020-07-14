@@ -24,5 +24,5 @@ lekce 2
 ##### Ukázka
 
 <video width="100%" controls>
-  <source src="/video/guides/assignments_005.mp4" type="video/mp4">
+  <source src="/video/guides/assignments3_blink_speed.mp4" type="video/mp4">
 </video>
