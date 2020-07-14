@@ -38,12 +38,9 @@ void setup() {
 }
 ```
 
-Pokud bychom chtěli danou proměnnou zvýšit pouze o hodnotu 1, například z 0 na 1, můžeme použít i zápis `promenna_1++;` a stejně tak i pro odečítání hodnoty 1 od proměnné `promenna_1--;`. 
+Pokud bychom chtěli danou proměnnou zvýšit pouze o hodnotu 1, například z 0 na 1, můžeme použít i zápis `promenna_1++;` a stejně tak i pro odečítání hodnoty 1 od proměnné `promenna_1--;`. #### Ukázka vytvoření různých proměnných
 
-
-#### Ukázka vytvoření různých proměnných
 ```cpp
-
 // proměnná pro celá čísla se jménem cele_cislo, ve které je hodnota 0
 int cele_cislo = 0;  
 // promenna pro desetinne cislo ve které je hodnota 3.14
@@ -54,4 +51,6 @@ char znak = 'a';
 bool otevreno = true; 
 // proměnná pro textový řetězec s hodnotou "nejaky text"
 std::string text = "nejaky text"; 
+
+
 ```
