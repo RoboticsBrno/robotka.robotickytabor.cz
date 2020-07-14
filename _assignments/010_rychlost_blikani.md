@@ -15,14 +15,14 @@ Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti
 
-lekce 2
+lekce 3
 
 ##### Odměna
-{:.yellow-text}
+
 2 frfníky
 
 ##### Ukázka
 
 <video width="100%" controls>
-  <source src="/video/guides/assignments_005.mp4" type="video/mp4">
+  <source src="/video/guides/assignments_3_blink_speed.mp4" type="video/mp4">
 </video>

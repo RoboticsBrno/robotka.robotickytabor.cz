@@ -20,11 +20,11 @@ Program běží v **nekonečné smyčce**.
 lekce 1
 
 ##### Odměna
-{:.yellow-text}
+
 1 frfník
 
 ##### Ukázka
 
 <video width="100%" controls>
-  <source src="/video/guides/assignments_002.mp4" type="video/mp4">
+  <source src="/video/guides/assignments_1_zablesky.mp4" type="video/mp4">
 </video>
