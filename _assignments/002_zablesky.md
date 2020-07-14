@@ -5,19 +5,26 @@ layout: assignments
 
 # {{ page.title | escape }}
 
-#### Zadání
+##### Zadání
 
 Napište program který každou vteřinu krátce zableskne LED diodou.
 
-#### Parametry
+##### Parametry
 
 Délka svícení je **50 ms**.
 LED se zableskne každou **vteřinu**.
 Program běží v **nekonečné smyčce**.
 
-#### Potřebné znalosti
+##### Potřebné znalosti
 
 lekce 1
 
-#### Odměna
+##### Odměna
+{:.yellow-text}
 1 frfník
+
+##### Ukázka
+
+<video width="100%" controls>
+  <source src="/video/guides/assignments_002.mp4" type="video/mp4">
+</video>

@@ -5,19 +5,26 @@ layout: assignments
 
 # {{ page.title | escape }}
 
-#### Zadání
+##### Zadání
 
 Napište program který umožní vypnout/zapnout blikání stiskem tlačítka.
 
-#### Parametry
+##### Parametry
 
 Stav při startu: **LED neblikají**.
 Délka svícení a vypnutí je **volitelná**.
 Program běží v **nekonečné smyčce**.
 
-#### Potřebné znalosti
+##### Potřebné znalosti
 
 lekce 2
 
-#### Odměna
+##### Odměna
+{:.yellow-text}
 1 frfník
+
+##### Ukázka
+
+<video width="100%" controls>
+  <source src="/video/guides/assignments_004.mp4" type="video/mp4">
+</video>
