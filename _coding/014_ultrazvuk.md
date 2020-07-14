@@ -41,20 +41,20 @@ void setup() {
 
     while(true){
        vzdalenost = rkUltraMeasure(1);  // zmer vzdalenost a uloz ji do promenne
-       if(vzdalenost > 50){
+       if(vzdalenost > 500){    // vzdalenost vetsi nez 500
            rkLedRed(false);
            rkLedGreen(true);
            rkLedYellow(false);
 
        }
        
-       else if(vzdalenost > 50){
+       else if(vzdalenost < 200){ // vzdalenost mensí vetsi 200, ale mensi nez 500
            rkLedRed(false);
            rkLedGreen(false);
            rkLedYellow(true);
        }
 
-       else{
+       else{    // vzdalenost mensí nez 200
            rkLedRed(true);
            rkLedGreen(false);
            rkLedYellow(false);
@@ -64,5 +64,6 @@ void setup() {
     }
 }
 ``` 
+Výše uvedený program nejprve změří vzdálenost pomocí ultrazvuku. Pokud je ve větší vzdálenosti než 500 mm, tak rozsvítí zelenou LED -první `if`. Pokud je vzdálenost více jak 200, ale současně menší než 500 (to řeší `else if`, který se provede pouze tehdy, pokud je `if` nesplněný), tak se rozsvítí žlutá LED. Pokud je vzdálenost měnší než 200, tak se rozsvítí červená LED `else`.
 
 
