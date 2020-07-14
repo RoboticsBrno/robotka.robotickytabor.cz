@@ -56,7 +56,7 @@ name: Podvozek
         " "
     url2="/img/guides/PODVOZEK-13.jpg"
     description2=
-        "Díly slepíme pomocí koutového spoje"
+        "<div class=\"alert\">Všechny části nasucho sestaveného dílu slepíme navzájem pomocí koutového spoje!</div>"
 %}
 
 {% include image.html
