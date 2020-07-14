@@ -18,7 +18,7 @@ Program běží v **nekonečné smyčce**.
 lekce 3
 
 ##### Odměna
-{:.yellow-text}
+
 2 frfníky
 
 ##### Ukázka

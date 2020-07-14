@@ -1,5 +1,5 @@
 ---
-title: Řízené blikání
+title: Vypínatelné blikání
 layout: assignments
 ---
 
@@ -20,7 +20,7 @@ Program běží v **nekonečné smyčce**.
 lekce 2
 
 ##### Odměna
-{:.yellow-text}
+
 1 frfník
 
 ##### Ukázka
