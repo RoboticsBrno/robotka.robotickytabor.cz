@@ -11,8 +11,8 @@ Napište program který bude blikat LED diodou.
 
 ##### Parametry
 
-Délka svícení a vypnutí je **300 ms**.
-Program běží v **nekonečné smyčce**.
+- Délka svícení a vypnutí je **300 ms**.
+- Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti
 

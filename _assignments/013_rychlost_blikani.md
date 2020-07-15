@@ -11,7 +11,7 @@ Napište program který umožní měnit rychlost blikání stiskem tlačítek na
 
 ##### Parametry
 
-Program běží v **nekonečné smyčce**.
+- Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti
 

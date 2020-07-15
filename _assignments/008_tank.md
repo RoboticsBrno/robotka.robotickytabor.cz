@@ -11,8 +11,8 @@ Napište program který při zmáčknutí tlačítka `<-` pojede levým motorem 
 
 ##### Parametry
 
-Stav při startu: **Robot stojí**.
-Program běží v **nekonečné smyčce**.
+- Stav při startu: **Robot stojí**.
+- Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti
 

@@ -11,12 +11,12 @@ Napište program který postupně zapne a vypne LED diody, tak aby vypadaly jako
 
 ##### Parametry
 
-Stav při startu: **LED nesvítí**.
-Program běží v **nekonečné smyčce**.
-**Dochází** k překryvu mezi kroky, vždy svítí dvě LED.
+- Stav při startu: **LED nesvítí**.
+- Program běží v **nekonečné smyčce**.
+- **Dochází** k překryvu mezi kroky, vždy svítí dvě LED.
 
 ##### Bonusové parametry
-Pomocí tlačítek `<-` a `->` upravujte rychlost se kterou "vlna" probíhá. 
+- Pomocí tlačítek `<-` a `->` upravujte rychlost se kterou "vlna" probíhá. 
 
 ##### Potřebné znalosti
 

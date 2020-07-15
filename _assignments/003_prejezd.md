@@ -11,9 +11,9 @@ Napište program který bude blikat jako železniční přejezd.
 
 ##### Parametry
 
-V blikání se střídají **dvě různé LED**.
-Délka svícení je **volitelná**.
-Program běží v **nekonečné smyčce**.
+- V blikání se střídají **dvě různé LED**.
+- Délka svícení je **volitelná**.
+- Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti
 

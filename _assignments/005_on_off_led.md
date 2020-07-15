@@ -11,8 +11,8 @@ Napište program který umožní jedním tlačítkem LED zapnout a druhým tlač
 
 ##### Parametry
 
-Stav při startu: **LED nesvítí**.
-Program běží v **nekonečné smyčce**.
+- Stav při startu: **LED nesvítí**.
+- Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti
 

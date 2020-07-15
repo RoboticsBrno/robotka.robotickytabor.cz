@@ -11,9 +11,9 @@ Napište program který umožní současným stisknutím  tlačítek <-, ON a ->
 
 ##### Parametry
 
-Stav při startu: **LED nesvítí**.
-Tlačítka: **<-, ON a ->**
-Program běží v **nekonečné smyčce**.
+- Stav při startu: **LED nesvítí**.
+- Tlačítka: **<-, ON a ->**
+- Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti
 

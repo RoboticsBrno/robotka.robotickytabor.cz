@@ -12,13 +12,13 @@ Při naražení na konec se otočí a jde opačným směrem.
 
 ##### Parametry
 
-Stav při startu: **LED nesvítí**.
-Program běží v **nekonečné smyčce**.
-Nedochází k překryvu mezi kroky, vždy svítí pouze jedna LED.
-Světlo se **"odráží"** od okrajů.
+- Stav při startu: **LED nesvítí**.
+- Program běží v **nekonečné smyčce**.
+- Nedochází k překryvu mezi kroky, vždy svítí pouze jedna LED.
+- Světlo se **"odráží"** od okrajů.
 
 ##### Bonusové parametry
-Pomocí tlačítek `<-` a `->` upravujte rychlost se kterou "vlna" probíhá. 
+- Pomocí tlačítek `<-` a `->` upravujte rychlost se kterou "vlna" probíhá. 
 
 ##### Potřebné znalosti
 

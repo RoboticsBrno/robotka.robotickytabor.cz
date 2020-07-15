@@ -11,9 +11,9 @@ Napište program který každou vteřinu krátce zableskne LED diodou.
 
 ##### Parametry
 
-Délka svícení je **50 ms**.
-LED se zableskne každou **vteřinu**.
-Program běží v **nekonečné smyčce**.
+- Délka svícení je **50 ms**.
+- LED se zableskne každou **vteřinu**.
+- Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti
 
