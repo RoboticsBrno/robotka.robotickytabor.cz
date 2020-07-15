@@ -1,6 +1,8 @@
 ---
 title: Rychlost blikání
 layout: assignments
+lecture: 3
+task: 6
 ---
 
 # {{ page.title | escape }}

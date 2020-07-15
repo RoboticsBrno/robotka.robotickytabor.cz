@@ -1,17 +1,20 @@
 ---
-title: Stabilní stav LED
+title: Kombinace tlačítek
 layout: assignments
+lecture: 2
+task: 4
 ---
 
 # {{ page.title | escape }}
 
 ##### Zadání
 
-Napište program který umožní jedním tlačítkem LED zapnout a druhým tlačítkem ji vypnout.
+Napište program který umožní současným stisknutím  tlačítek <-, ON a -> zapnout LED a stisknutím kteréhokoliv z nich ji vypne.
 
 ##### Parametry
 
 - Stav při startu: **LED nesvítí**.
+- Tlačítka: **<-, ON a ->**
 - Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti

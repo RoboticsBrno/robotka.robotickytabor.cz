@@ -1,6 +1,8 @@
 ---
-title: Vlna v2.0
+title: One direction
 layout: assignments
+lecture: 3
+task: 2
 ---
 
 # {{ page.title | escape }}
@@ -8,17 +10,15 @@ layout: assignments
 ##### Zadání
 
 Napište program který postupně zapne a vypne LED diody, tak aby vypadaly jako vlna.
-Při naražení na konec se otočí a jde opačným směrem.
 
 ##### Parametry
 
 - Stav při startu: **LED nesvítí**.
 - Program běží v **nekonečné smyčce**.
-- **Dochází** k překryvu mezi kroky, vždy svítí dvě LED.
-- Světlo se **"odráží"** od okrajů.
+- Nedochází k překryvu mezi kroky, vždy svítí pouze jedna LED.
 
 ##### Bonusové parametry
-Pomocí tlačítek `<-` a `->` upravujte rychlost se kterou "vlna" probíhá. 
+- Pomocí tlačítek `<-` a `->` upravujte rychlost se kterou "vlna" probíhá. 
 
 ##### Potřebné znalosti
 
@@ -26,8 +26,10 @@ lekce 3
 
 ##### Odměna
 
-3 frfníky
+1 frfník
 +1 frfník za bonus
+
+##### Ukázka
 
 <!-- FIXME: Add video -->
 <!-- <video width="100%" controls>

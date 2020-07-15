@@ -1,6 +1,8 @@
 ---
 title: Záblesky LED
 layout: assignments
+lecture: 1
+task: 2
 ---
 
 # {{ page.title | escape }}

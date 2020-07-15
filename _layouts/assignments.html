@@ -5,7 +5,7 @@ layout: default
 {% assign items = site.data.collectionMenus.assignments %}
 <div class="sidenav">
     {% for it in items %}
-        <a href="{{ it.doc.url | relative_url }}">{{ forloop.index }}. {{ it.doc.title }}</a>
+        <a href="{{ it.doc.url | relative_url }}">{{ it.doc.lecture }}.{{ it.doc.task }}. {{ it.doc.title }}</a>
         {% if page.url == it.doc.url %}
             {% for c in it.children %}
                 <a href="#{{ c.label }}" style="margin-left: 18px; font-size: 80%"> {{ c.name }}</a>

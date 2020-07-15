@@ -1,31 +1,28 @@
 ---
-title: One direction
+title: Manuální blikání LED
 layout: assignments
+lecture: 2
+task: 1
 ---
 
 # {{ page.title | escape }}
 
 ##### Zadání
 
-Napište program který postupně zapne a vypne LED diody, tak aby vypadaly jako vlna.
+Napište program který při zmáčknutí rozsvítí LED a při puštění tlačítka ji zhasne.
 
 ##### Parametry
 
 - Stav při startu: **LED nesvítí**.
 - Program běží v **nekonečné smyčce**.
-- Nedochází k překryvu mezi kroky, vždy svítí pouze jedna LED.
-
-##### Bonusové parametry
-- Pomocí tlačítek `<-` a `->` upravujte rychlost se kterou "vlna" probíhá. 
 
 ##### Potřebné znalosti
 
-lekce 3
+lekce 2
 
 ##### Odměna
 
 1 frfník
-+1 frfník za bonus
 
 ##### Ukázka
 

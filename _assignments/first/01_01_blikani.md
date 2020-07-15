@@ -1,6 +1,8 @@
 ---
 title: Blikání LED
 layout: assignments
+lecture: 1
+task: 1
 ---
 
 # {{ page.title | escape }}

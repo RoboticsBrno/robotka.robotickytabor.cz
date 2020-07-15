@@ -1,17 +1,20 @@
 ---
-title: Manuální blikání LED
+title: Vypínatelné blikání
 layout: assignments
+lecture: 2
+task: 3
 ---
 
 # {{ page.title | escape }}
 
 ##### Zadání
 
-Napište program který při zmáčknutí rozsvítí LED a při puštění tlačítka ji zhasne.
+Napište program který umožní vypnout/zapnout blikání stiskem tlačítka.
 
 ##### Parametry
 
-- Stav při startu: **LED nesvítí**.
+- Stav při startu: **LED neblikají**.
+- Délka svícení a vypnutí je **volitelná**.
 - Program běží v **nekonečné smyčce**.
 
 ##### Potřebné znalosti
@@ -24,7 +27,6 @@ lekce 2
 
 ##### Ukázka
 
-<!-- FIXME: Add video -->
-<!-- <video width="100%" controls>
+<video width="100%" controls>
   <source src="/video/guides/assignments_2_on_off_blink.mp4" type="video/mp4">
-</video> -->
+</video>

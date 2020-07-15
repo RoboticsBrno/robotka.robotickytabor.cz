@@ -1,6 +1,8 @@
 ---
 title: Železniční přejezd
 layout: assignments
+lecture: 1
+task: 3
 ---
 
 # {{ page.title | escape }}
