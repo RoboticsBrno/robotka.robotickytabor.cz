@@ -1,5 +1,5 @@
 ---
-title: Jedním směrem
+title: K.I.T.T (Knight Rider)
 layout: assignments
 ---
 
