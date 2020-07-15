@@ -1,5 +1,5 @@
 ---
-title: Jedním směrem
+title: One direction
 layout: assignments
 ---
 
