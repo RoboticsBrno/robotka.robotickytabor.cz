@@ -4,8 +4,9 @@ layout: coding
 fullwidth: true
 ---
 
-{% div class="coding-container-narrow mb-xl" %}
 # {{ page.title | escape }}
+
+{% div class="coding-container-narrow mb-xl" %}
 
 {:.lead}
 Programy pro robotku budeme psát ve **Visual Studiu Code** a použijeme rozšíření PlatformIO IDE.

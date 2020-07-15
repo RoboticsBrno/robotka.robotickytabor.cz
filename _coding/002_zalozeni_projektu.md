@@ -4,9 +4,9 @@ layout: coding
 fullwidth: true
 ---
 
-{% div class="coding-container-narrow mb-xl" %}
-
 # {{ page.title | escape }}
+
+{% div class="coding-container-narrow mb-xl" %}
 
 {:.lead}
 Robotka kromě dálkového ovládání zvládne dělat věci i úplně sama, když ji naprogramujeme.

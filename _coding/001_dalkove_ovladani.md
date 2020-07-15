@@ -4,8 +4,9 @@ layout: coding
 fullwidth: true
 ---
 
-{% div class="coding-container-narrow mb-xl" %}
 # {{ page.title | escape }}
+
+{% div class="coding-container-narrow mb-xl" %}
 
 {:.lead}
 Nahrajeme do Robotky předpřipravený program, abychom vyzkoušeli, jestli Robotka správně funguje.
