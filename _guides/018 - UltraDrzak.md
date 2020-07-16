@@ -12,7 +12,7 @@ name: Držáky ultrazvukových senzorů
     description=
         " "
     url2="/img/guides/ULTRAZVUK-2.jpg"
-    description=
+    description2=
         " "
 %}
 
@@ -21,8 +21,8 @@ name: Držáky ultrazvukových senzorů
     description=
         " "
     url2="/img/guides/ULTRAZVUK-4.jpg"
-    description=
-        " "
+    description2=
+        "<div class=\"alert\">Před nalepením ultrazvuku do držáku připojte kabel!</div>"
 %}
 
 {% include image.html
@@ -30,7 +30,7 @@ name: Držáky ultrazvukových senzorů
     description=
         " "
     url2="/img/guides/ULTRAZVUK-6.jpg"
-    description=
+    description2=
         " "
 %}
 
@@ -51,7 +51,7 @@ name: Držáky ultrazvukových senzorů
     description=
         " "
     url2="/img/guides/ULTRAZVUK-10.jpg"
-    description=
+    description2=
         " "
 %}
 
