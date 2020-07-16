@@ -7,9 +7,13 @@ layout: default
     <h1 class="header center secondary-text">{{ site.title }}</h1>
 
     <div class="row center">
-      <a href="{{ '/guide/' | relative_url }}" id="download-button" class="btn-large waves-effect waves-light secondary">Poskládat Robotku</a>
+      <a href="{{ '/guide/' | relative_url }}"  class="btn-large waves-effect waves-light secondary">Poskládat Robotku</a>
     </div>
-    <br><br>
+
+    <div class="row center" style="margin-top: 32px">
+      {% assign recovery = site.data.collectionMenus.recovery[0] %}
+      <a href="{{ recovery.doc.url | relative_url }}" class="btn waves-effect waves-light orange">Nefunguje Robotka?</a>
+    </div>
   </div>
 
   <div class="section" id="about">

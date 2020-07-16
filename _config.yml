@@ -5,21 +5,23 @@ description: > # this means to ignore newlines until "baseurl:"
     Robotka pro Robotický tábor
 
 twitter_username: RobotikaBrno
-github_username:  RoboticsBrno
+github_username: RoboticsBrno
 
 sass:
     style: compressed
 
 collections:
-  guides:
-      output: true
-  coding:
-      output: true
-  inspiration:
-      output: true
-  assignments:
-      sort_by: lecture
-      output: true
+    guides:
+        output: true
+    coding:
+        output: true
+    inspiration:
+        output: true
+    assignments:
+        sort_by: lecture
+        output: true
+    recovery:
+        output: true
 
 #plugins:
 #   - jekyll-minifier
@@ -39,7 +41,7 @@ mini_magick:
         source: img/guides/original
         destination: thumb/img/guides
         resize: "700x400"
-      
+
     medium:
         source: img/guides/original
         destination: img/guides/
@@ -49,7 +51,7 @@ mini_magick:
         source: img/gallery/original
         destination: thumb/img/gallery
         resize: "600x400"
-    
+
     gal_medium:
         source: img/gallery/original
         destination: img/gallery

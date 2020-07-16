@@ -30,6 +30,9 @@
             <li><a href="{{ assignments.doc.url | relative_url }}">Úkoly</a></li>
             {% assign inspiration = site.data.collectionMenus.inspiration[0] %}
             <li><a href="{{ inspiration.doc.url | relative_url }}">Inspirace</a></li>
+
+            {% assign recovery = site.data.collectionMenus.recovery[0] %}
+            <li><a href="{{ recovery.doc.url | relative_url }}" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
           </ul>
 
           <ul id="nav-mobile" class="side-nav">
@@ -61,6 +64,9 @@
             <li><a href="{{ assignments.doc.url | relative_url }}">Úkoly</a></li>
             {% assign inspiration = site.data.collectionMenus.inspiration[0] %}
             <li><a href="{{ inspiration.doc.url | relative_url }}">Inspirace</a></li>
+
+            {% assign recovery = site.data.collectionMenus.recovery[0] %}
+            <li><a href="{{ recovery.doc.url | relative_url }}" class="orange-text" style="font-weight: bold">Nefunguje?</a></li>
           </ul>
 
           {% if page.name == 'guide.md' %}
