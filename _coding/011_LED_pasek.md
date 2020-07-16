@@ -7,12 +7,12 @@ layout: coding
 
 #### Rozsícení LED pásku
 Pro LED pásek není možné použít funkce, které byly popsány pro LEDky v předchozí kapitole. Pro práci s LED páskem (chytré LEDky) je možné využít tyto funkce:  
-- `rkSmartLedsHSV()` - Nastavení barvy pomocí HSW (`H`-odstín, `S`-sytost barvy ,`V`-jas)
-- `rkSmartLedsRGB()` - Nastavení barvy pomocí RGB (`R`-červená, `G`-zelená ,`B`-modrá)
-Rozdíl mezi těmito funkcemi je v přístupu k nastavení jednotlivých barev. Zatím co `RGB` využívá kombinování červené, zelené a modré, tak `HSV` využívá kombinaci odstínu, sytosti a jasu. Obě tyto funkce, očekávají jako první parametr číslo LED na pásku. Na pásku je celkem 8 LEDek, takže první LEDka (která je nejblíže pinům) má číslo 0 a LEDka na druhé straně pásku má logicky hodnotu 7. Obě funkce následně očekávají ještě další 3 parametry, podle metody, kterou nastavují barvu: `rkSmartLedsHSV()` očekává celočíselné hodnoty odstín, sytost barvy a jas, které jsou od hodnoty 0 do 255. Funkce `rkSmartLedsRGB()` očekává hodnoty zastoupení červené zelené a modré barvy, opět od 0 do 255.
+- `rkSmartLedsHSV` - Nastavení barvy pomocí HSW (`H`-odstín, `S`-sytost barvy ,`V`-jas)
+- `rkSmartLedsRGB` - Nastavení barvy pomocí RGB (`R`-červená, `G`-zelená ,`B`-modrá)
+Rozdíl mezi těmito funkcemi je v přístupu k nastavení jednotlivých barev. Zatím co `RGB` využívá kombinování červené, zelené a modré, tak `HSV` využívá kombinaci odstínu, sytosti a jasu. Obě tyto funkce, očekávají jako první parametr číslo LED na pásku. Na pásku je celkem 8 LEDek, takže první LEDka (která je nejblíže pinům) má číslo 0 a LEDka na druhé straně pásku má logicky hodnotu 7. Obě funkce následně očekávají ještě další 3 parametry, podle metody, kterou nastavují barvu: `rkSmartLedsHSV` očekává celočíselné hodnoty odstín, sytost barvy a jas, které jsou od hodnoty 0 do 255. Funkce `rkSmartLedsRGB` očekává hodnoty zastoupení červené zelené a modré barvy, opět od 0 do 255.
 
-Pro `rkSmartLedsHSV()` je možné jednotlivé hodnoty barev nalézt <a href="https://alloyui.com/examples/color-picker/hsv.html">zde</a>.
-Pro `rkSmartLedsRGB()` je možné jednotlivé hodnoty barev nalézt <a href="https://htmlcolorcodes.com/">zde</a>.
+Pro `rkSmartLedsHSV` je možné jednotlivé hodnoty barev nalézt <a href="https://alloyui.com/examples/color-picker/hsv.html">zde</a>.
+Pro `rkSmartLedsRGB` je možné jednotlivé hodnoty barev nalézt <a href="https://htmlcolorcodes.com/">zde</a>.
 
 Rozsvícení celého pásku červeně pomocí `RGB`:
 ```cpp

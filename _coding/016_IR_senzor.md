@@ -9,8 +9,8 @@ IR senzor, neboli senzor, který pracuje s infračerveným zářením (InfraRed)
 
 #### Práce s IR senzorem
 Pro měření vzdálenosti můžeme na našem robotovi použít dva IR senzory. Pro práci s nimi můžeme použít následující funkce:
-- `rkIrLeft()` 
-- `rkIrRight()`
+- `rkIrLeft` 
+- `rkIrRight`
 
 Obě tyto funkce jsou úplně stejné, liší se pouze v tom, z jakého senzoru čteme hodnoty. Pokud z levého, tak použijeme `rkIrLeft()` a pokud z pravého, tak `rkIrRight()`. Tato funkce neočekává žádný parametr a vrací hodnotu od 0 do 4095. Pokud to tedy vztáhneme na sledování čáry, na kterou jsou na našem robotovi IR senzory určeny, funkce vrací 0 pro bílou plochu a 4095 na úplně černou. Pokud mu předhodíme jiné barvy, tak vrací odpovídající hodnotu mezi 0 a 4095.
 

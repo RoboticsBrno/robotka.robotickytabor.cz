@@ -9,7 +9,7 @@ layout: coding
 V některých případech potřebujeme komunikovat s naším robotem. Například když se snažím odhalit chybu, vypisovat hodnotu senzorů nebo informovat uživatel o ději v programu. Pro tento účel nám poslouží sériová linka.
 
 #### Sériová linka
-Pro komunikaci s PC je možné použít funkci`printf()`. Tato metoda je oproti již předchozím metodám rozdílná v tom, že nemá pevný počet parametrů. To ale znamená, že je zapotřebí dodržet jistá pravidla formátu těchto parametrů, aby to vůbec fungovalo.
+Pro komunikaci s PC je možné použít funkci`printf`. Tato metoda je oproti již předchozím metodám rozdílná v tom, že nemá pevný počet parametrů. To ale znamená, že je zapotřebí dodržet jistá pravidla formátu těchto parametrů, aby to vůbec fungovalo.
 
 ###### Výpis textu
 ```cpp

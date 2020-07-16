@@ -7,14 +7,14 @@ layout: coding
 
 #### Rozsícení LED
 Pro práci s LED je možné využít následující funkce:
-- `rkLedRed()` - rozsvícení a zhasnutí červené LED
-- `rkLedGreen()` - rozsvícení a zhasnutí zelené LED
-- `rkLedBlue()` - rozsvícení a zhasnutí modré LED
-- `rkLedYellow()` - rozsvícení a zhasnutí žluté LED
-- `rkLedAll()` - rozsvícení a zhasnutí všech LED
+- `rkLedRed` - rozsvícení a zhasnutí červené LED
+- `rkLedGreen` - rozsvícení a zhasnutí zelené LED
+- `rkLedBlue` - rozsvícení a zhasnutí modré LED
+- `rkLedYellow` - rozsvícení a zhasnutí žluté LED
+- `rkLedAll` - rozsvícení a zhasnutí všech LED
 Všechny výše uvedené funkce umožňují rozsvítit nebo zhasnout LED podle hodnoty parametru, která se mu předá. Pro rozsvícení například červené LED je možné použít volaní funkce s parametre `true`, tedy `rkLedRed(true)`.Pro její zhasnutí je zapotřebí zadat `rkLedRed(false)`. Stejně tak to funguje pro všechny ostatní výše uvedené funkce.
 
-- `rkLedById()` rozsvícení a zhasnutí LED podle jejich čísla na desce
+- `rkLedById` rozsvícení a zhasnutí LED podle jejich čísla na desce
 Tato funkce vyžaduje dva parametry: Číslo LED na desce a poté hodnotu `true` pro rozsvícení, případně `false` pro zhasnutí. 
 
 Následující program ukazuje, jak je možné jednotlivé LED rozsvítit.

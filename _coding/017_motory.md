@@ -9,20 +9,20 @@ Funkce, kterými je možné ovládat motory jsou rozděleny do dvou základních
 
 ###### Nastavení rychlosti motoru
 Všechny následující funkce pracují s rycholstí od -100 do 100. Hodnota udává, kolik procent rychlosti je přiděleno jednotlivým motorům. To znaméná, že hodnota -100 je maximální rychlost zpět a 100 je maximální rychlost vpřed.
-- `rkMotorsSetSpeed()` - Nastavení rychlosti obou motorů současně. Očekávají 2 parametry: rychlost levého motoru a rychlost pravého motoru, obě v rozsahu -100 až 100
-- `rkMotorsSetSpeedLeft()` - Nastavení rychlosti levého motoru. Očekává jeden parametr, reprezentující rychlost motoru
-- `rkMotorsSetSpeedRight()` - To samé jako `rkMotorsSetSpeedLeft()`, akorát pro pravý motor
-- `rkMotorsSetSpeedById()` - Nastavení rychlosti zvolenému motoru. Očekává id motoru a rychlost jako parametry, kde id je hodnota daného motoru na desce (1-4, což odpovídá M1-M4 na desce).
+- `rkMotorsSetSpeed` - Nastavení rychlosti obou motorů současně. Očekávají 2 parametry: rychlost levého motoru a rychlost pravého motoru, obě v rozsahu -100 až 100
+- `rkMotorsSetSpeedLeft` - Nastavení rychlosti levého motoru. Očekává jeden parametr, reprezentující rychlost motoru
+- `rkMotorsSetSpeedRight` - To samé jako `rkMotorsSetSpeedLeft`, akorát pro pravý motor
+- `rkMotorsSetSpeedById` - Nastavení rychlosti zvolenému motoru. Očekává id motoru a rychlost jako parametry, kde id je hodnota daného motoru na desce (1-4, což odpovídá M1-M4 na desce).
 
 ###### Nastavení výkonu motoru
 Tyto funkce se chovají stejně jako funkce pro nastavení rychlosti, akorát se nezadává rychlost, ale výkon. Tento výkon je opět v procentech -100 až 100.
-- `rkMotorsSetPower()`
-- `rkMotorsSetPowerLeft()`
-- `rkMotorsSetPowerRight()`
-- `rkMotorsSetPowerById()`
+- `rkMotorsSetPower`
+- `rkMotorsSetPowerLeft`
+- `rkMotorsSetPowerRight`
+- `rkMotorsSetPowerById`
 
 Rychlost motoru je také možné nastavit podle pozice joysticku.
-- `rkMotorsJoystick()`
+- `rkMotorsJoystick`
 Tato funkce očekává `x` a `y` souřadnici joystisku, na jejichž základě určí, jak nastavit rychlost motoru. Pro ovládání robota přes vysílačku/mobil je tato funkce vhodná.
 
 ###### Přehled použití funkcí

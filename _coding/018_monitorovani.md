@@ -9,9 +9,9 @@ U každého robota, který není přímo napájen ze sítě, je důležité sled
 
 #### Jak monitorovat stav Robotky
 Následující funkce, které je možné použít pro monitorování Robotky, neočekávají žádný parametr. Jsou jimy funkce:
-- `rkBatteryPercent()` - Získá hodnotu baterek, přepočítá ji na procenta a tuto hodnotu následně vrátí uživateli
-- `rkBatteryVoltageMv()` - Zjistí stav baterky v milivoltech a vrací ji uživateli. Například hodnotu 5V vrací jako 5000 mV
-- `rkTemperature()` - Změři teplotu v robotce a vrací ji uživateli
+- `rkBatteryPercent` - Získá hodnotu baterek, přepočítá ji na procenta a tuto hodnotu následně vrátí uživateli
+- `rkBatteryVoltageMv` - Zjistí stav baterky v milivoltech a vrací ji uživateli. Například hodnotu 5V vrací jako 5000 mV
+- `rkTemperature` - Změři teplotu v robotce a vrací ji uživateli
 
 ###### Ukázka detekce stavu baterie s využitím LED
 ```cpp

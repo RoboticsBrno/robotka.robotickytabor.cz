@@ -9,7 +9,7 @@ Pokud se náš robot autonomně pohybuje, je poměrně nezbytné před sebou det
 
 #### Měření vzdálenosti
 Pro měření vzdálenosti s ultrazvukem, je možné využít následující funkci:
-- `rkUltraMeasure()` - Změří vzdálenost od překážky a vrátí ji uživateli. Funkce očekává jeden jediný parametr a to číslo ultrazvuku, které chceme použít. Číslo ultrazvuku je v rozmezí 1 do 4.
+- `rkUltraMeasure` - Změří vzdálenost od překážky a vrátí ji uživateli. Funkce očekává jeden jediný parametr a to číslo ultrazvuku, které chceme použít. Číslo ultrazvuku je v rozmezí 1 do 4.
 
 ###### Měření a výpis vzdálenosti od překážky
 ```cpp
