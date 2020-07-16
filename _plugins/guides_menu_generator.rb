@@ -20,14 +20,14 @@ class GuidesMenuGenerator < Jekyll::Generator
             html.css('h4').each do |h|
                 children.push({
                     "name" => h.text,
-                    "label" => Jekyll::Utils::slugify(h.text, mode: "pretty"),
+                    "label" => Jekyll::Utils::slugify(h.text, mode: "default"),
                 })
             end
 
             menu.push({
                 "name" => doc.data["name"],
                 "doc" => doc,
-                "label" => Jekyll::Utils::slugify(doc.data["name"], mode: "pretty"),
+                "label" => Jekyll::Utils::slugify(doc.data["name"], mode: "default"),
                 "children" => children,
             })
         end
