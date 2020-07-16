@@ -15,7 +15,6 @@
           <ul class="hide-on-med-and-down" style="list-style-type: none; margin-left: 200px">
             <li><a href="{{ "/" | relative_url }}">Úvod</a></li>
             <li><a href="{{ "/#galerie" | relative_url }}">Galerie</a></li>
-            <li><a href="{{ "/#partners" | relative_url }}">Partneři</a></li>
             {% if page_paths %}
                 {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}
@@ -36,7 +35,6 @@
           <ul id="nav-mobile" class="side-nav">
             <li><a href="/">Úvod</a></li>
             <li><a href="{{ "/#galerie" | relative_url }}">Galerie</a></li>
-            <li><a href="{{ "/#partners" | relative_url }}">Partneři</a></li>
 
               {% if page_paths %}
                 {% for path in page_paths %}
