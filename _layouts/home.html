@@ -11,8 +11,20 @@ layout: default
     </div>
 
     <div class="row center" style="margin-top: 32px">
-      {% assign recovery = site.data.collectionMenus.recovery[0] %}
-      <a href="{{ recovery.doc.url | relative_url }}" class="btn waves-effect waves-light orange">Nefunguje Robotka?</a>
+      <div class="col xl2"> </div>
+      <div class="col s12 xl3" style="margin-bottom: 12px">
+        {% assign recovery = site.data.collectionMenus.recovery[0] %}
+        <a href="{{ recovery.doc.url | relative_url }}" class="btn waves-effect waves-light orange">Nefunguje Robotka?</a>
+      </div>
+
+      <div class="col s12 xl2"  style="margin-bottom: 12px">
+        <a class="btn blue " href="https://roboticsbrno.github.io/RB3204-RBCX-Robotka-library/modules.html">Dokumentace</a>
+      </div>
+      <div class="col s12 xl3"  style="margin-bottom: 12px">
+        <a class="btn green darken-1"  href="https://github.com/RoboticsBrno/robotka-examples/archive/master.zip">Příkladové programy</a>
+      </div>
+
+      <div class="col xl2"> </div>
     </div>
   </div>
 
@@ -23,7 +35,6 @@ layout: default
       </div>
     </div>
   </div>
-
   <div class="section" id="galerie">
     <p>  </p>
     <div class="row">
