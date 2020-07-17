@@ -39,6 +39,12 @@ Nemusíte se bát, obsahuje pouze data, které si platform.io umí stáhnout zno
 
 Potom znovu otevřete VSCode a nechte platform.io v klidu nainstalovat. Buďtě trpělivý, platform.io je, zvláště na horších počítačích, poněkud pomalé.
 
+#### Nejde zkompilovat program
+Pokud vám nejde zkompilovat program, i když jste si jistí, že je správně, a kompilace ukazuje nesmyslné chyby (*nelze najít soubor*, *file not found*, ...),
+**zkuste smazat složku `.pio`**, kterou vidíte vlevo v seznamu souborů ve VSCode a zkompilovat znova. Ujistěte se, že máte připojení k internetu.
+
+Složka `.pio` obsahuje dočasné soubory pro kompilaci a je bezpečné ji smazat - vytvoří se sama znova.
+
 #### Nejde nahrát program do Robotky
 Tento problém může mít řadu řešení, zkuste:
 
