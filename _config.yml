@@ -6,6 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 twitter_username: RobotikaBrno
 github_username: RoboticsBrno
+url: "https://robotka.robotickytabor.cz"
 
 sass:
     style: compressed
@@ -23,7 +24,8 @@ collections:
     recovery:
         output: true
 
-#plugins:
+plugins:
+    - jekyll-sitemap
 #   - jekyll-minifier
 
 kramdown:

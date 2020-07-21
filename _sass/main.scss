@@ -432,3 +432,29 @@ td.rouge-code  {
 .sidenavHighglight {
     background: lighten(#26547c, 60%);
 }
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    input {
+        color: white;
+        border-color: white !important;
+        margin: 0px !important;
+        max-width: 200px;
+
+        @media only screen and (max-width: 1365px) {
+            display: none;
+        }
+    }
+
+    i {
+        line-height: initial !important;
+        height: unset !important;
+    }
+
+    button {
+        padding: 0 12px;
+    }
+}
